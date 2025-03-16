@@ -9,7 +9,7 @@ import time
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://ucs.uob.edu.bh/index.php")  # Replace with the actual URL
 
-time.sleep(20)  # Wait for the page to fully load
+time.sleep(15)  # Wait for the page to fully load
 
 # Locate the results table
 tables = driver.find_elements(By.ID, "resultsTable")
