@@ -21,7 +21,7 @@ for table in tables:
         data.append(row.text.strip())  # Extract text content
 
 # Print data to debug
-print(data)
+# print(data)
 
 # Save to JSON only if data is available
 if data:
