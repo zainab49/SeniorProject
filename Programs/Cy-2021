@@ -1,0 +1,961 @@
+{
+  "program": {
+    "title": "B.Sc. in Cybersecurity",
+    "year": "2021",
+    "total_credits": 132,
+    "components": {
+      "University Requirement (UR)": {
+        "credits": 11,
+        "percentage": "8%"
+      },
+      "College Requirement (CR)": {
+        "credits": 25,
+        "percentage": "19%"
+      },
+      "Major Requirement (MR)": {
+        "credits": 75,
+        "percentage": "57%"
+      },
+      "Major Elective (ME)": {
+        "credits": 12,
+        "percentage": "9%",
+        "note": "Students must select four courses from the Major Elective (ME) ITCY 4XX list (List 1)."
+      },
+      "General Studies Elective (GSE)": {
+        "credits": 9,
+        "percentage": "7%",
+        "note": "Student must select three General Studies Electives, distributed as follows: two Business courses and one from Humanities and Social Science."
+      }
+    },
+    "study_plan": {
+      "year_1": {
+        "semester_1": [
+          {
+            "course_code": "ITIS 103",
+            "course_title": "Fundamentals of Information Systems",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "---",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCS 113",
+            "course_title": "Computer Programming I",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "CR",
+            "prerequisite": "---",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "MATHS 101",
+            "course_title": "Calculus I",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "CR",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          },
+          {
+            "course_code": "ARAB 110",
+            "course_title": "Arabic Language Skills",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "UR",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          },
+          {
+            "course_code": "ENGL 154",
+            "course_title": "Language Development I",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "CR",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          }
+        ],
+        "semester_2": [
+          {
+            "course_code": "ITCS 114",
+            "course_title": "Computer Programming II",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "CR",
+            "prerequisite": "ITCS 113",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITNE 110",
+            "course_title": "Introduction to Computer & Network Technology",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "---",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ENGL 155",
+            "course_title": "Language Development II",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "CR",
+            "prerequisite": "ENGL 154",
+            "major_gpa": "No"
+          },
+          {
+            "course_code": "BUS XXX",
+            "course_title": "Business Elective I",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          },
+          {
+            "course_code": "HIST 122",
+            "course_title": "Modern History of Bahrain and Citizenship",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "UR",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          }
+        ]
+      },
+      "year_2": {
+        "semester_3": [
+          {
+            "course_code": "ITCY 201",
+            "course_title": "Fundamentals of Cybersecurity",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCS 113 & ITNE 110",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITIS 213",
+            "course_title": "Database Management Systems",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITIS 103 & ITCS 113",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCS 214",
+            "course_title": "Data Structures",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "CR",
+            "prerequisite": "ITCS 114",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITNE 231",
+            "course_title": "Computer Networks I",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCS 113 & ITNE 110",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ENGL 219",
+            "course_title": "Technical Report Writing",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "CR",
+            "prerequisite": "ENGL 155",
+            "major_gpa": "No"
+          },
+          {
+            "course_code": "HRLC 107",
+            "course_title": "Human Rights",
+            "lecture_hours": 2,
+            "practical_hours": 0,
+            "credits": 2,
+            "course_type": "UR",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          }
+        ],
+        "semester_4": [
+          {
+            "course_code": "ITIS 252",
+            "course_title": "Cloud Computing I",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITNE 110",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITIS 266",
+            "course_title": "IT Project Management I",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITIS 103",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCS 254",
+            "course_title": "Discrete Structures I",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCS 113 & MATHS 101",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITNE 240",
+            "course_title": "Network Operating Systems",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCS 214 & ITNE 231",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITNE 241",
+            "course_title": "Computer Networks II",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITNE 231",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "BUS XXX",
+            "course_title": "Business Elective II",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          }
+        ]
+      },
+      "year_3": {
+        "semester_5": [
+          {
+            "course_code": "ITNE 341",
+            "course_title": "Network Security I",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITNE 241",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITNE 352",
+            "course_title": "Network Programming",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCS 214 & ITNE 231",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCS 333",
+            "course_title": "Internet Software Development",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITIS 213",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCS 342",
+            "course_title": "Design of Algorithms",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCS 214 & ITCS 254",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "STAT 273",
+            "course_title": "Probability and Statistics",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "CR",
+            "prerequisite": "MATHS 101",
+            "major_gpa": "No"
+          },
+          {
+            "course_code": "GSE XXX",
+            "course_title": "Humanities and Social Sciences Elective",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          }
+        ],
+        "semester_6": [
+          {
+            "course_code": "ITCY 351",
+            "course_title": "Cryptography",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITNE 341",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCY 354",
+            "course_title": "Secure Software Engineering",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITIS 266 & ITNE 352",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITIS 362",
+            "course_title": "Governance and Management of Enterprise IT",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITIS 103",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITIS 322",
+            "course_title": "Entrepreneurship and Digital Innovation",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITIS 266",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ISLM 101",
+            "course_title": "Islamic Culture",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "UR",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          }
+        ]
+      },
+      "training_requirement": [
+        {
+          "course_code": "ITCY 482",
+          "course_title": "Internship in Cybersecurity",
+          "lecture_hours": 0,
+          "practical_hours": 3,
+          "credits": 1,
+          "course_type": "CR- Training",
+          "prerequisite": "Pass 85 Credits",
+          "major_gpa": "Yes"
+        }
+      ],
+      "year_4": {
+        "semester_7": [
+          {
+            "course_code": "ITCY 401",
+            "course_title": "Information Security",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCY 351",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCY 470",
+            "course_title": "IT Auditing and Business Continuity",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCY 201",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCY 480",
+            "course_title": "Cyberethics",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCY 201",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCY 4XX",
+            "course_title": "ITCY Elective 1",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "ME",
+            "prerequisite": "As per ME list",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCY 4XX",
+            "course_title": "ITCY Elective 2",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "ME",
+            "prerequisite": "As per ME list",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCY 499",
+            "course_title": "Senior Project",
+            "lecture_hours": 0,
+            "practical_hours": 6,
+            "credits": 3,
+            "course_type": "CR",
+            "prerequisite": "Passing 85 Cr, ENGL 219",
+            "major_gpa": "Yes"
+          }
+        ],
+        "semester_8": [
+          {
+            "course_code": "ITCY 410",
+            "course_title": "Digital Forensics",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCY 201 & ITIS 362",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCY 460",
+            "course_title": "Security Risk Assessment and Countermeasures",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCY 201 & ITIS 362",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCY 481",
+            "course_title": "Ethical Hacking",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "MR",
+            "prerequisite": "ITCY 351 & ITNE 352",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCY 4XX",
+            "course_title": "ITCY Elective 3",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "ME",
+            "prerequisite": "As per ME list",
+            "major_gpa": "Yes"
+          },
+          {
+            "course_code": "ITCY 4XX",
+            "course_title": "ITCY Elective 4",
+            "lecture_hours": 3,
+            "practical_hours": 2,
+            "credits": 3,
+            "course_type": "ME",
+            "prerequisite": "As per ME list",
+            "major_gpa": "Yes"
+          }
+        ]
+      }
+    },
+    "major_electives": {
+      "note": "Students should select four major elective courses from the following list:",
+      "courses": [
+        {
+          "course_code": "ITCY 490",
+          "course_title": "Selected Topics in Cybersecurity I",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "Department Approval",
+          "major_gpa": "Yes"
+        },
+        {
+          "course_code": "ITCY 491",
+          "course_title": "Selected Topics in Cybersecurity II",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "Department Approval",
+          "major_gpa": "Yes"
+        },
+        {
+          "course_code": "ITCY 492",
+          "course_title": "Current Topics in Cybersecurity",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "Department Approval",
+          "major_gpa": "Yes"
+        },
+        {
+          "course_code": "ITCY 420",
+          "course_title": "Secure Coding",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "ITCY 354",
+          "major_gpa": "Yes"
+        },
+        {
+          "course_code": "ITCY 431",
+          "course_title": "Secure Information Storage and Management",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "ITIS 252 & ITIS 362",
+          "major_gpa": "Yes"
+        },
+        {
+          "course_code": "ITCY 432",
+          "course_title": "Internet of Things (IoT) Security",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "ITNE 341",
+          "major_gpa": "Yes"
+        },
+        {
+          "course_code": "ITCY 440",
+          "course_title": "Wireless Network Security",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "ITNE 341",
+          "major_gpa": "Yes"
+        },
+        {
+          "course_code": "ITCY 441",
+          "course_title": "Network Management and Administration",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "ITNE 241",
+          "major_gpa": "Yes"
+        },
+        {
+          "course_code": "ITCY 450",
+          "course_title": "Information Security Management",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "ITCY 401",
+          "major_gpa": "Yes"
+        },
+        {
+          "course_code": "ITCY 493",
+          "course_title": "Blockchain Technology and Applications",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "ACC 112 & ITNE 341",
+          "major_gpa": "Yes"
+        },
+        {
+          "course_code": "ITCY 494",
+          "course_title": "Cloud Security",
+          "lecture_hours": 3,
+          "practical_hours": 2,
+          "credits": 3,
+          "course_type": "ME",
+          "prerequisite": "ITIS 252 & ITCY 351",
+          "major_gpa": "Yes"
+        }
+      ]
+    },
+    "general_studies_electives": {
+      "business_courses": {
+        "note": "Students should select two Business courses from the following list:",
+        "courses": [
+          {
+            "course_code": "ACC 112",
+            "course_title": "Financial Accounting I",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          },
+          {
+            "course_code": "MGT 230",
+            "course_title": "Organization and Management",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          },
+          {
+            "course_code": "MKT 261",
+            "course_title": "Marketing Management",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---",
+            "major_gpa": "No"
+          }
+        ]
+      },
+      "humanities_and_social_sciences": {
+        "note": "Students should select one General Studies Elective from Humanities and Social Science.",
+        "courses": [
+          {
+            "course_code": "FREN 141",
+            "course_title": "French I",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "CHL 101",
+            "course_title": "Introduction to Chinese Language",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "EDPS 144",
+            "course_title": "Psychology of Learning and Memory",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "ART 133",
+            "course_title": "Fundamentals of Music and its Appreciation",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "ART 141",
+            "course_title": "Drawing and Painting",
+            "lecture_hours": 2,
+            "practical_hours": 1,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "ART 221",
+            "course_title": "Traditional Music of Bahrain and Its Application",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "EDAR 126",
+            "course_title": "Playing on Piano and Org 1",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "JAPN 101",
+            "course_title": "Japanese Level I",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "GERM 101",
+            "course_title": "Introduction to German",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "KL 101",
+            "course_title": "Korean Language I",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "TL 101",
+            "course_title": "Turkish Language",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "ENGL 130",
+            "course_title": "Introduction to Literature",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "PSYC 103",
+            "course_title": "Introduction to Psychology",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "PSYC 120",
+            "course_title": "Psychology of Marriage",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "PSYC 211",
+            "course_title": "Educational Psychology",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "SOCIO 161",
+            "course_title": "Introduction to Sociology",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "SOCIO 181",
+            "course_title": "Introduction to Anthropology",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "SOCIO 191",
+            "course_title": "Citizenship, Identity and Globalization",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "SOCIO 224",
+            "course_title": "Sociology of Health",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "SOCIO 226",
+            "course_title": "Sociology of Arabian Gulf",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "HISTO 212",
+            "course_title": "Contemporary History of The Arab World",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "HISTO 281",
+            "course_title": "Landmarks of Islamic Civilization",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "ARAB 141",
+            "course_title": "Modern Arabic Lit.",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "ARAB 242",
+            "course_title": "Arabic Poetry in The Renaissance Period",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "ISLM 114",
+            "course_title": "Quranic Sciences",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "ISLM 136",
+            "course_title": "Biography of The Prophet",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "ISLM 141",
+            "course_title": "Introduction to Shari'a",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "ISLM 252",
+            "course_title": "Islamic Doctrine",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "LAW 101",
+            "course_title": "Introduction to Legal Studies",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "LAW 102",
+            "course_title": "History of Law",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "LAW 106",
+            "course_title": "Constitutional Law I",
+            "lecture_hours": 3,
+            "practical_hours": 0,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "PHYCS 181",
+            "course_title": "Elementary Astronomy",
+            "lecture_hours": 2,
+            "practical_hours": 3,
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          },
+          {
+            "course_code": "GSE XXX",
+            "course_title": "Other electives",
+            "lecture_hours": "X",
+            "practical_hours": "X",
+            "credits": 3,
+            "course_type": "GSE",
+            "prerequisite": "---"
+          }
+        ]
+      }
+    }}}
