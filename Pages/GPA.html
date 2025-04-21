@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; 
+            font-family: 'Merienda', cursive;
+            background-color: #F5EBE0;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .container {
+            max-width: 600px; 
+            width: 100%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #C3A995;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #D5BDAF;
+        }
+
+        th {
+            background-color: #F2F2F2;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #D5BDAF;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 15px;
+            padding: 10px;
+            background: #C3A995;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-top: 10px; 
+        }
+
+        .btn:hover {
+            background: #c58a5d;
+        }
+
+        #gpa-result {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            color: #C3A995;
+        }  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject Name</th>
+                    <th>Credits</th>
+                    <th>Grade</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="subject-list">
+                <tr>
+                    <td><input type="text" placeholder="Enter subject name"></td>
+                    <td><input type="number" placeholder="Enter credits" value="0"></td>
+                    <td>
+                        <select>
+                            <option value="0">Select Grade</option>
+                            <option value="4">A</option>
+                            <option value="3.67">A-</option>
+                            <option value="3.33">B+</option>
+                            <option value="3">B</option>
+                            <option value="2.67">B-</option>
+                            <option value="2.33">C+</option>
+                            <option value="2">C</option>
+                            <option value="1.67">C-</option>
+                            <option value="1.33">D+</option>
+                            <option value="1">D</option>
+                            <option value="0">F</option>
+                        </select>
+                    </td>
+                    <td><button onclick="removeSubject(this)">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <button class="btn" onclick="addSubject()">Add Subject</button>
+        <button class="btn" onclick="calculateGPA()">Calculate GPA</button>
+        <h2 id="gpa-result">GPA: 0.00</h2>
+    </div>
+
+    
+</body>
+</html>
