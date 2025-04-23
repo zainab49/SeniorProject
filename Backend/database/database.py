@@ -12,15 +12,12 @@ def create_database():
     # Students Table with Password
     c.execute('''CREATE TABLE IF NOT EXISTS Students (
                  student_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                 first_name TEXT NOT NULL,
-                 last_name TEXT NOT NULL,
+                 student_name TEXT NOT NULL,
                  email TEXT UNIQUE NOT NULL,
                  password TEXT NOT NULL,  -- Store hashed passwords
                  major TEXT NOT NULL,
-                 current_gpa REAL DEFAULT 0.0,
-                 major_gpa REAL DEFAULT 0.0,
-                 academic_status TEXT DEFAULT 'Active',
-                 total_credits_earned INTEGER DEFAULT 0)''')
+                 CGPA REAL DEFAULT 0.0,
+                 MCGPA REAL DEFAULT 0.0,)''')
 
     # Student Courses Table
     c.execute('''CREATE TABLE IF NOT EXISTS StudentCourses (
@@ -34,20 +31,16 @@ def create_database():
                  is_major_course BOOLEAN DEFAULT FALSE,
                  FOREIGN KEY (student_id) REFERENCES Students(student_id))''')
 
-    # Academic Standing Table
-    c.execute('''CREATE TABLE IF NOT EXISTS AcademicStanding (
-                 standing_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                 status_name TEXT UNIQUE NOT NULL,
-                 min_gpa REAL NOT NULL,
-                 min_credits INTEGER NOT NULL)''')
+                     # Enrollment Table
+    c.execute('''CREATE TABLE IF NOT EXISTS Enrollment (
+                 enrollment_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                 student_id INTEGER NOT NULL,
+                 course_id TEXT NOT NULL,
+                 semester TEXT NOT NULL,
+                 grade TEXT CHECK(grade IN ('A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'F')),
+                 FOREIGN KEY (student_id) REFERENCES Students(student_id))''')
 
-    # Insert initial academic standing rules
-    c.execute('''INSERT OR IGNORE INTO AcademicStanding 
-                 (status_name, min_gpa, min_credits)
-                 VALUES 
-                 ('Good Standing', 2.0, 12),
-                 ('Probation', 1.5, 9),
-                 ('Academic Alert', 2.3, 15)''')
+
 
     conn.commit()
     conn.close()
