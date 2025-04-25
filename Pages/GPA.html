@@ -128,6 +128,56 @@
         <h2 id="gpa-result">GPA: 0.00</h2>
     </div>
 
+        <script>
+        function addSubject() {
+            const subjectList = document.getElementById('subject-list');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td><input type="text" placeholder="Enter subject name"></td>
+                <td><input type="number" placeholder="Enter credits" value="0"></td>
+                <td>
+                    <select>
+                        <option value="0">Select Grade</option>
+                        <option value="4">A</option>
+                        <option value="3.67">A-</option>
+                        <option value="3.33">B+</option>
+                        <option value="3">B</option>
+                        <option value="2.67">B-</option>
+                        <option value="2.33">C+</option>
+                        <option value="2">C</option>
+                        <option value="1.67">C-</option>
+                        <option value="1.33">D+</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                    </select>
+                </td>
+                <td><button onclick="removeSubject(this)">Remove</button></td>
+            `
+            ;
+            subjectList.appendChild(row);
+        }
+
+        function removeSubject(button) {
+            const row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+
+        function calculateGPA() {
+            const subjects = document.querySelectorAll('#subject-list tr');
+            let totalCredits = 0;
+            let total = 0;
+
+            subjects.forEach(subject => {
+                const credits = parseFloat(subject.cells[1].children[0].value);
+                const grade = parseFloat(subject.cells[2].children[0].value);
+                totalCredits += credits;
+                total += credits * grade;
+            });
+
+            const gpa = totalCredits ? (total / totalCredits).toFixed(2) : 0;
+            document.getElementById('gpa-result').innerText = `GPA: ${gpa}`;
+        }
+    </script>
     
 </body>
 </html>
