@@ -40,7 +40,6 @@ def create_database():
                  student_id INTEGER NOT NULL,
                  course_id TEXT NOT NULL,
                  semester TEXT NOT NULL,
-                 grade TEXT CHECK(grade IN ('A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'F')),
                  FOREIGN KEY (student_id) REFERENCES Students(student_id))''')
 
 
