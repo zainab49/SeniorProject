@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #EDEDE9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.login-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form .title {
+    color:#C3A995; /* Muted Purple */
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-form .message {
+    color: #777;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #EED3E6; /* Pale Pink */
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color:#C3A995; /* Muted Purple */
+    box-shadow: 0 0 0 2px rgba(194, 157, 194, 0.2);
+}
+
+.login-form .icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #C3A995; /* Muted Purple */
+}
+
+.login-form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color:#C3A995; /* Muted Purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form .submit-btn:hover {
+    background-color: #C3A995; /* Soft Purple */
+}
+
+.login-form .forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.login-form .forgot-password a {
+    color: #C29DC2; /* Muted Purple */
+    text-decoration: none;
+}
+
+.login-form .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.login-form .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+.login-form .signup-link a {
+    color: #C3A995; /* Muted Purple */
+    text-decoration: none;
+}
+
+.login-form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+.image-section {
+    flex: 1;
+    background-color: #C3A995; /* Muted Purple */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.image-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.image-section p {
+    font-size: 1.1em;
+}
+
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .login-container {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .login-form {
+        padding: 30px;
+    }
+
+    .image-section {
+        padding: 30px;
+    }
+
+    .login-form .title {
+        font-size: 22px;
+    }
+
+    .login-form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-form .submit-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+
+    .image-section {
+        padding: 20px;
+    }
+
+    .login-form .title {
+        font-size: 20px;
+    }
+
+    .login-form input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .login-form .submit-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form .title {
+        font-size: 18px;
+    }
+
+    .login-form input {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .login-form .submit-btn {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+
+    .image-section h2 {
+        font-size: 1.5em;
+    }
+
+    .image-section p {
+        font-size: 1em;
+    }
+}

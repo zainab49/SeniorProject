@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'Project/login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    
+    <div class="login-container">
+        <div class="login-form">
+            <form action="{% url 'login' %}" class="login-form" method="post">
+                {% csrf_token %}
+                <p class="title">Login</p>
+                <p class="message">Enter your email and password to login</p>
+                <label>
+                    <input type="text" name="email" placeholder="Enter your username or email" required>
+                </label>
+                <label>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                    <span class="icon" id="togglePassword"><i class="far fa-eye-slash"></i></span>
+                </label>
+                
+                <button type="submit" class="submit-btn">Login</button>
+                  
+            </form>
+        </div>
+        <div class="image-section">
+            <h2>Welcome to UOB</h2>
+        </div>
+    </div>
+</body>
+</html>
