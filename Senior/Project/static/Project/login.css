@@ -116,7 +116,7 @@ body {
 
 .image-section {
     flex: 1;
-    background-color: #C3A995; /* Muted Purple */
+    background-color: #C3A995;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -124,15 +124,24 @@ body {
     align-items: center;
     color: white;
     text-align: center;
+    position: relative; /* Add this */
+    overflow: hidden; /* Add this */
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the area while maintaining aspect ratio */
+    position: absolute; /* Add this */
+    top: 0;
+    left: 0;
 }
 
 .image-section h2 {
     font-size: 2em;
     margin-bottom: 15px;
-}
-
-.image-section p {
-    font-size: 1.1em;
+    position: relative; /* Add this */
+    z-index: 1; /* Ensures text stays above the image */
 }
 
 

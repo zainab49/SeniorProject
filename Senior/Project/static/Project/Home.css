@@ -193,7 +193,7 @@
   
   .sidebar-header {
     padding: 20px;
-    background-color: var(--color-khaki);
+    background-color: var(--color-linen);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -224,7 +224,7 @@
   }
   
   .sidebar-menu li a:hover {
-    background-color: var(--color-champagne);
+    background-color: var(--color-linen);
   }
   
   .overlay {
