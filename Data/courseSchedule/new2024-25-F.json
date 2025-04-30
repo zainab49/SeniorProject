@@ -1,0 +1,5725 @@
+[
+    {
+        "course_code": "ARAB110",
+        "course_name": "ARABIC LANGUAGE SKILLS",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-22 - 11:30 - 13:30 - -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. KHALIFA YASEEN ARABI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-22 - 11:30 - 13:30 - -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. KHALIFA YASEEN ARABI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "HIST122",
+        "course_name": "MODERN HISTORY OF BAHRAIN AND CITIZENSHIP",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-21 - 08:30 - 10:30 - -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. KHALID ISMAIL HAMADANI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "02",
+                "instructor": "DR. WALEED MOHAMED ALSADEQI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "Time: From 20:00 To 20:50 Location: -/No Room",
+        "course_name": "LAB",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "Time: From 20:00 To 20:50 Location: -/No Room",
+        "course_name": "LAB",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "Time: From 20:00 To 20:50 Location: -/No Room",
+        "course_name": "LAB",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-21 - 08:30 - 10:30 - -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. KHALID ISMAIL HAMADANI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "02",
+                "instructor": "DR. WALEED MOHAMED ALSADEQI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "HRLC107",
+        "course_name": "HUMAN RIGHTS",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-24 - 11:30 - 13:30 - -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DOCTOR YASER ABDULRAHMAN ALMAHMEED",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "02",
+                "instructor": "DOCTOR SAQER EID ALROIES",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "03",
+                "instructor": "Ms. Farah Khaleel Mohammad Mustafa Abdullah",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-24 - 11:30 - 13:30 - -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DOCTOR YASER ABDULRAHMAN ALMAHMEED",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "02",
+                "instructor": "DOCTOR SAQER EID ALROIES",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "03",
+                "instructor": "Ms. Farah Khaleel Mohammad Mustafa Abdullah",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "ISLM101",
+        "course_name": "ISLAMIC CULTURE",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-23 - 14:30 - 16:30 - -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. MAHMOUD ELSAYED DAOUD",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "02",
+                "instructor": "Prof. Ruqaya Alalwani",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-23 - 14:30 - 16:30 - -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. MAHMOUD ELSAYED DAOUD",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "02",
+                "instructor": "Prof. Ruqaya Alalwani",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: -- No Room",
+        "course_name": "LEC",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "MATHS211",
+        "course_name": "LINEAR ALGEBRA",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "PROF. AHMED AYACHE",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S41/0100"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S41/0100"
+                    }
+                ]
+            },
+            {
+                "section_number": "02",
+                "instructor": "PROF. AHMED AYACHE",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "09:30",
+                        "time_to": "10:45",
+                        "location": "S41/0100"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "09:30",
+                        "time_to": "10:45",
+                        "location": "S41/0100"
+                    }
+                ]
+            },
+            {
+                "section_number": "03",
+                "instructor": "DR. KHALID AMIN",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "14/146"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "14/146"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "14/146"
+                    }
+                ]
+            },
+            {
+                "section_number": "05",
+                "instructor": "DR. KHALID AMIN",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "16:00",
+                        "time_to": "17:15",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "16:00",
+                        "time_to": "17:15",
+                        "location": "S48/05"
+                    }
+                ]
+            },
+            {
+                "section_number": "01",
+                "instructor": "PROF. AHMED AYACHE",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "02",
+                "instructor": "PROF. AHMED AYACHE",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "03",
+                "instructor": "DR. KHALID AMIN",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "05",
+                "instructor": "DR. KHALID AMIN",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "MATHS101",
+        "course_name": "CALCULUS I",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-21 - 14:30 - 16:30 - G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. AHMED ALI MATAR",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "S41/0101"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "S41/0101"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "S41/0101"
+                    }
+                ]
+            },
+            {
+                "section_number": "04",
+                "instructor": "Sonia Rani",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S50/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S50/05"
+                    }
+                ]
+            },
+            {
+                "section_number": "05",
+                "instructor": "Sonia Rani",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "09:30",
+                        "time_to": "10:45",
+                        "location": "S50/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "09:30",
+                        "time_to": "10:45",
+                        "location": "S50/05"
+                    }
+                ]
+            },
+            {
+                "section_number": "06",
+                "instructor": "DR. AHMED ALI MATAR",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "S50/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "S50/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "S50/05"
+                    }
+                ]
+            },
+            {
+                "section_number": "08",
+                "instructor": "Dr. Oliver Thomas",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S50/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S50/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S50/05"
+                    }
+                ]
+            },
+            {
+                "section_number": "09",
+                "instructor": "MOHAMMED JAFFAR ABDULLA ALDERAZI",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "16:00",
+                        "time_to": "16:50",
+                        "location": "S50/14"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "16:00",
+                        "time_to": "16:50",
+                        "location": "S50/14"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "16:00",
+                        "time_to": "16:50",
+                        "location": "S50/14"
+                    }
+                ]
+            },
+            {
+                "section_number": "11",
+                "instructor": "MOHAMMED JAFFAR ABDULLA ALDERAZI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "12",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "13",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "14",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-21 - 14:30 - 16:30 - G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. AHMED ALI MATAR",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "04",
+                "instructor": "Sonia Rani",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "05",
+                "instructor": "Sonia Rani",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "06",
+                "instructor": "DR. AHMED ALI MATAR",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "08",
+                "instructor": "Dr. Oliver Thomas",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "09",
+                "instructor": "MOHAMMED JAFFAR ABDULLA ALDERAZI",
+                "available_seats": "-",
+                "exam_room": "S18- 101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "11",
+                "instructor": "MOHAMMED JAFFAR ABDULLA ALDERAZI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "12",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "13",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "14",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "PHYCS101",
+        "course_name": "GENERAL PHYSICS I",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "02",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "03",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "04",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "05",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "06",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "07",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "08",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "09",
+                "instructor": "Dr. Qurrat Ul Ain Gulfam",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "10",
+                "instructor": "Dr. Qurrat Ul Ain Gulfam",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "11",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "12",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "13",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "14",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "15",
+                "instructor": "DR. ABDULMONEM ISA ALSHINO",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "16",
+                "instructor": "DR. ABDULMONEM ISA ALSHINO",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "17",
+                "instructor": "DR. NABIL MOHAMED HASSAN",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "18",
+                "instructor": "DR. NABIL MOHAMED HASSAN",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "19",
+                "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "20",
+                "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "21",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "22",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "23",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "24",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "25",
+                "instructor": "Dr. Qurrat Ul Ain Gulfam",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "26",
+                "instructor": "Dr. Qurrat Ul Ain Gulfam",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "27",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "28",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "29",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "30",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "31",
+                "instructor": "DR. JAWAD MOHAMED ALSAEI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "32",
+                "instructor": "DR. JAWAD MOHAMED ALSAEI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "33",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "34",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "35",
+                "instructor": "DR. NABIL MOHAMED HASSAN",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "36",
+                "instructor": "DR. NABIL MOHAMED HASSAN",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "37",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "38",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "39",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Tuesday",
+                        "time_from": "12:00",
+                        "time_to": "13:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "40",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Sunday",
+                        "time_from": "14:00",
+                        "time_to": "15:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "41",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Monday",
+                        "time_from": "10:00",
+                        "time_to": "11:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "42",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Monday",
+                        "time_from": "12:00",
+                        "time_to": "13:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "43",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Monday",
+                        "time_from": "14:00",
+                        "time_to": "15:40",
+                        "location": "S41/0106"
+                    }
+                ]
+            },
+            {
+                "section_number": "44",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Monday",
+                        "time_from": "14:00",
+                        "time_to": "15:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "45",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "09:30",
+                        "time_to": "10:45",
+                        "location": "S48/04"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "09:30",
+                        "time_to": "10:45",
+                        "location": "S48/04"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Wednesday",
+                        "time_from": "12:00",
+                        "time_to": "13:40",
+                        "location": "S41/0106"
+                    }
+                ]
+            },
+            {
+                "section_number": "46",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "09:30",
+                        "time_to": "10:45",
+                        "location": "S48/04"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "09:30",
+                        "time_to": "10:45",
+                        "location": "S48/04"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Wednesday",
+                        "time_from": "12:00",
+                        "time_to": "13:40",
+                        "location": "S41/1109"
+                    }
+                ]
+            },
+            {
+                "section_number": "47",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Wednesday",
+                        "time_from": "10:00",
+                        "time_to": "11:40",
+                        "location": "S41/1109"
+                    }
+                ]
+            },
+            {
+                "section_number": "48",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Wednesday",
+                        "time_from": "10:00",
+                        "time_to": "11:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "49",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Wednesday",
+                        "time_from": "10:00",
+                        "time_to": "11:40",
+                        "location": "S41/0106"
+                    }
+                ]
+            },
+            {
+                "section_number": "50",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Wednesday",
+                        "time_from": "12:00",
+                        "time_to": "13:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "51",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Tuesday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/0106"
+                    }
+                ]
+            },
+            {
+                "section_number": "52",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Tuesday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/1109"
+                    }
+                ]
+            },
+            {
+                "section_number": "53",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Thursday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "54",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "S48/03"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Thursday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/1109"
+                    }
+                ]
+            },
+            {
+                "section_number": "55",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/06"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/06"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Sunday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/0106"
+                    }
+                ]
+            },
+            {
+                "section_number": "56",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/06"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/06"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Sunday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/1109"
+                    }
+                ]
+            },
+            {
+                "section_number": "57",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/07"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/07"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Monday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/0106"
+                    }
+                ]
+            },
+            {
+                "section_number": "58",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/07"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S48/07"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Monday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/1109"
+                    }
+                ]
+            },
+            {
+                "section_number": "59",
+                "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "13:00",
+                        "time_to": "14:15",
+                        "location": "S48/12"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "13:00",
+                        "time_to": "14:15",
+                        "location": "S48/12"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Wednesday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "60",
+                "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "13:00",
+                        "time_to": "14:15",
+                        "location": "S48/12"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "13:00",
+                        "time_to": "14:15",
+                        "location": "S48/12"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Wednesday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/1109"
+                    }
+                ]
+            },
+            {
+                "section_number": "61",
+                "instructor": "DR. MOHAMMED YOUSIF HUSSAIN",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S41/0032"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S41/0032"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Sunday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "62",
+                "instructor": "DR. MOHAMMED YOUSIF HUSSAIN",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S41/0032"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:30",
+                        "time_to": "15:45",
+                        "location": "S41/0032"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Tuesday",
+                        "time_from": "16:00",
+                        "time_to": "17:40",
+                        "location": "S41/2127"
+                    }
+                ]
+            },
+            {
+                "section_number": "01",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "02",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "03",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "04",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "05",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "06",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "07",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "08",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "09",
+                "instructor": "Dr. Qurrat Ul Ain Gulfam",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "10",
+                "instructor": "Dr. Qurrat Ul Ain Gulfam",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "11",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "12",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "13",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "14",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "15",
+                "instructor": "DR. ABDULMONEM ISA ALSHINO",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "16",
+                "instructor": "DR. ABDULMONEM ISA ALSHINO",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "17",
+                "instructor": "DR. NABIL MOHAMED HASSAN",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "18",
+                "instructor": "DR. NABIL MOHAMED HASSAN",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "19",
+                "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "20",
+                "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "21",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "22",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "23",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "24",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "25",
+                "instructor": "Dr. Qurrat Ul Ain Gulfam",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "26",
+                "instructor": "Dr. Qurrat Ul Ain Gulfam",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "27",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "28",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "29",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "30",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "31",
+                "instructor": "DR. JAWAD MOHAMED ALSAEI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "32",
+                "instructor": "DR. JAWAD MOHAMED ALSAEI",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "33",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "34",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "35",
+                "instructor": "DR. NABIL MOHAMED HASSAN",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "36",
+                "instructor": "DR. NABIL MOHAMED HASSAN",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "37",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "38",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "39",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "40",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "41",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "42",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "43",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "44",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "45",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "46",
+                "instructor": "DR. KHALIL EBRAHIM MUBARAK",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "47",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "48",
+                "instructor": "DR. HACENE MANAA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "49",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "50",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "51",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "52",
+                "instructor": "DR. KARIM BEN MESSAI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "53",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "54",
+                "instructor": "DR. HABIB EBRAHIM KHALIL",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "55",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "56",
+                "instructor": "DR. HANAN MUBARAK ALBUFLASA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "57",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "58",
+                "instructor": "MRS BASMA TAQI ALNAJJAR",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "59",
+                "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "60",
+                "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "61",
+                "instructor": "DR. MOHAMMED YOUSIF HUSSAIN",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "62",
+                "instructor": "DR. MOHAMMED YOUSIF HUSSAIN",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "MATHS102",
+        "course_name": "CALCULUS II",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "Dr. Sami Omar",
+                "available_seats": "-",
+                "exam_room": "S41- 1102 , S41- 1103 , S41- 2017",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "S50/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "S50/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "15:00",
+                        "time_to": "15:50",
+                        "location": "S50/05"
+                    }
+                ]
+            },
+            {
+                "section_number": "02",
+                "instructor": "Dr. Sami Omar",
+                "available_seats": "-",
+                "exam_room": "S48- 02 , S48- 03",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S41/0031"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S41/0031"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S41/0031"
+                    }
+                ]
+            },
+            {
+                "section_number": "03",
+                "instructor": "Dr. Sami Omar",
+                "available_seats": "-",
+                "exam_room": "S48- 05 , S48- 06",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S41/1103"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S41/1103"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S41/1103"
+                    }
+                ]
+            },
+            {
+                "section_number": "04",
+                "instructor": "DR. KHALID AMIN",
+                "available_seats": "-",
+                "exam_room": "S48- 06 , S48- 07",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "14/146"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "14/146"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "14/146"
+                    }
+                ]
+            },
+            {
+                "section_number": "05",
+                "instructor": "DR. KHALID AMIN",
+                "available_seats": "-",
+                "exam_room": "S48- 04",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "14/106"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "14/106"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "14/106"
+                    }
+                ]
+            },
+            {
+                "section_number": "06",
+                "instructor": "Dr. Sami Omar",
+                "available_seats": "-",
+                "exam_room": "S41- 0101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "16:00",
+                        "time_to": "16:50",
+                        "location": "S41/0100"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "16:00",
+                        "time_to": "16:50",
+                        "location": "S41/1059"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "16:00",
+                        "time_to": "16:50",
+                        "location": "S41/0100"
+                    }
+                ]
+            },
+            {
+                "section_number": "01",
+                "instructor": "Dr. Sami Omar",
+                "available_seats": "-",
+                "exam_room": "S41- 1102 , S41- 1103 , S41- 2017",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "02",
+                "instructor": "Dr. Sami Omar",
+                "available_seats": "-",
+                "exam_room": "S48- 02 , S48- 03",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "03",
+                "instructor": "Dr. Sami Omar",
+                "available_seats": "-",
+                "exam_room": "S48- 05 , S48- 06",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "04",
+                "instructor": "DR. KHALID AMIN",
+                "available_seats": "-",
+                "exam_room": "S48- 06 , S48- 07",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "05",
+                "instructor": "DR. KHALID AMIN",
+                "available_seats": "-",
+                "exam_room": "S48- 04",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "06",
+                "instructor": "Dr. Sami Omar",
+                "available_seats": "-",
+                "exam_room": "S41- 0101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "PHYCS102",
+        "course_name": "GENERAL PHYSICS II",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 0100",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/07"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/07"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/07"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Sunday",
+                        "time_from": "08:00",
+                        "time_to": "09:40",
+                        "location": "S41/0091"
+                    }
+                ]
+            },
+            {
+                "section_number": "02",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 0100",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/07"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/07"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "S48/07"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Sunday",
+                        "time_from": "08:00",
+                        "time_to": "09:40",
+                        "location": "S41/1100"
+                    }
+                ]
+            },
+            {
+                "section_number": "03",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 0101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "08:00",
+                        "time_to": "08:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "08:00",
+                        "time_to": "08:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "08:00",
+                        "time_to": "08:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Thursday",
+                        "time_from": "10:00",
+                        "time_to": "11:40",
+                        "location": "S41/0091"
+                    }
+                ]
+            },
+            {
+                "section_number": "04",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 0101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "08:00",
+                        "time_to": "08:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "08:00",
+                        "time_to": "08:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "08:00",
+                        "time_to": "08:50",
+                        "location": "S48/02"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Thursday",
+                        "time_from": "10:00",
+                        "time_to": "11:40",
+                        "location": "S41/1100"
+                    }
+                ]
+            },
+            {
+                "section_number": "05",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 1102",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Tuesday",
+                        "time_from": "10:00",
+                        "time_to": "11:40",
+                        "location": "S41/0091"
+                    }
+                ]
+            },
+            {
+                "section_number": "06",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 1102",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "S48/05"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Tuesday",
+                        "time_from": "10:00",
+                        "time_to": "11:40",
+                        "location": "S41/1100"
+                    }
+                ]
+            },
+            {
+                "section_number": "07",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S41- 1103",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Tuesday",
+                        "time_from": "12:00",
+                        "time_to": "13:40",
+                        "location": "S41/0091"
+                    }
+                ]
+            },
+            {
+                "section_number": "08",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S41- 1103",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "11:00",
+                        "time_to": "11:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Tuesday",
+                        "time_from": "12:00",
+                        "time_to": "13:40",
+                        "location": "S41/1100"
+                    }
+                ]
+            },
+            {
+                "section_number": "09",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 0065",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Sunday",
+                        "time_from": "12:00",
+                        "time_to": "13:40",
+                        "location": "S41/0091"
+                    }
+                ]
+            },
+            {
+                "section_number": "10",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 0065",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Sunday",
+                        "time_from": "12:00",
+                        "time_to": "13:40",
+                        "location": "S41/1100"
+                    }
+                ]
+            },
+            {
+                "section_number": "11",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S41- 0066",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "13:00",
+                        "time_to": "14:15",
+                        "location": "S48/13"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "13:00",
+                        "time_to": "14:15",
+                        "location": "S48/13"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Wednesday",
+                        "time_from": "08:00",
+                        "time_to": "09:40",
+                        "location": "S41/0091"
+                    }
+                ]
+            },
+            {
+                "section_number": "12",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S41- 0066",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "13:00",
+                        "time_to": "14:15",
+                        "location": "S48/13"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "13:00",
+                        "time_to": "14:15",
+                        "location": "S48/13"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Wednesday",
+                        "time_from": "08:00",
+                        "time_to": "09:40",
+                        "location": "S41/1100"
+                    }
+                ]
+            },
+            {
+                "section_number": "13",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 1016",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Monday",
+                        "time_from": "10:00",
+                        "time_to": "11:40",
+                        "location": "S41/0091"
+                    }
+                ]
+            },
+            {
+                "section_number": "14",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 1016",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S48/17"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Monday",
+                        "time_from": "10:00",
+                        "time_to": "11:40",
+                        "location": "S41/1100"
+                    }
+                ]
+            },
+            {
+                "section_number": "15",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 1017",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "S48/13"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "S48/13"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "S48/13"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Tuesday",
+                        "time_from": "08:00",
+                        "time_to": "09:40",
+                        "location": "S41/0091"
+                    }
+                ]
+            },
+            {
+                "section_number": "16",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 1017",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "S48/13"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "S48/13"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "S48/13"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Tuesday",
+                        "time_from": "08:00",
+                        "time_to": "09:40",
+                        "location": "S41/1100"
+                    }
+                ]
+            },
+            {
+                "section_number": "01",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 0100",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "02",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 0100",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "03",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 0101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "04",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 0101",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "05",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 1102",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "06",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 1102",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "07",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S41- 1103",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "08",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S41- 1103",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "09",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 0065",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "10",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 0065",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "11",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S41- 0066",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "12",
+                "instructor": "Prof. Ashwini Sinha",
+                "available_seats": "-",
+                "exam_room": "S41- 0066",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "13",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 1016",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "14",
+                "instructor": "Dr. Ihab Hamdy Naeim",
+                "available_seats": "-",
+                "exam_room": "S41- 1016",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "15",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 1017",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "16",
+                "instructor": "DR. AQEEL AZIZ DAKHIL",
+                "available_seats": "-",
+                "exam_room": "S41- 1017",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "STAT273",
+        "course_name": "PROBABILITY AND STATISTICS",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-28 - 11:30 - 13:30 - G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "02",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "03",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "04",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "06",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "07",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "2024-12-28 - 11:30 - 13:30 - G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "02",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "03",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "04",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "06",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "07",
+                "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
+                "available_seats": "-",
+                "exam_room": "",
+                "section_status": "",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "Exam Room: G- 2 S Sports Hall",
+        "course_name": "S4",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "MATHS205",
+        "course_name": "DIFFERENTIAL EQUATIONS",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. MOHAMMED LARBI LABBI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "13:00",
+                        "time_to": "14:15",
+                        "location": "S50/05"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "13:00",
+                        "time_to": "14:15",
+                        "location": "S50/05"
+                    }
+                ]
+            },
+            {
+                "section_number": "02",
+                "instructor": "DR. MOHAMMED LARBI LABBI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "16:00",
+                        "time_to": "17:15",
+                        "location": "S41/2017"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "16:00",
+                        "time_to": "17:15",
+                        "location": "S41/2017"
+                    }
+                ]
+            },
+            {
+                "section_number": "03",
+                "instructor": "DR. MOHAMMED LARBI LABBI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "14/248"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "14/248"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "12:00",
+                        "time_to": "12:50",
+                        "location": "14/248"
+                    }
+                ]
+            },
+            {
+                "section_number": "04",
+                "instructor": "DR. MOHAMMED LARBI LABBI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "13:00",
+                        "time_to": "13:50",
+                        "location": "14/153"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "13:00",
+                        "time_to": "13:50",
+                        "location": "14/153"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "13:00",
+                        "time_to": "13:50",
+                        "location": "14/153"
+                    }
+                ]
+            },
+            {
+                "section_number": "05",
+                "instructor": "DR. MOHAMMED LARBI LABBI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "14/153"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "14/153"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "14:00",
+                        "time_to": "14:50",
+                        "location": "14/153"
+                    }
+                ]
+            },
+            {
+                "section_number": "06",
+                "instructor": "DR. THURAYA JUMA ABDULLA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "14/146"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "14/146"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "09:00",
+                        "time_to": "09:50",
+                        "location": "14/146"
+                    }
+                ]
+            },
+            {
+                "section_number": "07",
+                "instructor": "DR. THURAYA JUMA ABDULLA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "14/146"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "14/146"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "10:00",
+                        "time_to": "10:50",
+                        "location": "14/146"
+                    }
+                ]
+            },
+            {
+                "section_number": "01",
+                "instructor": "DR. MOHAMMED LARBI LABBI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "02",
+                "instructor": "DR. MOHAMMED LARBI LABBI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "03",
+                "instructor": "DR. MOHAMMED LARBI LABBI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "04",
+                "instructor": "DR. MOHAMMED LARBI LABBI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "05",
+                "instructor": "DR. MOHAMMED LARBI LABBI",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "06",
+                "instructor": "DR. THURAYA JUMA ABDULLA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "07",
+                "instructor": "DR. THURAYA JUMA ABDULLA",
+                "available_seats": "-",
+                "exam_room": "S6 - Multi-purpose Hall- S6",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "ENGL219",
+        "course_name": "TECHNICAL REPORT WRITING",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "Khaled Abdelmajeed Kanani",
+                "available_seats": "-",
+                "exam_room": "S17- 103+105",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:00",
+                        "time_to": "15:15",
+                        "location": "S40/1086"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:00",
+                        "time_to": "15:15",
+                        "location": "S40/1086"
+                    }
+                ]
+            },
+            {
+                "section_number": "02",
+                "instructor": "Khaled Abdelmajeed Kanani",
+                "available_seats": "-",
+                "exam_room": "S17- 103+105",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "15:30",
+                        "time_to": "16:45",
+                        "location": "S20B/108"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "15:30",
+                        "time_to": "16:45",
+                        "location": "S20B/108"
+                    }
+                ]
+            },
+            {
+                "section_number": "03",
+                "instructor": "DR.YASSER AHMED GOMAA HASSANEIN",
+                "available_seats": "-",
+                "exam_room": "S17- 027 , S17- 029",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "15:30",
+                        "time_to": "16:45",
+                        "location": "S20A/07"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "15:30",
+                        "time_to": "16:45",
+                        "location": "S20A/07"
+                    }
+                ]
+            },
+            {
+                "section_number": "05",
+                "instructor": "Mohammed Ebrahim",
+                "available_seats": "-",
+                "exam_room": "S17- 029 , S17- 031",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "09:30",
+                        "time_to": "10:45",
+                        "location": "S20B/116"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "09:30",
+                        "time_to": "10:45",
+                        "location": "S20B/116"
+                    }
+                ]
+            },
+            {
+                "section_number": "06",
+                "instructor": "Mohammed Ebrahim",
+                "available_seats": "-",
+                "exam_room": "S17- 031 , S17- 033",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "11:00",
+                        "time_to": "12:15",
+                        "location": "S20B/121"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "11:00",
+                        "time_to": "12:15",
+                        "location": "S20B/121"
+                    }
+                ]
+            },
+            {
+                "section_number": "07",
+                "instructor": "DR.YASSER AHMED GOMAA HASSANEIN",
+                "available_seats": "-",
+                "exam_room": "S17- 103+105",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "17:00",
+                        "time_to": "18:15",
+                        "location": "S39/31"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "17:00",
+                        "time_to": "18:15",
+                        "location": "S39/31"
+                    }
+                ]
+            },
+            {
+                "section_number": "01",
+                "instructor": "Khaled Abdelmajeed Kanani",
+                "available_seats": "-",
+                "exam_room": "S17- 103+105",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "02",
+                "instructor": "Khaled Abdelmajeed Kanani",
+                "available_seats": "-",
+                "exam_room": "S17- 103+105",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "03",
+                "instructor": "DR.YASSER AHMED GOMAA HASSANEIN",
+                "available_seats": "-",
+                "exam_room": "S17- 027 , S17- 029",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "05",
+                "instructor": "Mohammed Ebrahim",
+                "available_seats": "-",
+                "exam_room": "S17- 029 , S17- 031",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "06",
+                "instructor": "Mohammed Ebrahim",
+                "available_seats": "-",
+                "exam_room": "S17- 031 , S17- 033",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "07",
+                "instructor": "DR.YASSER AHMED GOMAA HASSANEIN",
+                "available_seats": "-",
+                "exam_room": "S17- 103+105",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "ENGL154",
+        "course_name": "LANGUAGE DEVELOPMENT I",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "Dr. Deyaa Mohamed Alsayed Hammam",
+                "available_seats": "-",
+                "exam_room": "S20- 13",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "15:30",
+                        "time_to": "16:45",
+                        "location": "S1A/108"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "15:30",
+                        "time_to": "16:45",
+                        "location": "S1A/108"
+                    }
+                ]
+            },
+            {
+                "section_number": "02",
+                "instructor": "Dr. Deyaa Mohamed Alsayed Hammam",
+                "available_seats": "-",
+                "exam_room": "S20- 06",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "17:00",
+                        "time_to": "18:15",
+                        "location": "S1A/046"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "17:00",
+                        "time_to": "18:15",
+                        "location": "S1A/046"
+                    }
+                ]
+            },
+            {
+                "section_number": "03",
+                "instructor": "Dr. Deyaa Mohamed Alsayed Hammam",
+                "available_seats": "-",
+                "exam_room": "S20- 11",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "18:30",
+                        "time_to": "19:45",
+                        "location": "S1A/108"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "18:30",
+                        "time_to": "19:45",
+                        "location": "S1A/108"
+                    }
+                ]
+            },
+            {
+                "section_number": "04",
+                "instructor": "MS.SAIMA IRUM",
+                "available_seats": "-",
+                "exam_room": "S20- 05",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "12:30",
+                        "time_to": "13:45",
+                        "location": "S20B/24"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "12:30",
+                        "time_to": "13:45",
+                        "location": "S20B/24"
+                    }
+                ]
+            },
+            {
+                "section_number": "05",
+                "instructor": "MS.SAIMA IRUM",
+                "available_seats": "-",
+                "exam_room": "S20- 12",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:00",
+                        "time_to": "15:15",
+                        "location": "S20B/116"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:00",
+                        "time_to": "15:15",
+                        "location": "S20B/116"
+                    }
+                ]
+            },
+            {
+                "section_number": "01",
+                "instructor": "Dr. Deyaa Mohamed Alsayed Hammam",
+                "available_seats": "-",
+                "exam_room": "S20- 13",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "02",
+                "instructor": "Dr. Deyaa Mohamed Alsayed Hammam",
+                "available_seats": "-",
+                "exam_room": "S20- 06",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "03",
+                "instructor": "Dr. Deyaa Mohamed Alsayed Hammam",
+                "available_seats": "-",
+                "exam_room": "S20- 11",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "04",
+                "instructor": "MS.SAIMA IRUM",
+                "available_seats": "-",
+                "exam_room": "S20- 05",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "05",
+                "instructor": "MS.SAIMA IRUM",
+                "available_seats": "-",
+                "exam_room": "S20- 12",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "ENGL155",
+        "course_name": "LANGUAGE DEVELOPMENT II",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "Ms. Noora Abdulaziz Alabbasi",
+                "available_seats": "-",
+                "exam_room": "S41- 0031",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "16:00",
+                        "time_to": "16:50",
+                        "location": "S1A/048"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "16:00",
+                        "time_to": "16:50",
+                        "location": "S1A/048"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "16:00",
+                        "time_to": "16:50",
+                        "location": "S1A/048"
+                    }
+                ]
+            },
+            {
+                "section_number": "02",
+                "instructor": "Ms. Noora Abdulaziz Alabbasi",
+                "available_seats": "-",
+                "exam_room": "S41- 0032",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "14:00",
+                        "time_to": "15:15",
+                        "location": "S1A/026"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "14:00",
+                        "time_to": "15:15",
+                        "location": "S1A/026"
+                    }
+                ]
+            },
+            {
+                "section_number": "03",
+                "instructor": "Husain Ali Akbar Ahmed Merza",
+                "available_seats": "-",
+                "exam_room": "S41- 0065",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "15:30",
+                        "time_to": "16:45",
+                        "location": "S39/116"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "15:30",
+                        "time_to": "16:45",
+                        "location": "S39/116"
+                    }
+                ]
+            },
+            {
+                "section_number": "04",
+                "instructor": "Husain Ali Akbar Ahmed Merza",
+                "available_seats": "-",
+                "exam_room": "S41- 0066",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Sunday",
+                        "time_from": "15:30",
+                        "time_to": "16:45",
+                        "location": "S40/057"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "15:30",
+                        "time_to": "16:45",
+                        "location": "S40/057"
+                    }
+                ]
+            },
+            {
+                "section_number": "01",
+                "instructor": "Ms. Noora Abdulaziz Alabbasi",
+                "available_seats": "-",
+                "exam_room": "S41- 0031",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "02",
+                "instructor": "Ms. Noora Abdulaziz Alabbasi",
+                "available_seats": "-",
+                "exam_room": "S41- 0032",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "03",
+                "instructor": "Husain Ali Akbar Ahmed Merza",
+                "available_seats": "-",
+                "exam_room": "S41- 0065",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            },
+            {
+                "section_number": "04",
+                "instructor": "Husain Ali Akbar Ahmed Merza",
+                "available_seats": "-",
+                "exam_room": "S41- 0066",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course_code": "PHYCS241",
+        "course_name": "INTRODUCTORY ELECTRONICS",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": []
+    },
+    {
+        "course_code": "",
+        "course_name": "PHYCS102",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
+                "available_seats": "-",
+                "exam_room": "S41- 0100",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": [
+                    {
+                        "class_type": "LEC",
+                        "day": "Monday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S48/12"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Wednesday",
+                        "time_from": "08:00",
+                        "time_to": "09:15",
+                        "location": "S48/12"
+                    },
+                    {
+                        "class_type": "LAB",
+                        "day": "Monday",
+                        "time_from": "11:00",
+                        "time_to": "12:40",
+                        "location": "S41/0095"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "course_code": "",
+        "course_name": "PHYCS102",
+        "prerequisites": "",
+        "exam_date": "",
+        "exam_time_start": "",
+        "exam_time_end": "",
+        "exam_room": "",
+        "sections": [
+            {
+                "section_number": "01",
+                "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
+                "available_seats": "-",
+                "exam_room": "S41- 0100",
+                "section_status": "OPEN",
+                "remarks": "",
+                "classes": []
+            }
+        ]
+    }
+]

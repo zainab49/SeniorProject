@@ -2,7 +2,7 @@ import json
 import re
 
 # Load the messy JSON file
-file_path = 'CE-2024-25-F.json'
+file_path = 'IS-2024-25-F.json'
 
 with open(file_path, 'r', encoding='utf-8') as f:
     raw_data = json.load(f)
@@ -147,7 +147,7 @@ if current_course:
     cleaned_courses.append(current_course)
 
 # Save result
-output_file = 'fixed_courses.json'
+output_file = 'newIS-2024-25-F.json'
 with open(output_file, 'w', encoding='utf-8') as f:
     json.dump(cleaned_courses, f, indent=4)
 
