@@ -33,6 +33,7 @@ class Enrollment(models.Model):
     enrollment_id = models.AutoField(primary_key=True)
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
     course_id = models.CharField(max_length=100)
+    section = models.CharField(max_length=10, default='01')
     is_major_course = models.BooleanField(default=False)
     semester = models.CharField(max_length=50)
 

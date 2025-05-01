@@ -88,95 +88,36 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <strong>ITIS265</strong><br>
-              IT PROJECT MANAGEMENT
-              <button class="toggle-time" data-target="times-1">↓</button>
-              <div class="course-times" id="times-1">
-                <div class="time-slot">
-                  <strong>Sunday (U):</strong> 10:00 AM - 10:50 AM<br>
-                  Building 540, Room 029
-                </div>
-                <div class="time-slot">
-                  <strong>Tuesday (T):</strong> 10:00 AM - 10:50 AM<br>
-                  Building 540, Room 029
-                </div>
-                <div class="time-slot">
-                  <strong>Thursday (H):</strong> 10:00 AM - 10:50 AM<br>
-                  Building 540, Room 029
-                </div>
-              </div>
-            </td>
-            <td>02</td>
-            <td>DR. MAAN MUBARA</td>
-            <td>0</td>
-            <td>3</td>
-            <td>
-              <div class="exam-time">
-                2:30 PM - 4:30 PM<br>
-                26/05/2025
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>COEN352</strong><br>
-              DATA STRUCTURES & ALGORITHMS
-              <button class="toggle-time" data-target="times-2">↓</button>
-              <div class="course-times" id="times-2">
-                <div class="time-slot">
-                  <strong>Monday (M):</strong> 8:30 AM - 9:45 AM<br>
-                  Building 550, Room 115
-                </div>
-                <div class="time-slot">
-                  <strong>Wednesday (W):</strong> 8:30 AM - 9:45 AM<br>
-                  Building 550, Room 115
-                </div>
-                <div class="time-slot">
-                  <strong>Thursday (H):</strong> 2:00 PM - 3:50 PM (Lab)<br>
-                  Building 612, Room 205
-                </div>
-              </div>
-            </td>
-            <td>01</td>
-            <td>DR. SARAH AHMED</td>
-            <td>0</td>
-            <td>4</td>
-            <td>
-              <div class="exam-time">
-                9:00 AM - 11:00 AM<br>
-                22/05/2025
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <strong>NETW375</strong><br>
-              WIRELESS NETWORKS
-              <button class="toggle-time" data-target="times-3">↓</button>
-              <div class="course-times" id="times-3">
-                <div class="time-slot">
-                  <strong>Sunday (U):</strong> 1:00 PM - 2:15 PM<br>
-                  Building 530, Room 112
-                </div>
-                <div class="time-slot">
-                  <strong>Tuesday (T):</strong> 1:00 PM - 2:15 PM<br>
-                  Building 530, Room 112
-                </div>
-              </div>
-            </td>
-            <td>03</td>
-            <td>DR. JAMES WILSON</td>
-            <td>0</td>
-            <td>3</td>
-            <td>
-              <div class="exam-time">
-                12:30 PM - 2:30 PM<br>
-                24/05/2025
-              </div>
-            </td>
-          </tr>
+          {% for course in courses %}
+<tr>
+  <td>
+    <strong>{{ course.course_code }}</strong><br>
+    {{ course.course_name }}
+    <button class="toggle-time" data-target="times-{{ forloop.counter }}">↓</button>
+    <div class="course-times" id="times-{{ forloop.counter }}">
+      {% for class in course.classes %}
+      <div class="time-slot">
+        <strong>{{ class.day }}:</strong> {{ class.time_from }} - {{ class.time_to }}<br>
+        {{ class.location }}
+      </div>
+      {% endfor %}
+    </div>
+  </td>
+  <td>{{ course.section }}</td>
+  <td>{{ course.instructor }}</td>
+  <td>0</td>
+  <td>{{ course.credits }}</td>
+  <td>
+    <div class="exam-time">
+      {{ course.exam_start }} - {{ course.exam_end }}<br>
+      {{ course.exam_date }}
+    </div>
+  </td>
+</tr>
+{% empty %}
+<tr><td colspan="6">No courses found</td></tr>
+{% endfor %}
+
         </tbody>
       </table>
     </div>
