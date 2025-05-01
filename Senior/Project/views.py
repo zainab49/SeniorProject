@@ -22,6 +22,13 @@ def login_page(request):
 
     return render(request, 'Project/login.html')
 
+
+
+#logout view
+def logout_view(request):
+    request.session.flush()  # Clears the session (logs the user out)
+    return redirect('login')  # Redirect to login page
+
 # Home page view
 def home_page(request):
     student_id = request.session.get('student_id')

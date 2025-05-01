@@ -29,9 +29,12 @@
       <div class="logo">
         <button class="menu-toggle" id="menuToggle">☰</button>
         <img src="{% static 'Project/Logo.png' %}" alt="University Logo">
+        
       </div>
       <div class="user-profile">
-        <img src="{% static 'Project/user.png' %}" alt="User Profile">
+        <a href="{% url 'logout' %}" class="profile-button">
+          <img src="{% static 'Project/user.png' %}" alt="User Profile">
+        </a>
       </div>
     </div>
   </header>
