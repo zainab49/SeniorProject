@@ -33,51 +33,61 @@ def home_page(request):
     except Student.DoesNotExist:
         return redirect('login')
 
-    # Get all enrollments for this student
     enrollments = Enrollment.objects.filter(student=student)
-
-    # Prepare real course data list
     courses_data = []
+    not_found_courses = []
+
+
+    # JSON course files location
+    json_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), 'Data', 'courseSchedule'))
+
 
     for enrollment in enrollments:
-        if enrollment.semester.lower() == 'first':
-            course_id = enrollment.course_id.strip()
-            course_info = None
+        course_id = enrollment.course_id.strip()
+        section_number = enrollment.section.strip()
+        course_info = None
 
-            # Search all F-ending JSON files in courseSchedule
-            json_folder = os.path.join(os.path.dirname(__file__), '..', 'Data', 'courseSchedule')
-            json_folder = os.path.abspath(json_folder)
-
-            for file in os.listdir(json_folder):
-                if fnmatch.fnmatch(file, '*-F.json'):  # Match all first semester files
-                    file_path = os.path.join(json_folder, file)
+        # Match only first semester JSON files
+        for file in os.listdir(json_folder):
+            if file.endswith('F.json'):
+                file_path = os.path.join(json_folder, file)
+                try:
                     with open(file_path, 'r', encoding='utf-8') as f:
-                        try:
-                            data = json.load(f)
-                            for course in data:
-                                if course.get('course_code', '').strip() == course_id:
-                                    course_info = course
-                                    break
-                        except Exception as e:
-                            print(f"Error reading {file_path}: {e}")
-                if course_info:
-                    break
+                        data = json.load(f)
+                        for course in data:
+                            if course.get('course_code', '').strip().lower() == course_id.lower():
+                                for sec in course.get('sections', []):
+                                    if sec.get('section_number', '').strip() == section_number:
+                                        course_info = {
+                                            'course_code': course.get('course_code', ''),
+                                            'course_name': course.get('course_name', ''),
+                                            'exam_date': course.get('exam_date', ''),
+                                            'exam_start': course.get('exam_time_start', ''),
+                                            'exam_end': course.get('exam_time_end', ''),
+                                            'section': sec.get('section_number', ''),
+                                            'instructor': sec.get('instructor', ''),
+                                            'credits': 3,
+                                            'classes': sec.get('classes', [])
+                                        }
+                                        break
+                            if course_info:
+                                break
+                    if course_info:
+                        break
+                except Exception as e:
+                    print(f"Error reading {file_path}: {e}")
 
-            if course_info:
-                courses_data.append({
-                    'course_code': course_info['course_code'],
-                    'course_name': course_info['course_name'],
-                    'exam_date': course_info.get('exam_date', ''),
-                    'exam_start': course_info.get('exam_time_start', ''),
-                    'exam_end': course_info.get('exam_time_end', ''),
-                    'section': course_info['sections'][0]['section_number'] if course_info.get('sections') else '',
-                    'instructor': course_info['sections'][0]['instructor'] if course_info.get('sections') else '',
-                    'credits': 3,  # Optional: change if you have real credit data
-                })
-   
+        # If course was found, add to homepage data
+        if course_info:
+            courses_data.append(course_info)
+        else:
+            not_found_courses.append(f"{course_id} - Section {section_number}")
+
     return render(request, 'Project/Home.html', {
-         'student': student,
-         'courses': courses_data})
+        'student': student,
+        'courses': courses_data,
+        'not_found_courses': not_found_courses
+    })
 
 # GPA Calculator page view
 def gpa_calculator_page(request):

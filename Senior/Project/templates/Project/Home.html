@@ -17,10 +17,10 @@
       <button class="close-sidebar" id="closeSidebar">×</button>
     </div>
     <ul class="sidebar-menu">
-      <li><a href="Home.html">Dashboard</a></li>
-      <li><a href="#">GPA Calculator</a></li>
-      <li><a href="gpa_improvement.html">GPA Improvement</a></li>
-      <li><a href="schedule_suggestions.html">Course Schedule Suggestions</a></li>
+      <li><a href="{% url 'home' %}">Dashboard</a></li>
+      <li><a href="{% url 'gpa_calculator' %}">GPA Calculator</a></li>
+      <li><a href="{% url 'gpa_improvement' %}">GPA Improvement</a></li>
+      <li><a href="{% url 'schedule_suggestions' %}">Course Schedule Suggestions</a></li>
     </ul>
   </div>
   
@@ -28,10 +28,10 @@
     <div class="container header-content">
       <div class="logo">
         <button class="menu-toggle" id="menuToggle">☰</button>
-        <img src="{% static 'Project/Logo.png' %}" alt="image" >
+        <img src="{% static 'Project/Logo.png' %}" alt="University Logo">
       </div>
       <div class="user-profile">
-        <img src="{% static 'Project/user.png' %}" alt="image" >
+        <img src="{% static 'Project/user.png' %}" alt="User Profile">
       </div>
     </div>
   </header>
@@ -117,10 +117,20 @@
 {% empty %}
 <tr><td colspan="6">No courses found</td></tr>
 {% endfor %}
-
         </tbody>
       </table>
     </div>
+
+    {% if not_found_courses %}
+    <div style="color: red; margin-top: 20px;">
+      <h3>⚠️ Missing Courses in JSON:</h3>
+      <ul>
+        {% for item in not_found_courses %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
   </main>
 
   <script>
