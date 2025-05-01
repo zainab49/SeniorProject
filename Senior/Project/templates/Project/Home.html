@@ -28,9 +28,11 @@
     <div class="container header-content">
       <div class="logo">
         <button class="menu-toggle" id="menuToggle">☰</button>
-        <img src="/api/placeholder/50/50" alt="University Logo">
+        <img src="{% static 'Project/Logo.png' %}" alt="image" >
       </div>
-      <div class="user-profile"></div>
+      <div class="user-profile">
+        <img src="{% static 'Project/user.png' %}" alt="image" >
+      </div>
     </div>
   </header>
   
@@ -38,9 +40,9 @@
     <div class="dashboard">
       <div class="student-info">
         <h2>Student Information</h2>
-        <p><strong>Student Name:</strong> John Smith</p>
-        <p><strong>ID:</strong> 2020XXXXX</p>
-        <p><strong>Program:</strong> B.SC. in Network Engineering</p>
+        <p><strong>Student Name:</strong> {{ student.student_name }}</p>
+        <p><strong>ID:</strong> {{ student.student_id }}</p>
+        <p><strong>Program:</strong> {{ student.major }}</p>
         <div style="margin-top: 15px;">
           <p><strong>CH Remaining</strong></p>
           <div class="progress-bar">
@@ -58,11 +60,11 @@
           </div>
           <div class="stat-box">
             <div class="stat-label">CGPA</div>
-            <div class="stat-value">3.75</div>
+            <div class="stat-value">{{ student.CGPA }}</div>
           </div>
           <div class="stat-box">
             <div class="stat-label">MCGPA</div>
-            <div class="stat-value">3.82</div>
+            <div class="stat-value">{{ student.MCGPA }}</div>
           </div>
           <div class="stat-box">
             <div class="stat-label">Registered CH</div>

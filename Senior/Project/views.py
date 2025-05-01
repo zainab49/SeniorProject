@@ -21,8 +21,17 @@ def login_page(request):
 
 # Home page view
 def home_page(request):
-    student_name = request.session.get('student_name', 'Guest')  # Default to Guest if no session
-    return render(request, 'Project/Home.html', {'student_name': student_name})
+    student_id = request.session.get('student_id')
+    if not student_id:
+        return redirect('login')  # not logged in
+
+    try:
+        student = Student.objects.get(student_id=student_id)
+    except Student.DoesNotExist:
+        return redirect('login')  # invalid session
+
+    return render(request, 'Project/Home.html', {'student': student})
+
 def gpa_calculator_page(request):
     return render(request, 'Project/gpa_calculator.html')
 
