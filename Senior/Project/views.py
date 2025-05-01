@@ -69,8 +69,6 @@ def home_page(request):
                                             'course_code': course.get('course_code', ''),
                                             'course_name': course.get('course_name', ''),
                                             'exam_date': course.get('exam_date', ''),
-                                            'exam_start': course.get('exam_time_start', ''),
-                                            'exam_end': course.get('exam_time_end', ''),
                                             'section': sec.get('section_number', ''),
                                             'instructor': sec.get('instructor', ''),
                                             'credits': 3,

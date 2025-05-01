@@ -1,154 +1,123 @@
 import json
 import re
 
-# Load the messy JSON file
-file_path = 'IS-2024-25-F.json'
+def parse_course_data(raw_data):
+    courses = []
+    current_course = None
+    current_section = None
+    current_class = None
+    expecting_exam_date = False  # Track if next line contains exam details
 
-with open(file_path, 'r', encoding='utf-8') as f:
-    raw_data = json.load(f)
-
-# Fix encoding manually: replace \\n with real \n
-fixed_data = []
-for item in raw_data:
-    if isinstance(item, str):
-        fixed_item = item.replace("\\n", "\n")
-        fixed_data.append(fixed_item)
-    else:
-        fixed_data.append(item)
-
-cleaned_courses = []
-
-current_course = None
-current_section = None
-
-# Helper functions
-def split_course_block(block):
-    """Split a big course block into smaller clean lines."""
-    return [line.strip() for line in block.split('\n') if line.strip()]
-
-def extract_course_info(line):
-    match = re.match(r'(.*?)\s*\((.*?)\)', line)
-    if match:
-        code = match.group(1).strip()
-        name = match.group(2).strip()
-        return code, name
-    return None, None
-
-def extract_exam_info(line):
-    parts = line.replace('Exam Date:', '').split('-')
-    if len(parts) >= 4:
-        date = parts[0].strip()
-        start = parts[1].strip()
-        end = parts[2].strip()
-        room = parts[3].strip()
-        return date, start, end, room
-    return '', '', '', ''
-
-# Start processing
-for raw_line in fixed_data:
-    lines = split_course_block(raw_line)
-
-    for line in lines:
-        if not line:
+    for entry in raw_data:
+        entry = entry.strip()
+        if not entry:
             continue
 
-        if '(' in line and ')' in line and 'Prereqs:' not in line:
+        # --- New Course Detection ---
+        if re.match(r'^[A-Z]+\d+.*\(.*\)', entry):
             if current_course:
-                cleaned_courses.append(current_course)
-
-            code, name = extract_course_info(line)
+                courses.append(current_course)
+            code, name = re.match(r'^([A-Z]+\d+)\s*\((.*?)\)', entry).groups()
             current_course = {
-                "course_code": code,
-                "course_name": name,
+                "course_code": code.strip(),
+                "course_name": name.strip(),
                 "prerequisites": "",
                 "exam_date": "",
-                "exam_time_start": "",
-                "exam_time_end": "",
-                "exam_room": "",
+                "exam_room": "-- No Room (LEC)",
                 "sections": []
             }
-            current_section = None
+            expecting_exam_date = False
+            continue
 
-        elif line.startswith('Prereqs:'):
-            if current_course:
-                current_course['prerequisites'] = line.replace('Prereqs:', '').strip()
+        # --- Handle Exam Date ---
+        if expecting_exam_date:
+            # This line contains the actual exam date and room
+            parts = entry.split(" - ")
+            if len(parts) >= 4:
+                current_course["exam_date"] = " - ".join(parts[:3]).strip()
+                current_course["exam_room"] = parts[3].strip()
+            expecting_exam_date = False
+            continue
 
-        elif line.startswith('Exam Date:'):
+        if entry.startswith("Exam Date:"):
+            # Next line will have the actual exam details
+            expecting_exam_date = True
+            continue
+        # --- Sections ---
+        if entry.startswith("Section:"):
             if current_course:
-                date, start, end, room = extract_exam_info(line)
-                current_course['exam_date'] = date
-                current_course['exam_time_start'] = start
-                current_course['exam_time_end'] = end
-                current_course['exam_room'] = room
-
-        elif line.startswith('Section:'):
-            if current_course:
-                section_number = line.replace('Section:', '').strip()
                 current_section = {
-                    "section_number": section_number,
+                    "section_number": entry.split(":", 1)[1].strip(),
                     "instructor": "",
-                    "available_seats": "",
-                    "exam_room": "",
-                    "section_status": "",
+                    "available_seats": "-",
+                    "exam_room": "-- No Room (LEC)",
+                    "section_status": "OPEN",
                     "remarks": "",
                     "classes": []
                 }
                 current_course["sections"].append(current_section)
+            continue
 
-        elif line.startswith('Instructor:'):
-            if current_section:
-                instructor_info = line.replace('Instructor:', '').strip()
-                current_section['instructor'] = instructor_info
-
-        elif 'Available Seats:' in line:
-            if current_section:
-                current_section['available_seats'] = line.replace('Available Seats:', '').strip()
-
-        elif 'Exam Room:' in line:
-            if current_section:
-                current_section['exam_room'] = line.replace('Exam Room:', '').strip()
-
-        elif 'Section Status:' in line:
-            if current_section:
-                current_section['section_status'] = line.replace('Section Status:', '').strip()
-
-        elif line.startswith('Class Type:'):
-            if current_section:
-                parts = line.replace('Class Type:', '').split('Day:')
-                class_type = parts[0].strip()
-                day = parts[1].strip() if len(parts) > 1 else ''
-
+        # --- Class Parsing ---
+        if current_section:
+            if entry.startswith("Instructor:"):
+                current_section["instructor"] = entry.split(":", 1)[1].strip()
+            
+            elif entry.startswith("Class Type:"):
+                # Start new class
                 current_class = {
-                    "class_type": class_type,
-                    "day": day,
+                    "class_type": "",
+                    "day": "",
                     "time_from": "",
                     "time_to": "",
                     "location": ""
                 }
-                current_section['classes'].append(current_class)
+                current_section["classes"].append(current_class)
+                _parse_class_line(entry, current_class)  # Fixed: Removed 'self.'
+            
+            elif current_class:
+                # Continue parsing multi-line class info
+                _parse_class_line(entry, current_class)  # Fixed: Removed 'self.'
 
-        elif line.startswith('Time:'):
-            if current_section and current_section['classes']:
-                parts = line.replace('Time:', '').split('Location:')
-                if len(parts) == 2:
-                    time_info = parts[0].strip()
-                    location = parts[1].strip()
+    # Add the last course
+    if current_course:
+        courses.append(current_course)
+    
+    return courses
 
-                    if 'To' in time_info:
-                        from_time = time_info.split('To')[0].replace('From', '').strip()
-                        to_time = time_info.split('To')[1].strip()
+def _parse_class_line(line, current_class):  # Fixed: No 'self' parameter
+    """Helper to parse class information from any line"""
+    # Class Type
+    if "Class Type:" in line:
+        current_class["class_type"] = re.search(r'Class Type: (\w+)', line).group(1)
+    
+    # Day
+    if "Day:" in line:
+        current_class["day"] = re.search(r'Day: (\w+)', line).group(1)
+    
+    # Time
+    if "From" in line and "To" in line:
+        time_match = re.search(r'From (.*?) To (.*?)( Location:|$)', line)
+        if time_match:
+            current_class["time_from"] = time_match.group(1).strip()
+            current_class["time_to"] = time_match.group(2).strip()
+    
+    # Location
+    if "Location:" in line:
+        current_class["location"] = line.split("Location:", 1)[1].strip()
 
-                        current_section['classes'][-1]['time_from'] = from_time
-                        current_section['classes'][-1]['time_to'] = to_time
-                        current_section['classes'][-1]['location'] = location
+# Usage remains the same
+with open('CE-2024-25-F.json', 'r', encoding='utf-8') as f:
+    raw_data = json.load(f)
 
-# Add last course
-if current_course:
-    cleaned_courses.append(current_course)
+processed_data = []
+for item in raw_data:
+    if isinstance(item, str):
+        processed_data.extend(item.replace('\\n', '\n').split('\n'))
 
-# Save result
-output_file = 'newIS-2024-25-F.json'
-with open(output_file, 'w', encoding='utf-8') as f:
-    json.dump(cleaned_courses, f, indent=4)
+courses = parse_course_data(processed_data)
 
-print(f"✅ Done! {len(cleaned_courses)} courses cleaned and saved into {output_file}.")
+with open('structured_courses_fixed.json', 'w', encoding='utf-8') as f:
+    json.dump(courses, f, indent=4, ensure_ascii=False)
+
+print(f"Success! Generated {len(courses)} courses.")
