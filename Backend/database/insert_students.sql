@@ -36,8 +36,8 @@ VALUES (
     3.5
 );
 
-#Admin :
-# username: admin
-# email:admin@uob.edu.bh
-# password: 12345678
-#http://127.0.0.1:8000/admin/
+-- #Admin :
+-- # username: admin
+-- # email:admin@uob.edu.bh
+-- # password: 12345678
+-- #http://127.0.0.1:8000/admin/
