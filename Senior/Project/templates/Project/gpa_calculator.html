@@ -2,249 +2,644 @@
 <html lang="en">
   {% load static %}
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GPA Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    body { 
-        font-family: 'Segoe UI', sans-serif; 
-        background: #f5eBe0 ; 
-        padding: 40px; 
-        margin: 0;
+    :root {
+      --primary: #d5bdaf;
+      --primary-light: #e8d7c6;
+      --secondary: #c3a995;
+      --light: #f5ebe0;
+      --accent: #c3a995;
+      --dark: #4a3f35;
+      --light-gray: #edede9;
+      --white: #ffffff;
+      --danger: #e74c3c;
+      --success: #2ecc71;
     }
     
-    h1 { margin-bottom: 30px; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--light);
+      margin: 0;
+      color: var(--dark);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+      width: 250px;
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar-header {
+      padding: 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .sidebar-header h2 {
+      margin: 0;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: var(--white);
+    }
+
+    .sidebar-menu {
+      list-style: none;
+      padding: 1rem 0;
+    }
+
+    .sidebar-menu li {
+      margin-bottom: 0.5rem;
+    }
+
+    .sidebar-menu a {
+      display: block;
+      padding: 0.75rem 1.5rem;
+      color: var(--white);
+      text-decoration: none;
+      transition: all 0.3s;
+      border-left: 3px solid transparent;
+      font-size: 0.95rem;
+    }
+
+    .sidebar-menu a:hover, 
+    .sidebar-menu a.active {
+      background: var(--primary-light);
+      border-left-color: var(--accent);
+    }
+
+    .sidebar-menu a i {
+      margin-right: 10px;
+      width: 20px;
+      text-align: center;
+    }
+
+    /* Main Content Styles */
+    .content-wrapper {
+      flex: 1;
+      margin-left: 250px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+      background: var(--light);
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--dark);
+      background-color: var(--primary-light);
+      padding: 1.2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-bottom: 2px dashed var(--secondary);
+    }
+    
+    /* Table Styles */
+    .card {
+      background: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+
+    .card-header {
+      padding: 1rem;
+      background: var(--primary);
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-header h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 20px;  
+      margin-bottom: 1rem;
     }
     
     th, td {
-      padding: 12px;
-      border: 1px solid #ccc;
+      padding: 0.75rem;
       text-align: center;
+      border-bottom: 1px solid var(--light-gray);
     }
     
     th {
-      background-color: #C3A995 ;
+      background-color: var(--light);
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    tr:hover {
+      background-color: rgba(245, 245, 245, 0.5);
     }
     
     select, input {
-      padding: 8px;
-      width: 80%;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      padding: 0.5rem;
+      width: 100%;
+      border: 1px solid var(--light-gray);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      transition: border-color 0.3s;
     }
 
-    button {
-      padding: 12px 25px;
-      background: #D5BDAF ;
-      color: white;
-      border: 1px dashed #EDEDE9 ;;
-      border-radius: 5px;
-      font-size: 16px;
+    select:focus, input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(58, 80, 107, 0.2);
+    }
+
+    /* Button Styles */
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 0.9rem;
       cursor: pointer;
-      margin-top: 10px;
-   
+      transition: all 0.3s;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .button-wrapper {
+    .btn i {
+      margin-right: 0.5rem;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-light);
+    }
+    
+    .btn-danger {
+      background: var(--danger);
+      color: var(--white);
+    }
+    
+    .btn-danger:hover {
+      background: #c0392b;
+    }
+    
+    .btn-success {
+      background: var(--success);
+      color: var(--white);
+    }
+    
+    .btn-success:hover {
+      background: #27ae60;
+    }
+
+    .btn-sm {
+      padding: 0.3rem 0.6rem;
+      font-size: 0.8rem;
+    }
+
+    .actions-container {
+      margin-top: 1rem;
       display: flex;
-      justify-content: center;  
-      align-items: center;            
+      justify-content: space-between;
+      align-items: center;
     }
 
-    button:hover {
-      background: #C3A995  ;
-      font-size: 18px;
+    /* Results Section */
+    .results-container {
+      margin-top: 2rem;
     }
 
     .results {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
     }
 
-    .results div {
-      margin-bottom: 10px;
-      width: calc(33.33% - 15px);
-      background: #fff;
-      border: 1px solid #ccc;  
-      padding: 8px 12px;
-      box-sizing: border-box;
-      border-radius: 5px;
+    .result-card {
+      flex: 1;
+      min-width: 200px;
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1rem;
       text-align: center;
-      font-weight: bold;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border-top: 3px solid var(--secondary);
     }
 
-    .results_values {
-    margin-right: 5px;
-    width: 200px;         
-    height: 50px;         
-    text-align: center;   
-    background-color: #f2f2f2;
-    border-radius: 8px;
-    font-weight: bold;
+    .result-card h4 {
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
     }
 
-.page-title {
-        text-align: center;
-        font-size: 30px;
-        font-weight: bold;
-        color: #4a3f35;
-        background-color: #e8d7c6;
-        padding: 20px 0;
-        margin-bottom: 10;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        border-bottom: 2px dashed #d5bdaf;
+    .result-value {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    /* Removed Courses Section */
+    .removed-courses {
+      margin-top: 2rem;
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .removed-courses h4 {
+      margin-bottom: 1rem;
+      color: var(--dark);
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .removed-list {
+      list-style: none;
+    }
+
+    .removed-list li {
+      padding: 0.75rem;
+      border-bottom: 1px solid var(--light-gray);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .removed-list li:last-child {
+      border-bottom: none;
+    }
+
+    .restore-btn {
+      background: none;
+      border: none;
+      color: var(--primary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .restore-btn i {
+      margin-right: 0.5rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+      .sidebar {
+        width: 200px;
+      }
+      .content-wrapper {
+        margin-left: 200px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .content-wrapper {
+        margin-left: 0;
+      }
+      .results {
+        flex-direction: column;
+      }
+      .result-card {
+        width: 100%;
+      }
+    }
+
+    /* Toggle Menu Button for Mobile */
+    .menu-toggle {
+      display: none;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 20;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      .sidebar {
+        transform: translateX(-100%);
+      }
+      .sidebar.active {
+        transform: translateX(0);
+      }
+      .content-wrapper {
+        padding-top: 3.5rem;
+      }
     }
   </style>
 </head>
-
-<h1 class="page-title">GPA Calculator</h1>
- 
-  <div style="padding-left: 80px; padding-right: 80px;">
-    <div style=" background-color: white;">
-  <table>
-    <tr>
-      <th>Course ID</th>
-      <th>CH</th>
-      <th>Type</th>
-      <th>Grade</th>
-    </tr>
-    <!-- 6 rows each represent a course -->
-    <tr>
-      <td>ITCS401</td>
-      <td>3</td>
-      <td>MS</td>
-      <td>
-        <select>
-          <option>A</option>
-          <option>A-</option>
-          <option>B+</option>
-          <option>B</option>
-          <option>B-</option>
-          <option>C+</option>
-          <option>C</option>
-          <option>D+</option>
-          <option>D</option>
-          <option>F</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-        <td>ITCS402</td>
-        <td>3</td>
-        <td>MS</td>
-        <td>
-          <select>
-            <option>A</option>
-            <option>A-</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>B-</option>
-            <option>C+</option>
-            <option>C</option>
-            <option>D+</option>
-            <option>D</option>
-            <option>F</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>ITCS403</td>
-        <td>3</td>
-        <td>MS</td>
-        <td>
-          <select>
-            <option>A</option>
-            <option>A-</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>B-</option>
-            <option>C+</option>
-            <option>C</option>
-            <option>D+</option>
-            <option>D</option>
-            <option>F</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>ITCS404</td>
-        <td>3</td>
-        <td>MS</td>
-        <td>
-          <select>
-            <option>A</option>
-            <option>A-</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>B-</option>
-            <option>C+</option>
-            <option>C</option>
-            <option>D+</option>
-            <option>D</option>
-            <option>F</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>ITCS405</td>
-        <td>3</td>
-        <td>MS</td>
-        <td>
-          <select>
-            <option>A</option>
-            <option>A-</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>B-</option>
-            <option>C+</option>
-            <option>C</option>
-            <option>D+</option>
-            <option>D</option>
-            <option>F</option>
-          </select>
-        </td>
-      </tr><tr>
-        <td>ITCS406</td>
-        <td>3</td>
-        <td>MS</td>
-        <td>
-          <select>
-            <option>A</option>
-            <option>A-</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>B-</option>
-            <option>C+</option>
-            <option>C</option>
-            <option>D+</option>
-            <option>D</option>
-            <option>F</option>
-          </select>
-        </td>
-      </tr>
-      
-  </table>
-</div>
-
-<div class="button-wrapper">
-  <button>Calculate</button>
-</div>
-  <div style=" padding: 30px;">
-  <div class="results">
-    <div class="results_values">SGPA: 3.50</div>
-    <div class="results_values">CGPA: 3.40</div>
-    <div class="results_values">MGPA: 3.60</div>
-    <div class="results_values">Semester Cr. Attended: 18</div>
-    <div class="results_values">Passed: 6</div>
-    <div class="results_values">Cumulative Cr. Attended: 55</div>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Academic Portal</h2>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Dashboard</a></li>
+      <li><a href="{% url 'gpa_calculator' %}" class="active"><i class="fas fa-calculator"></i> GPA Calculator</a></li>
+      <li><a href="{% url 'gpa_improvement' %}"><i class="fas fa-chart-line"></i> GPA Improvement</a></li>
+      <li><a href="{% url 'schedule_suggestions' %}"><i class="fas fa-calendar-alt"></i> Course Schedule</a></li>
+    </ul>
   </div>
-</div>
-</div>
+
+  <!-- Main Content -->
+  <div class="content-wrapper">
+    <h1 class="page-title">GPA Calculator</h1>
+    
+    <form method="post">
+      {% csrf_token %}
+      
+      <div class="card">
+        <div class="card-header" style="background-color: var(--secondary);">
+          <h3>Course Information</h3>
+        </div>
+        
+        <div class="card-body">
+          <table id="course-table">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>Credits</th>
+                <th>Major?</th>
+                <th>Grade</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="course-body">
+              {% for enrollment in enrollments %}
+              <tr class="course-row">
+                <td>
+                  <input type="hidden" name="course_id" value="{{ enrollment.course_id }}">
+                  {{ enrollment.course_id }}
+                </td>
+                <td>
+                  <input type="hidden" name="credit" value="{{ enrollment.Credits }}">
+                  {{ enrollment.Credits }}
+                </td>
+                <td>
+                  <input type="hidden" name="major" value="{{ enrollment.is_major_course|yesno:"1,0" }}">
+                  {% if enrollment.is_major_course %}Yes{% else %}No{% endif %}
+                </td>
+                <td>
+                  <select name="grade" class="grade-select">
+                    {% for g in grade_options %}
+                      <option value="{{ g }}">{{ g }}</option>
+                    {% endfor %}
+                  </select>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm remove-btn">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="actions-container">
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-calculator"></i> Calculate GPA
+        </button>
+      </div>
+      
+      <!-- New Course Modal - Hidden by default, shown with JavaScript -->
+      <div id="addCourseModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 100; justify-content: center; align-items: center;">
+        <div style="background: white; padding: 2rem; border-radius: 8px; width: 90%; max-width: 500px;">
+          <h3 style="margin-bottom: 1.5rem;">Add New Course</h3>
+          
+          <div style="margin-bottom: 1rem;">
+            <label for="newCourseId" style="display: block; margin-bottom: 0.5rem;">Course ID:</label>
+            <input type="text" id="newCourseId" style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+          </div>
+          
+          <div style="margin-bottom: 1rem;">
+            <label for="newCredits" style="display: block; margin-bottom: 0.5rem;">Credits:</label>
+            <input type="number" id="newCredits" min="1" max="5" value="3" style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+          </div>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <label style="display: block; margin-bottom: 0.5rem;">Major Course:</label>
+            <label style="margin-right: 1rem;">
+              <input type="radio" name="newIsMajor" value="yes" checked> Yes
+            </label>
+            <label>
+              <input type="radio" name="newIsMajor" value="no"> No
+            </label>
+          </div>
+          
+          <div style="display: flex; justify-content: flex-end; gap: 1rem;">
+            <button type="button" class="btn btn-danger" id="cancelAddCourse">Cancel</button>
+            <button type="button" class="btn btn-primary" id="confirmAddCourse">Add Course</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Removed Courses Section -->
+    <div class="removed-courses">
+      <h4>Removed Courses</h4>
+      <ul id="removed-list" class="removed-list"></ul>
+    </div>
+    
+    <!-- Results Section -->
+    {% if sgpa %}
+    <div class="results-container">
+      <div class="card">
+        <div class="card-header" style="background-color: var(--secondary);">
+          <h3>GPA Results</h3>
+        </div>
+        <div class="card-body">
+          <div class="results">
+            <div class="result-card">
+              <h4>Semester GPA</h4>
+              <div class="result-value">{{ sgpa }}</div>
+            </div>
+            <div class="result-card">
+              <h4>Major GPA</h4>
+              <div class="result-value">{{ mgpa }}</div>
+            </div>
+            <div class="result-card">
+              <h4>Cumulative GPA</h4>
+              <div class="result-value">{{ cgpa }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <script>
+
+    // Course removal functionality
+    const removedList = document.getElementById("removed-list");
+
+    // Setup initial event listeners for remove buttons
+    setupRemoveButtons();
+
+    function setupRemoveButtons() {
+      document.querySelectorAll(".remove-btn").forEach(button => {
+        button.addEventListener("click", function () {
+          const row = this.closest("tr");
+          const courseName = row.children[0].textContent.trim();
+          
+          // Store removed HTML and hide
+          const listItem = document.createElement('li');
+          listItem.setAttribute('data-html', row.outerHTML);
+          listItem.innerHTML = `
+            <span>${courseName}</span>
+            <button type="button" class="restore-btn">
+              <i class="fas fa-undo"></i> Restore
+            </button>
+          `;
+          removedList.appendChild(listItem);
+          
+          // Add restore functionality
+          listItem.querySelector('.restore-btn').addEventListener('click', function() {
+            restoreCourse(this);
+          });
+          
+          row.remove();
+        });
+      });
+    }
+
+    function restoreCourse(button) {
+      const li = button.closest("li");
+      const html = li.getAttribute("data-html");
+
+      // Add row back to table
+      document.getElementById("course-body").insertAdjacentHTML("beforeend", html);
+      li.remove();
+
+      // Re-bind the remove event
+      setupRemoveButtons();
+    }
+
+    // Add New Course Modal
+    const addCourseModal = document.getElementById('addCourseModal');
+    
+    document.getElementById('addCourseBtn').addEventListener('click', function() {
+      addCourseModal.style.display = 'flex';
+    });
+    
+    document.getElementById('cancelAddCourse').addEventListener('click', function() {
+      addCourseModal.style.display = 'none';
+    });
+    
+    document.getElementById('confirmAddCourse').addEventListener('click', function() {
+      const courseId = document.getElementById('newCourseId').value.trim();
+      const credits = document.getElementById('newCredits').value;
+      const isMajor = document.querySelector('input[name="newIsMajor"]:checked').value === 'yes';
+      
+      if (!courseId) {
+        alert('Please enter a Course ID');
+        return;
+      }
+      
+      // Create new course row
+      const newRow = document.createElement('tr');
+      newRow.className = 'course-row';
+      newRow.innerHTML = `
+        <td>
+          <input type="hidden" name="course_id" value="${courseId}">
+          ${courseId}
+        </td>
+        <td>
+          <input type="hidden" name="credit" value="${credits}">
+          ${credits}
+        </td>
+        <td>
+          <input type="hidden" name="major" value="${isMajor ? '1' : '0'}">
+          ${isMajor ? 'Yes' : 'No'}
+        </td>
+        <td>
+          <select name="grade" class="grade-select">
+            {% for g in grade_options %}
+              <option value="{{ g }}">{{ g }}</option>
+            {% endfor %}
+          </select>
+        </td>
+        <td>
+          <button type="button" class="btn btn-danger btn-sm remove-btn">
+            <i class="fas fa-trash"></i>
+          </button>
+        </td>
+      `;
+      
+      document.getElementById('course-body').appendChild(newRow);
+      
+      // Reset form and close modal
+      document.getElementById('newCourseId').value = '';
+      document.getElementById('newCredits').value = '3';
+      document.querySelector('input[name="newIsMajor"][value="yes"]').checked = true;
+      addCourseModal.style.display = 'none';
+      
+      // Update event listeners
+      setupRemoveButtons();
+    });
+    
+    // Close modal when clicking outside
+    addCourseModal.addEventListener('click', function(e) {
+      if (e.target === addCourseModal) {
+        addCourseModal.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
