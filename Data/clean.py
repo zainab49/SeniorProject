@@ -107,7 +107,7 @@ def _parse_class_line(line, current_class):  # Fixed: No 'self' parameter
         current_class["location"] = line.split("Location:", 1)[1].strip()
 
 # Usage remains the same
-with open('CE-2024-25-F.json', 'r', encoding='utf-8') as f:
+with open('CS-2024-25-S.json', 'r', encoding='utf-8') as f:
     raw_data = json.load(f)
 
 processed_data = []
@@ -117,7 +117,7 @@ for item in raw_data:
 
 courses = parse_course_data(processed_data)
 
-with open('structured_courses_fixed.json', 'w', encoding='utf-8') as f:
+with open('NEWCS-2024-25-S.json', 'w', encoding='utf-8') as f:
     json.dump(courses, f, indent=4, ensure_ascii=False)
 
 print(f"Success! Generated {len(courses)} courses.")
