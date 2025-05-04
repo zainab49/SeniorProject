@@ -33,6 +33,7 @@ def logout_view(request):
     return redirect('login')  # Redirect to login page
 
 # Home page view
+# Home page view with credit calculation and academic status
 def home_page(request):
     student_id = request.session.get('student_id')
     if not student_id:
@@ -43,23 +44,63 @@ def home_page(request):
     except Student.DoesNotExist:
         return redirect('login')
 
+    # Get current enrollments
     enrollments = Enrollment.objects.filter(student=student)
+    
+    # Get completed courses
+    completed_courses = StudentCourse.objects.filter(student=student)
+    
+    # Calculate total completed credits (only count passed courses)
+    passing_grades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D"]
+    completed_credits = 0
+    for course in completed_courses:
+        if course.grade in passing_grades:
+            completed_credits += course.credits
+    
+    # Calculate currently registered credits
+    registered_credits = sum(enrollment.Credits for enrollment in enrollments)
+    
+    # Determine total required credits based on major
+    major = student.major.lower()
+    if "cybersecurity" in major:
+        total_credits = 132
+    elif "network engineering" in major:
+        total_credits = 134
+    elif "software engineering" in major:
+        total_credits = 134
+    else:
+        # Default if we can't determine the major
+        total_credits = 134
+    
+    # Calculate remaining credits
+    remaining_credits = total_credits - completed_credits
+    
+    # Calculate completion percentage
+    completed_percentage = int((completed_credits / total_credits) * 100)
+    
+    # Determine academic status based on CGPA
+    if student.CGPA >= 3.0:
+        academic_status = "Excellent Student"
+    elif student.CGPA >= 2.0:
+        academic_status = "Normal Student"
+    else:
+        academic_status = "Under Probation"
+
+    # Process course data
     courses_data = []
     not_found_courses = []
 
-
     # JSON course files location
     json_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), 'Data', 'courseSchedule'))
-
 
     for enrollment in enrollments:
         course_id = enrollment.course_id.strip()
         section_number = enrollment.section.strip()
         course_info = None
 
-        # Match only first semester JSON files
+        # Match course files
         for file in os.listdir(json_folder):
-            if file.endswith('F.json'):
+            if file.endswith('F.json'):  # First semester files
                 file_path = os.path.join(json_folder, file)
                 try:
                     with open(file_path, 'r', encoding='utf-8') as f:
@@ -74,7 +115,7 @@ def home_page(request):
                                             'exam_date': course.get('exam_date', ''),
                                             'section': sec.get('section_number', ''),
                                             'instructor': sec.get('instructor', ''),
-                                            'credits': 3,
+                                            'credits': 3,  # Default or you can get from the course data
                                             'classes': sec.get('classes', [])
                                         }
                                         break
@@ -94,7 +135,13 @@ def home_page(request):
     return render(request, 'Project/Home.html', {
         'student': student,
         'courses': courses_data,
-        'not_found_courses': not_found_courses
+        'not_found_courses': not_found_courses,
+        'completed_credits': completed_credits,
+        'registered_credits': registered_credits,
+        'total_credits': total_credits,
+        'remaining_credits': remaining_credits,
+        'completed_percentage': completed_percentage,
+        'academic_status': academic_status
     })
 
 # GPA Calculator page view
