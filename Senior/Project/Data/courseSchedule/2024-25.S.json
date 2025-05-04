@@ -3,16 +3,14 @@
         "course_code": "ARAB110",
         "course_name": "ARABIC LANGUAGE SKILLS",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-21 - 11:30 - 13:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DR. KHALIFA YASEEN ARABI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -43,7 +41,7 @@
                 "section_number": "01",
                 "instructor": "DR. KHALIFA YASEEN ARABI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -54,16 +52,14 @@
         "course_code": "HIST122",
         "course_name": "MODERN HISTORY OF BAHRAIN AND CITIZENSHIP",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-20 - 08:30 - 10:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DR. KHALID ISMAIL HAMADANI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -94,7 +90,7 @@
                 "section_number": "02",
                 "instructor": "DR. WALEED MOHAMED ALSADEQI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -125,7 +121,7 @@
                 "section_number": "01",
                 "instructor": "DR. KHALID ISMAIL HAMADANI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -134,7 +130,7 @@
                 "section_number": "02",
                 "instructor": "DR. WALEED MOHAMED ALSADEQI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -145,16 +141,14 @@
         "course_code": "HRLC107",
         "course_name": "HUMAN RIGHTS",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-24 - 11:30 - 13:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DOCTOR YASER ABDULRAHMAN ALMAHMEED",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -178,7 +172,7 @@
                 "section_number": "02",
                 "instructor": "DOCTOR YASER ABDULRAHMAN ALMAHMEED",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -202,7 +196,7 @@
                 "section_number": "03",
                 "instructor": "Ms. Farah Khaleel Mohammad Mustafa Abdullah",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -226,7 +220,7 @@
                 "section_number": "01",
                 "instructor": "DOCTOR YASER ABDULRAHMAN ALMAHMEED",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -235,7 +229,7 @@
                 "section_number": "02",
                 "instructor": "DOCTOR YASER ABDULRAHMAN ALMAHMEED",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -244,7 +238,7 @@
                 "section_number": "03",
                 "instructor": "Ms. Farah Khaleel Mohammad Mustafa Abdullah",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -255,16 +249,14 @@
         "course_code": "HRLC107",
         "course_name": "HUMAN RIGHTS",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-24 - 11:30 - 13:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DOCTOR YASER ABDULRAHMAN ALMAHMEED",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -288,7 +280,7 @@
                 "section_number": "02",
                 "instructor": "DOCTOR YASER ABDULRAHMAN ALMAHMEED",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -312,7 +304,7 @@
                 "section_number": "03",
                 "instructor": "Ms. Farah Khaleel Mohammad Mustafa Abdullah",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -336,7 +328,7 @@
                 "section_number": "01",
                 "instructor": "DOCTOR YASER ABDULRAHMAN ALMAHMEED",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -345,7 +337,7 @@
                 "section_number": "02",
                 "instructor": "DOCTOR YASER ABDULRAHMAN ALMAHMEED",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -354,7 +346,7 @@
                 "section_number": "03",
                 "instructor": "Ms. Farah Khaleel Mohammad Mustafa Abdullah",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -365,16 +357,14 @@
         "course_code": "MATHS211",
         "course_name": "LINEAR ALGEBRA",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-28 - 11:30 - 13:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "PROF. AHMED AYACHE",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -405,7 +395,7 @@
                 "section_number": "02",
                 "instructor": "PROF. AHMED AYACHE",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -436,7 +426,7 @@
                 "section_number": "04",
                 "instructor": "Shahanabi Riyas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -460,7 +450,7 @@
                 "section_number": "01",
                 "instructor": "PROF. AHMED AYACHE",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -469,7 +459,7 @@
                 "section_number": "02",
                 "instructor": "PROF. AHMED AYACHE",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -478,7 +468,7 @@
                 "section_number": "04",
                 "instructor": "Shahanabi Riyas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -489,16 +479,14 @@
         "course_code": "MATHS101",
         "course_name": "CALCULUS I",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-20 - 14:30 - 16:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "Dr. Oliver Thomas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -529,7 +517,7 @@
                 "section_number": "02",
                 "instructor": "Shahanabi Riyas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -553,7 +541,7 @@
                 "section_number": "03",
                 "instructor": "Dr. Oliver Thomas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -584,7 +572,7 @@
                 "section_number": "04",
                 "instructor": "Dr. Oliver Thomas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -615,7 +603,7 @@
                 "section_number": "05",
                 "instructor": "Shahanabi Riyas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -639,7 +627,7 @@
                 "section_number": "06",
                 "instructor": "Shahanabi Riyas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -670,7 +658,7 @@
                 "section_number": "07",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -694,7 +682,7 @@
                 "section_number": "01",
                 "instructor": "Dr. Oliver Thomas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -703,7 +691,7 @@
                 "section_number": "02",
                 "instructor": "Shahanabi Riyas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -712,7 +700,7 @@
                 "section_number": "03",
                 "instructor": "Dr. Oliver Thomas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -721,7 +709,7 @@
                 "section_number": "04",
                 "instructor": "Dr. Oliver Thomas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -730,7 +718,7 @@
                 "section_number": "05",
                 "instructor": "Shahanabi Riyas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -739,7 +727,7 @@
                 "section_number": "06",
                 "instructor": "Shahanabi Riyas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -748,7 +736,7 @@
                 "section_number": "07",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -759,16 +747,14 @@
         "course_code": "PHYCS101",
         "course_name": "GENERAL PHYSICS I",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-21 - 08:30 - 10:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -806,7 +792,7 @@
                 "section_number": "02",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -844,7 +830,7 @@
                 "section_number": "03",
                 "instructor": "MRS BASMA TAQI ALNAJJAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -882,7 +868,7 @@
                 "section_number": "04",
                 "instructor": "MRS BASMA TAQI ALNAJJAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -920,7 +906,7 @@
                 "section_number": "05",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -958,7 +944,7 @@
                 "section_number": "06",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -996,7 +982,7 @@
                 "section_number": "07",
                 "instructor": "MRS BASMA TAQI ALNAJJAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1034,7 +1020,7 @@
                 "section_number": "08",
                 "instructor": "MRS BASMA TAQI ALNAJJAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1072,7 +1058,7 @@
                 "section_number": "09",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1110,7 +1096,7 @@
                 "section_number": "10",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1148,7 +1134,7 @@
                 "section_number": "11",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1186,7 +1172,7 @@
                 "section_number": "12",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1224,7 +1210,7 @@
                 "section_number": "13",
                 "instructor": "DR. ABDULMONEM ISA ALSHINO",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1262,7 +1248,7 @@
                 "section_number": "14",
                 "instructor": "DR. ABDULMONEM ISA ALSHINO",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1300,7 +1286,7 @@
                 "section_number": "15",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1338,7 +1324,7 @@
                 "section_number": "16",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1376,7 +1362,7 @@
                 "section_number": "17",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1414,7 +1400,7 @@
                 "section_number": "18",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1452,7 +1438,7 @@
                 "section_number": "19",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1483,7 +1469,7 @@
                 "section_number": "20",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1514,7 +1500,7 @@
                 "section_number": "21",
                 "instructor": "DR. NABIL MOHAMED HASSAN",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1545,7 +1531,7 @@
                 "section_number": "22",
                 "instructor": "DR. NABIL MOHAMED HASSAN",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1576,7 +1562,7 @@
                 "section_number": "23",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1607,7 +1593,7 @@
                 "section_number": "24",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1638,7 +1624,7 @@
                 "section_number": "25",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1669,7 +1655,7 @@
                 "section_number": "26",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1700,7 +1686,7 @@
                 "section_number": "27",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1738,7 +1724,7 @@
                 "section_number": "28",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1776,7 +1762,7 @@
                 "section_number": "29",
                 "instructor": "DR. HANAN MUBARAK ALBUFLASA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1807,7 +1793,7 @@
                 "section_number": "30",
                 "instructor": "DR. HANAN MUBARAK ALBUFLASA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1838,7 +1824,7 @@
                 "section_number": "31",
                 "instructor": "DR. NABIL MOHAMED HASSAN",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1876,7 +1862,7 @@
                 "section_number": "32",
                 "instructor": "DR. NABIL MOHAMED HASSAN",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1914,7 +1900,7 @@
                 "section_number": "33",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1945,7 +1931,7 @@
                 "section_number": "34",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -1976,7 +1962,7 @@
                 "section_number": "35",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2014,7 +2000,7 @@
                 "section_number": "36",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2052,7 +2038,7 @@
                 "section_number": "37",
                 "instructor": "DR. HANAN MUBARAK ALBUFLASA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2090,7 +2076,7 @@
                 "section_number": "38",
                 "instructor": "DR. HANAN MUBARAK ALBUFLASA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2128,7 +2114,7 @@
                 "section_number": "01",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2137,7 +2123,7 @@
                 "section_number": "02",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2146,7 +2132,7 @@
                 "section_number": "03",
                 "instructor": "MRS BASMA TAQI ALNAJJAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2155,7 +2141,7 @@
                 "section_number": "04",
                 "instructor": "MRS BASMA TAQI ALNAJJAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2164,7 +2150,7 @@
                 "section_number": "05",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2173,7 +2159,7 @@
                 "section_number": "06",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2182,7 +2168,7 @@
                 "section_number": "07",
                 "instructor": "MRS BASMA TAQI ALNAJJAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2191,7 +2177,7 @@
                 "section_number": "08",
                 "instructor": "MRS BASMA TAQI ALNAJJAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2200,7 +2186,7 @@
                 "section_number": "09",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2209,7 +2195,7 @@
                 "section_number": "10",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2218,7 +2204,7 @@
                 "section_number": "11",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2227,7 +2213,7 @@
                 "section_number": "12",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2236,7 +2222,7 @@
                 "section_number": "13",
                 "instructor": "DR. ABDULMONEM ISA ALSHINO",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2245,7 +2231,7 @@
                 "section_number": "14",
                 "instructor": "DR. ABDULMONEM ISA ALSHINO",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2254,7 +2240,7 @@
                 "section_number": "15",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2263,7 +2249,7 @@
                 "section_number": "16",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2272,7 +2258,7 @@
                 "section_number": "17",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2281,7 +2267,7 @@
                 "section_number": "18",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2290,7 +2276,7 @@
                 "section_number": "19",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2299,7 +2285,7 @@
                 "section_number": "20",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2308,7 +2294,7 @@
                 "section_number": "21",
                 "instructor": "DR. NABIL MOHAMED HASSAN",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2317,7 +2303,7 @@
                 "section_number": "22",
                 "instructor": "DR. NABIL MOHAMED HASSAN",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2326,7 +2312,7 @@
                 "section_number": "23",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2335,7 +2321,7 @@
                 "section_number": "24",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2344,7 +2330,7 @@
                 "section_number": "25",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2353,7 +2339,7 @@
                 "section_number": "26",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2362,7 +2348,7 @@
                 "section_number": "27",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2371,7 +2357,7 @@
                 "section_number": "28",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2380,7 +2366,7 @@
                 "section_number": "29",
                 "instructor": "DR. HANAN MUBARAK ALBUFLASA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2389,7 +2375,7 @@
                 "section_number": "30",
                 "instructor": "DR. HANAN MUBARAK ALBUFLASA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2398,7 +2384,7 @@
                 "section_number": "31",
                 "instructor": "DR. NABIL MOHAMED HASSAN",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2407,7 +2393,7 @@
                 "section_number": "32",
                 "instructor": "DR. NABIL MOHAMED HASSAN",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2416,7 +2402,7 @@
                 "section_number": "33",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2425,7 +2411,7 @@
                 "section_number": "34",
                 "instructor": "DR. HABIB EBRAHIM KHALIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2434,7 +2420,7 @@
                 "section_number": "35",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2443,7 +2429,7 @@
                 "section_number": "36",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2452,7 +2438,7 @@
                 "section_number": "37",
                 "instructor": "DR. HANAN MUBARAK ALBUFLASA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2461,7 +2447,7 @@
                 "section_number": "38",
                 "instructor": "DR. HANAN MUBARAK ALBUFLASA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2472,16 +2458,14 @@
         "course_code": "MATHS102",
         "course_name": "CALCULUS II",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-20 - 11:30 - 13:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DR. AHMED ALI MATAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2512,7 +2496,7 @@
                 "section_number": "02",
                 "instructor": "DR. AHMED ALI MATAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2543,7 +2527,7 @@
                 "section_number": "03",
                 "instructor": "Dr. Sami Omar",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2574,7 +2558,7 @@
                 "section_number": "04",
                 "instructor": "Dr. Sami Omar",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2605,7 +2589,7 @@
                 "section_number": "05",
                 "instructor": "Dr. Sami Omar",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2636,7 +2620,7 @@
                 "section_number": "06",
                 "instructor": "Dr. Sami Omar",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2667,7 +2651,7 @@
                 "section_number": "10",
                 "instructor": "Shahanabi Riyas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2698,7 +2682,7 @@
                 "section_number": "11",
                 "instructor": "Sonia Rani",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2722,7 +2706,7 @@
                 "section_number": "12",
                 "instructor": "Sonia Rani",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2746,7 +2730,7 @@
                 "section_number": "01",
                 "instructor": "DR. AHMED ALI MATAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2755,7 +2739,7 @@
                 "section_number": "02",
                 "instructor": "DR. AHMED ALI MATAR",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2764,7 +2748,7 @@
                 "section_number": "03",
                 "instructor": "Dr. Sami Omar",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2773,7 +2757,7 @@
                 "section_number": "04",
                 "instructor": "Dr. Sami Omar",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2782,7 +2766,7 @@
                 "section_number": "05",
                 "instructor": "Dr. Sami Omar",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2791,7 +2775,7 @@
                 "section_number": "06",
                 "instructor": "Dr. Sami Omar",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2800,7 +2784,7 @@
                 "section_number": "10",
                 "instructor": "Shahanabi Riyas",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2809,7 +2793,7 @@
                 "section_number": "11",
                 "instructor": "Sonia Rani",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2818,7 +2802,7 @@
                 "section_number": "12",
                 "instructor": "Sonia Rani",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -2829,16 +2813,14 @@
         "course_code": "PHYCS102",
         "course_name": "GENERAL PHYSICS II",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-22 - 08:30 - 10:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2876,7 +2858,7 @@
                 "section_number": "02",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2914,7 +2896,7 @@
                 "section_number": "03",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2952,7 +2934,7 @@
                 "section_number": "04",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -2990,7 +2972,7 @@
                 "section_number": "05",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3028,7 +3010,7 @@
                 "section_number": "06",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3066,7 +3048,7 @@
                 "section_number": "07",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3104,7 +3086,7 @@
                 "section_number": "08",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3142,7 +3124,7 @@
                 "section_number": "09",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3180,7 +3162,7 @@
                 "section_number": "10",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3218,7 +3200,7 @@
                 "section_number": "11",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3256,7 +3238,7 @@
                 "section_number": "12",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3294,7 +3276,7 @@
                 "section_number": "13",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3332,7 +3314,7 @@
                 "section_number": "14",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3370,7 +3352,7 @@
                 "section_number": "15",
                 "instructor": "DR. KHALIL EBRAHIM MUBARAK",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3401,7 +3383,7 @@
                 "section_number": "16",
                 "instructor": "DR. KHALIL EBRAHIM MUBARAK",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3432,7 +3414,7 @@
                 "section_number": "17",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3463,7 +3445,7 @@
                 "section_number": "18",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3494,7 +3476,7 @@
                 "section_number": "19",
                 "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3525,7 +3507,7 @@
                 "section_number": "20",
                 "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3556,7 +3538,7 @@
                 "section_number": "21",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3594,7 +3576,7 @@
                 "section_number": "22",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3632,7 +3614,7 @@
                 "section_number": "23",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3670,7 +3652,7 @@
                 "section_number": "24",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3708,7 +3690,7 @@
                 "section_number": "25",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3739,7 +3721,7 @@
                 "section_number": "26",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3770,7 +3752,7 @@
                 "section_number": "27",
                 "instructor": "DR. KHALIL EBRAHIM MUBARAK",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3801,7 +3783,7 @@
                 "section_number": "28",
                 "instructor": "DR. KHALIL EBRAHIM MUBARAK",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3832,7 +3814,7 @@
                 "section_number": "29",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3870,7 +3852,7 @@
                 "section_number": "30",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -3908,7 +3890,7 @@
                 "section_number": "01",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -3917,7 +3899,7 @@
                 "section_number": "02",
                 "instructor": "DR. HACENE MANAA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -3926,7 +3908,7 @@
                 "section_number": "03",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -3935,7 +3917,7 @@
                 "section_number": "04",
                 "instructor": "Dr. Qurrat Ul Ain Gulfam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -3944,7 +3926,7 @@
                 "section_number": "05",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -3953,7 +3935,7 @@
                 "section_number": "06",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -3962,7 +3944,7 @@
                 "section_number": "07",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -3971,7 +3953,7 @@
                 "section_number": "08",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -3980,7 +3962,7 @@
                 "section_number": "09",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -3989,7 +3971,7 @@
                 "section_number": "10",
                 "instructor": "DR. KARIM BEN MESSAI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -3998,7 +3980,7 @@
                 "section_number": "11",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4007,7 +3989,7 @@
                 "section_number": "12",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4016,7 +3998,7 @@
                 "section_number": "13",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4025,7 +4007,7 @@
                 "section_number": "14",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4034,7 +4016,7 @@
                 "section_number": "15",
                 "instructor": "DR. KHALIL EBRAHIM MUBARAK",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4043,7 +4025,7 @@
                 "section_number": "16",
                 "instructor": "DR. KHALIL EBRAHIM MUBARAK",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4052,7 +4034,7 @@
                 "section_number": "17",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4061,7 +4043,7 @@
                 "section_number": "18",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4070,7 +4052,7 @@
                 "section_number": "19",
                 "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4079,7 +4061,7 @@
                 "section_number": "20",
                 "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4088,7 +4070,7 @@
                 "section_number": "21",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4097,7 +4079,7 @@
                 "section_number": "22",
                 "instructor": "Dr. Ihab Hamdy Naeim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4106,7 +4088,7 @@
                 "section_number": "23",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4115,7 +4097,7 @@
                 "section_number": "24",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4124,7 +4106,7 @@
                 "section_number": "25",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4133,7 +4115,7 @@
                 "section_number": "26",
                 "instructor": "DR. AQEEL AZIZ DAKHIL",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4142,7 +4124,7 @@
                 "section_number": "27",
                 "instructor": "DR. KHALIL EBRAHIM MUBARAK",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4151,7 +4133,7 @@
                 "section_number": "28",
                 "instructor": "DR. KHALIL EBRAHIM MUBARAK",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4160,7 +4142,7 @@
                 "section_number": "29",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4169,7 +4151,7 @@
                 "section_number": "30",
                 "instructor": "Prof. Ashwini Sinha",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4180,16 +4162,14 @@
         "course_code": "STAT273",
         "course_name": "PROBABILITY AND STATISTICS",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-27 - 11:30 - 13:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4220,7 +4200,7 @@
                 "section_number": "02",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4251,7 +4231,7 @@
                 "section_number": "03",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4282,7 +4262,7 @@
                 "section_number": "04",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4313,7 +4293,7 @@
                 "section_number": "05",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4344,7 +4324,7 @@
                 "section_number": "06",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4368,7 +4348,7 @@
                 "section_number": "01",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4377,7 +4357,7 @@
                 "section_number": "02",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4386,7 +4366,7 @@
                 "section_number": "03",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4395,7 +4375,7 @@
                 "section_number": "04",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4404,7 +4384,7 @@
                 "section_number": "05",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4413,7 +4393,7 @@
                 "section_number": "06",
                 "instructor": "DR. MOUSTAFA EBRAHIM MOUSTAFA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4424,16 +4404,14 @@
         "course_code": "MATHS205",
         "course_name": "DIFFERENTIAL EQUATIONS",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-26 - 11:30 - 13:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DR. MOHAMMED LARBI LABBI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4464,7 +4442,7 @@
                 "section_number": "02",
                 "instructor": "DR. MOHAMMED LARBI LABBI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4495,7 +4473,7 @@
                 "section_number": "03",
                 "instructor": "DR. MOHAMMED LARBI LABBI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4526,7 +4504,7 @@
                 "section_number": "04",
                 "instructor": "DR. MOHAMMED LARBI LABBI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4550,7 +4528,7 @@
                 "section_number": "05",
                 "instructor": "DR. THURAYA JUMA ABDULLA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4581,7 +4559,7 @@
                 "section_number": "06",
                 "instructor": "DR. THURAYA JUMA ABDULLA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4612,7 +4590,7 @@
                 "section_number": "07",
                 "instructor": "DR. MOHAMMED LARBI LABBI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4636,7 +4614,7 @@
                 "section_number": "01",
                 "instructor": "DR. MOHAMMED LARBI LABBI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4645,7 +4623,7 @@
                 "section_number": "02",
                 "instructor": "DR. MOHAMMED LARBI LABBI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4654,7 +4632,7 @@
                 "section_number": "03",
                 "instructor": "DR. MOHAMMED LARBI LABBI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4663,7 +4641,7 @@
                 "section_number": "04",
                 "instructor": "DR. MOHAMMED LARBI LABBI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4672,7 +4650,7 @@
                 "section_number": "05",
                 "instructor": "DR. THURAYA JUMA ABDULLA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4681,7 +4659,7 @@
                 "section_number": "06",
                 "instructor": "DR. THURAYA JUMA ABDULLA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4690,7 +4668,7 @@
                 "section_number": "07",
                 "instructor": "DR. MOHAMMED LARBI LABBI",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4701,16 +4679,14 @@
         "course_code": "ENGL219",
         "course_name": "TECHNICAL REPORT WRITING",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-28 - 08:30 - 10:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4734,7 +4710,7 @@
                 "section_number": "02",
                 "instructor": "Mohammed Ebrahim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4758,7 +4734,7 @@
                 "section_number": "03",
                 "instructor": "Mohammed Ebrahim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4782,7 +4758,7 @@
                 "section_number": "04",
                 "instructor": "DR. YULIA VOROBEVA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4806,7 +4782,7 @@
                 "section_number": "05",
                 "instructor": "DR. YULIA VOROBEVA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4830,7 +4806,7 @@
                 "section_number": "01",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4839,7 +4815,7 @@
                 "section_number": "02",
                 "instructor": "Mohammed Ebrahim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4848,7 +4824,7 @@
                 "section_number": "03",
                 "instructor": "Mohammed Ebrahim",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4857,7 +4833,7 @@
                 "section_number": "04",
                 "instructor": "DR. YULIA VOROBEVA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4866,7 +4842,7 @@
                 "section_number": "05",
                 "instructor": "DR. YULIA VOROBEVA",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4877,16 +4853,14 @@
         "course_code": "ENGL154",
         "course_name": "LANGUAGE DEVELOPMENT I",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-24 - 11:30 - 13:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "Dr. Deyaa Mohamed Alsayed Hammam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4910,7 +4884,7 @@
                 "section_number": "02",
                 "instructor": "Dr. Deyaa Mohamed Alsayed Hammam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4934,7 +4908,7 @@
                 "section_number": "01",
                 "instructor": "Dr. Deyaa Mohamed Alsayed Hammam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4943,7 +4917,7 @@
                 "section_number": "02",
                 "instructor": "Dr. Deyaa Mohamed Alsayed Hammam",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -4954,16 +4928,14 @@
         "course_code": "ENGL155",
         "course_name": "LANGUAGE DEVELOPMENT II",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-28 - 17:30 - 19:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "Husain Ali Akbar Ahmed Merza",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -4987,7 +4959,7 @@
                 "section_number": "02",
                 "instructor": "Husain Ali Akbar Ahmed Merza",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5011,7 +4983,7 @@
                 "section_number": "03",
                 "instructor": "MS.SAIMA IRUM",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5035,7 +5007,7 @@
                 "section_number": "04",
                 "instructor": "MS.SAIMA IRUM",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5059,7 +5031,7 @@
                 "section_number": "05",
                 "instructor": "Dr. Sayed Sadek Awadalla Ahmed",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5083,7 +5055,7 @@
                 "section_number": "06",
                 "instructor": "Dr. Sayed Sadek Awadalla Ahmed",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5107,7 +5079,7 @@
                 "section_number": "07",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5138,7 +5110,7 @@
                 "section_number": "08",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5169,7 +5141,7 @@
                 "section_number": "09",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5193,7 +5165,7 @@
                 "section_number": "01",
                 "instructor": "Husain Ali Akbar Ahmed Merza",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5202,7 +5174,7 @@
                 "section_number": "02",
                 "instructor": "Husain Ali Akbar Ahmed Merza",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5211,7 +5183,7 @@
                 "section_number": "03",
                 "instructor": "MS.SAIMA IRUM",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5220,7 +5192,7 @@
                 "section_number": "04",
                 "instructor": "MS.SAIMA IRUM",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5229,7 +5201,7 @@
                 "section_number": "05",
                 "instructor": "Dr. Sayed Sadek Awadalla Ahmed",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5238,7 +5210,7 @@
                 "section_number": "06",
                 "instructor": "Dr. Sayed Sadek Awadalla Ahmed",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5247,7 +5219,7 @@
                 "section_number": "07",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5256,7 +5228,7 @@
                 "section_number": "08",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5265,7 +5237,7 @@
                 "section_number": "09",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5276,16 +5248,14 @@
         "course_code": "ENGL155",
         "course_name": "LANGUAGE DEVELOPMENT II",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-28 - 17:30 - 19:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "Husain Ali Akbar Ahmed Merza",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5309,7 +5279,7 @@
                 "section_number": "02",
                 "instructor": "Husain Ali Akbar Ahmed Merza",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5333,7 +5303,7 @@
                 "section_number": "03",
                 "instructor": "MS.SAIMA IRUM",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5357,7 +5327,7 @@
                 "section_number": "04",
                 "instructor": "MS.SAIMA IRUM",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5381,7 +5351,7 @@
                 "section_number": "05",
                 "instructor": "Dr. Sayed Sadek Awadalla Ahmed",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5405,7 +5375,7 @@
                 "section_number": "06",
                 "instructor": "Dr. Sayed Sadek Awadalla Ahmed",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5429,7 +5399,7 @@
                 "section_number": "07",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5460,7 +5430,7 @@
                 "section_number": "08",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5491,7 +5461,7 @@
                 "section_number": "09",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5515,7 +5485,7 @@
                 "section_number": "01",
                 "instructor": "Husain Ali Akbar Ahmed Merza",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5524,7 +5494,7 @@
                 "section_number": "02",
                 "instructor": "Husain Ali Akbar Ahmed Merza",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5533,7 +5503,7 @@
                 "section_number": "03",
                 "instructor": "MS.SAIMA IRUM",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5542,7 +5512,7 @@
                 "section_number": "04",
                 "instructor": "MS.SAIMA IRUM",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5551,7 +5521,7 @@
                 "section_number": "05",
                 "instructor": "Dr. Sayed Sadek Awadalla Ahmed",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5560,7 +5530,7 @@
                 "section_number": "06",
                 "instructor": "Dr. Sayed Sadek Awadalla Ahmed",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5569,7 +5539,7 @@
                 "section_number": "07",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5578,7 +5548,7 @@
                 "section_number": "08",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5587,7 +5557,7 @@
                 "section_number": "09",
                 "instructor": "Ms. Noora Abdulaziz Alabbasi",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5598,26 +5568,14 @@
         "course_code": "PHYCS241",
         "course_name": "INTRODUCTORY ELECTRONICS",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
-        "sections": []
-    },
-    {
-        "course_code": "",
-        "course_name": "PHYCS102",
-        "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-24 - 14:30 - 16:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5648,7 +5606,7 @@
                 "section_number": "02",
                 "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5679,7 +5637,7 @@
                 "section_number": "03",
                 "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5705,23 +5663,12 @@
                         "location": "S41/0095"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "course_code": "",
-        "course_name": "PHYCS102",
-        "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
-        "sections": [
+            },
             {
                 "section_number": "01",
                 "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5730,7 +5677,7 @@
                 "section_number": "02",
                 "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5739,7 +5686,7 @@
                 "section_number": "03",
                 "instructor": "DR. SAYED MAHMOOD MOHAMED NASSER",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5750,16 +5697,14 @@
         "course_code": "ISLM101",
         "course_name": "ISLAMIC CULTURE",
         "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
+        "exam_date": "2025-05-22 - 11:30 - 13:30",
+        "exam_room": "-- No Room (LEC)",
         "sections": [
             {
                 "section_number": "01",
                 "instructor": "DR. MAHMOUD ELSAYED DAOUD",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
@@ -5790,55 +5735,38 @@
                 "section_number": "02",
                 "instructor": "Prof. Ruqaya Alalwani",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": [
                     {
                         "class_type": "LEC",
                         "day": "Sunday",
-                        "time_from": "",
-                        "time_to": "",
-                        "location": ""
+                        "time_from": "21:00",
+                        "time_to": "21:50",
+                        "location": "-/No Room (LAB)"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Tuesday",
+                        "time_from": "21:00",
+                        "time_to": "21:50",
+                        "location": "-/No Room (LAB)"
+                    },
+                    {
+                        "class_type": "LEC",
+                        "day": "Thursday",
+                        "time_from": "21:00",
+                        "time_to": "21:50",
+                        "location": "-/No Room (LEC)"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "course_code": "Time: From 21:00 To 21:50 Location: -/No Room",
-        "course_name": "LAB",
-        "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
-        "sections": []
-    },
-    {
-        "course_code": "Time: From 21:00 To 21:50 Location: -/No Room",
-        "course_name": "LAB",
-        "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
-        "sections": []
-    },
-    {
-        "course_code": "Time: From 21:00 To 21:50 Location: -/No Room",
-        "course_name": "LEC",
-        "prerequisites": "",
-        "exam_date": "",
-        "exam_time_start": "",
-        "exam_time_end": "",
-        "exam_room": "",
-        "sections": [
+            },
             {
                 "section_number": "01",
                 "instructor": "DR. MAHMOUD ELSAYED DAOUD",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []
@@ -5847,7 +5775,7 @@
                 "section_number": "02",
                 "instructor": "Prof. Ruqaya Alalwani",
                 "available_seats": "-",
-                "exam_room": "To be announced",
+                "exam_room": "-- No Room (LEC)",
                 "section_status": "OPEN",
                 "remarks": "",
                 "classes": []

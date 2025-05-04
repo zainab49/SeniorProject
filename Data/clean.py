@@ -6,18 +6,18 @@ def parse_course_data(raw_data):
     current_course = None
     current_section = None
     current_class = None
-    expecting_exam_date = False  # Track if next line contains exam details
+    exam_date_next_line = False  # Flag to track if next line contains exam date
 
-    for entry in raw_data:
-        entry = entry.strip()
-        if not entry:
+    for line in raw_data:
+        line = line.strip()
+        if not line:
             continue
 
-        # --- New Course Detection ---
-        if re.match(r'^[A-Z]+\d+.*\(.*\)', entry):
+        # New Course Detection
+        if re.match(r'^[A-Z]+\d+.*\(.*\)', line):
             if current_course:
                 courses.append(current_course)
-            code, name = re.match(r'^([A-Z]+\d+)\s*\((.*?)\)', entry).groups()
+            code, name = re.match(r'^([A-Z]+\d+)\s*\((.*?)\)', line).groups()
             current_course = {
                 "course_code": code.strip(),
                 "course_name": name.strip(),
@@ -26,28 +26,35 @@ def parse_course_data(raw_data):
                 "exam_room": "-- No Room (LEC)",
                 "sections": []
             }
-            expecting_exam_date = False
+            exam_date_next_line = False
             continue
 
-        # --- Handle Exam Date ---
-        if expecting_exam_date:
-            # This line contains the actual exam date and room
-            parts = entry.split(" - ")
-            if len(parts) >= 4:
-                current_course["exam_date"] = " - ".join(parts[:3]).strip()
-                current_course["exam_room"] = parts[3].strip()
-            expecting_exam_date = False
+        # Handle Exam Date
+        if exam_date_next_line:
+            # This is the line containing the actual exam date
+            exam_parts = [part.strip() for part in line.split(' - ') if part.strip()]
+            if len(exam_parts) >= 3:
+                current_course["exam_date"] = ' - '.join(exam_parts[:3])
+                if len(exam_parts) >= 4:
+                    current_course["exam_room"] = exam_parts[3]
+            exam_date_next_line = False
             continue
 
-        if entry.startswith("Exam Date:"):
-            # Next line will have the actual exam details
-            expecting_exam_date = True
+        if line.startswith("Exam Date:"):
+            exam_date_next_line = True
             continue
-        # --- Sections ---
-        if entry.startswith("Section:"):
+
+        # Prerequisites
+        if line.startswith("Prereqs:"):
+            if current_course:
+                current_course["prerequisites"] = line.split(":", 1)[1].strip()
+            continue
+
+        # Sections
+        if line.startswith("Section:"):
             if current_course:
                 current_section = {
-                    "section_number": entry.split(":", 1)[1].strip(),
+                    "section_number": line.split(":", 1)[1].strip(),
                     "instructor": "",
                     "available_seats": "-",
                     "exam_room": "-- No Room (LEC)",
@@ -58,13 +65,12 @@ def parse_course_data(raw_data):
                 current_course["sections"].append(current_section)
             continue
 
-        # --- Class Parsing ---
+        # Class Parsing
         if current_section:
-            if entry.startswith("Instructor:"):
-                current_section["instructor"] = entry.split(":", 1)[1].strip()
+            if line.startswith("Instructor:"):
+                current_section["instructor"] = line.split(":", 1)[1].strip()
             
-            elif entry.startswith("Class Type:"):
-                # Start new class
+            elif line.startswith("Class Type:"):
                 current_class = {
                     "class_type": "",
                     "day": "",
@@ -73,51 +79,53 @@ def parse_course_data(raw_data):
                     "location": ""
                 }
                 current_section["classes"].append(current_class)
-                _parse_class_line(entry, current_class)  # Fixed: Removed 'self.'
+                _parse_class_line(line, current_class)
             
             elif current_class:
-                # Continue parsing multi-line class info
-                _parse_class_line(entry, current_class)  # Fixed: Removed 'self.'
+                _parse_class_line(line, current_class)
 
-    # Add the last course
     if current_course:
         courses.append(current_course)
     
     return courses
 
-def _parse_class_line(line, current_class):  # Fixed: No 'self' parameter
+def _parse_class_line(line, current_class):
     """Helper to parse class information from any line"""
-    # Class Type
     if "Class Type:" in line:
-        current_class["class_type"] = re.search(r'Class Type: (\w+)', line).group(1)
+        match = re.search(r'Class Type: (\w+)', line)
+        if match:
+            current_class["class_type"] = match.group(1)
     
-    # Day
     if "Day:" in line:
-        current_class["day"] = re.search(r'Day: (\w+)', line).group(1)
+        match = re.search(r'Day: (\w+)', line)
+        if match:
+            current_class["day"] = match.group(1)
     
-    # Time
     if "From" in line and "To" in line:
         time_match = re.search(r'From (.*?) To (.*?)( Location:|$)', line)
         if time_match:
             current_class["time_from"] = time_match.group(1).strip()
             current_class["time_to"] = time_match.group(2).strip()
     
-    # Location
     if "Location:" in line:
         current_class["location"] = line.split("Location:", 1)[1].strip()
 
-# Usage remains the same
-with open('CS-2024-25-S.json', 'r', encoding='utf-8') as f:
+# Load and process the data
+with open('CE-2024-25-S.json', 'r', encoding='utf-8') as f:
     raw_data = json.load(f)
 
+# Pre-process the data to split into individual lines
 processed_data = []
 for item in raw_data:
     if isinstance(item, str):
-        processed_data.extend(item.replace('\\n', '\n').split('\n'))
+        # Split by newlines and add each line separately
+        lines = item.replace('\\n', '\n').split('\n')
+        processed_data.extend([line.strip() for line in lines if line.strip()])
 
 courses = parse_course_data(processed_data)
 
-with open('NEWCS-2024-25-S.json', 'w', encoding='utf-8') as f:
+with open('structured_courses_fixed.json', 'w', encoding='utf-8') as f:
     json.dump(courses, f, indent=4, ensure_ascii=False)
 
 print(f"Success! Generated {len(courses)} courses.")
+print("Example exam date from first course:", courses[0].get("exam_date", "Not found"))

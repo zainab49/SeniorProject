@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import Student, Enrollment , StudentCourse
+from .models import Student, Enrollment , StudentCourse 
 import json 
 import os
 import fnmatch
+from .ai_schedule import generate_course_schedule
+
+
 
 # Login view
 def login_page(request):
@@ -174,5 +177,31 @@ def gpa_improvement_page(request):
     return render(request, 'Project/gpa_improvement.html')
 
 # Schedule Suggestions page view
-def schedule_suggestions_page(request):
-    return render(request, 'Project/schedule_suggestions.html')
+
+# Update the schedule_suggestions view function
+def schedule_suggestions(request):
+    student_id = request.session.get('student_id')
+    if not student_id:
+        return redirect('login')  # Redirect to login page if not logged in
+
+    try:
+        student = Student.objects.get(student_id=student_id)
+    except Student.DoesNotExist:
+        return redirect('login')  # Fallback in case student not found
+
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    schedule_dir = os.path.join(BASE_DIR, 'Data', 'courseSchedule')
+    plan_dir = os.path.join(BASE_DIR, 'Data', 'Programs')
+
+    # Generate multiple course schedules
+    schedule_options = generate_course_schedule(student, schedule_dir, plan_dir)
+    
+    # Make sure we always have 3 options (even if some are empty)
+    while len(schedule_options) < 3:
+        schedule_options.append([])
+
+    return render(request, 'Project/schedule_suggestions.html', {
+        'schedule_options': schedule_options,
+        'max_allowed': 6,
+        'min_allowed': 4
+    })

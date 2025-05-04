@@ -7,5 +7,5 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout'),
     path('gpa_calculator/', views.gpa_calculator_page, name='gpa_calculator'),
     path('gpa_improvement/', views.gpa_improvement_page, name='gpa_improvement'),
-    path('schedule_suggestions/', views.schedule_suggestions_page, name='schedule_suggestions'),
+     path('schedule_suggestions/', views.schedule_suggestions, name='schedule_suggestions'),
 ]
