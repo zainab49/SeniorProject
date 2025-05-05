@@ -504,6 +504,25 @@
       .section-header {
         font-size: 1.2rem;
       }
+      .courses-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      .courses-table th, .courses-table td {
+        font-size: 0.85rem;
+        padding: 10px;
+      }
+      .credits-container {
+        padding: 10px;
+      }
+      .credits-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .credits-percentage {
+        margin-top: 5px;
+      }
     }
   </style>
 </head>
@@ -709,6 +728,7 @@
         academicStatus.classList.add('status-probation');
       }
     });
+    
   </script>
 </body>
 </html>

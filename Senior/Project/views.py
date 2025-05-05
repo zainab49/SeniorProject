@@ -80,7 +80,9 @@ def home_page(request):
     completed_percentage = int((completed_credits / total_credits) * 100)
     
     # Determine academic status based on CGPA
-    if student.CGPA >= 3.0:
+    if remaining_credits < 20:
+        academic_status = "Senior Student"
+    elif student.CGPA >= 3.0:
         academic_status = "Excellent Student"
     elif student.CGPA >= 2.0:
         academic_status = "Normal Student"

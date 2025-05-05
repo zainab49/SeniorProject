@@ -3,7 +3,7 @@
   {% load static %}
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>GPA Calculator</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
@@ -33,6 +33,7 @@
       color: var(--dark);
       display: flex;
       min-height: 100vh;
+      overflow-x: hidden;
     }
 
     /* Sidebar Styles */
@@ -53,6 +54,7 @@
       padding: 1.5rem;
       text-align: center;
       border-bottom: 1px solid rgba(255,255,255,0.1);
+      position: relative;
     }
 
     .sidebar-header h2 {
@@ -140,6 +142,11 @@
 
     .card-body {
       padding: 1rem;
+    }
+
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     table {
@@ -235,6 +242,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     /* Results Section */
@@ -318,34 +327,21 @@
       margin-right: 0.5rem;
     }
 
-    /* Responsive Styles */
-    @media (max-width: 992px) {
-      .sidebar {
-        width: 200px;
-      }
-      .content-wrapper {
-        margin-left: 200px;
-      }
+    /* Sidebar Overlay */
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 5;
+      backdrop-filter: blur(2px);
     }
 
-    @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-      .content-wrapper {
-        margin-left: 0;
-      }
-      .results {
-        flex-direction: column;
-      }
-      .result-card {
-        width: 100%;
-      }
+    .sidebar-overlay.active {
+      display: block;
     }
 
     /* Toggle Menu Button for Mobile */
@@ -362,29 +358,158 @@
       left: 10px;
       z-index: 20;
       border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .sidebar-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    /* Enhanced Responsive Styles */
+    @media (max-width: 992px) {
+      .sidebar {
+        width: 220px;
+      }
+      .content-wrapper {
+        margin-left: 220px;
+      }
+      .sidebar-menu a {
+        padding: 0.6rem 1rem;
+      }
     }
 
     @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Hide off-screen by default */
+        z-index: 100;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+      }
+      .sidebar.active {
+        left: 0; /* Show when active */
+        box-shadow: 3px 0 15px rgba(0,0,0,0.2);
+      }
+      .content-wrapper {
+        margin-left: 0;
+        width: 100%;
+        padding: 70px 1rem 1rem;
+      }
       .menu-toggle {
         display: block;
       }
-      .sidebar {
-        transform: translateX(-100%);
+      .results {
+        flex-direction: column;
       }
-      .sidebar.active {
-        transform: translateX(0);
+      .result-card {
+        width: 100%;
       }
+      .page-title {
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+      /* Make the buttons take full width on mobile */
+      .actions-container .btn {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 576px) {
       .content-wrapper {
-        padding-top: 3.5rem;
+        padding: 70px 0.75rem 1rem;
+      }
+      .page-title {
+        font-size: 1.3rem;
+        padding: 0.8rem;
+      }
+      .card-body {
+        padding: 0.75rem;
+      }
+      
+      /* Stack buttons in the modal */
+      #addCourseModal .btn-row {
+        flex-direction: column;
+      }
+      #addCourseModal .btn {
+        margin-bottom: 0.5rem;
+        width: 100%;
+      }
+      
+      /* Stack buttons in the actions container */
+      .actions-container {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .actions-container .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+      
+      /* Enhanced table display for very small screens */
+      .mobile-responsive-table td, 
+      .mobile-responsive-table th {
+        display: block;
+        text-align: left;
+        padding: 0.5rem;
+      }
+      
+      .mobile-responsive-table td {
+        position: relative;
+        padding-left: 40%;
+        border-bottom: none;
+      }
+      
+      .mobile-responsive-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.5rem;
+        top: 0.5rem;
+        width: 35%;
+        font-weight: bold;
+      }
+      
+      .mobile-responsive-table tr {
+        border-bottom: 2px solid var(--light-gray);
+        margin-bottom: 0.5rem;
+      }
+      
+      .mobile-responsive-table thead {
+        display: none;
       }
     }
   </style>
 </head>
 <body>
+  <!-- Sidebar Overlay -->
+  <div class="sidebar-overlay" id="overlay"></div>
+  
+  <!-- Mobile Menu Toggle -->
+  <button class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </button>
+  
   <!-- Sidebar -->
   <div class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <h2>Academic Portal</h2>
+      <button class="sidebar-close" id="closeSidebar">
+        <i class="fas fa-times"></i>
+      </button>
     </div>
     <ul class="sidebar-menu">
       <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Dashboard</a></li>
@@ -407,47 +532,49 @@
         </div>
         
         <div class="card-body">
-          <table id="course-table">
-            <thead>
-              <tr>
-                <th>Course</th>
-                <th>Credits</th>
-                <th>Major?</th>
-                <th>Grade</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody id="course-body">
-              {% for enrollment in enrollments %}
-              <tr class="course-row">
-                <td>
-                  <input type="hidden" name="course_id" value="{{ enrollment.course_id }}">
-                  {{ enrollment.course_id }}
-                </td>
-                <td>
-                  <input type="hidden" name="credit" value="{{ enrollment.Credits }}">
-                  {{ enrollment.Credits }}
-                </td>
-                <td>
-                  <input type="hidden" name="major" value="{{ enrollment.is_major_course|yesno:"1,0" }}">
-                  {% if enrollment.is_major_course %}Yes{% else %}No{% endif %}
-                </td>
-                <td>
-                  <select name="grade" class="grade-select">
-                    {% for g in grade_options %}
-                      <option value="{{ g }}">{{ g }}</option>
-                    {% endfor %}
-                  </select>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger btn-sm remove-btn">
-                    <i class="fas fa-trash"></i>
-                  </button>
-                </td>
-              </tr>
-              {% endfor %}
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table id="course-table" class="mobile-responsive-table">
+              <thead>
+                <tr>
+                  <th>Course</th>
+                  <th>Credits</th>
+                  <th>Major?</th>
+                  <th>Grade</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="course-body">
+                {% for enrollment in enrollments %}
+                <tr class="course-row">
+                  <td data-label="Course">
+                    <input type="hidden" name="course_id" value="{{ enrollment.course_id }}">
+                    {{ enrollment.course_id }}
+                  </td>
+                  <td data-label="Credits">
+                    <input type="hidden" name="credit" value="{{ enrollment.Credits }}">
+                    {{ enrollment.Credits }}
+                  </td>
+                  <td data-label="Major?">
+                    <input type="hidden" name="major" value="{{ enrollment.is_major_course|yesno:"1,0" }}">
+                    {% if enrollment.is_major_course %}Yes{% else %}No{% endif %}
+                  </td>
+                  <td data-label="Grade">
+                    <select name="grade" class="grade-select">
+                      {% for g in grade_options %}
+                        <option value="{{ g }}">{{ g }}</option>
+                      {% endfor %}
+                    </select>
+                  </td>
+                  <td data-label="Action">
+                    <button type="button" class="btn btn-danger btn-sm remove-btn">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       
@@ -455,11 +582,12 @@
         <button type="submit" class="btn btn-primary">
           <i class="fas fa-calculator"></i> Calculate GPA
         </button>
+        
       </div>
       
       <!-- New Course Modal - Hidden by default, shown with JavaScript -->
       <div id="addCourseModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 100; justify-content: center; align-items: center;">
-        <div style="background: white; padding: 2rem; border-radius: 8px; width: 90%; max-width: 500px;">
+        <div style="background: white; padding: 1.5rem; border-radius: 8px; width: 90%; max-width: 500px; max-height: 90vh; overflow-y: auto;">
           <h3 style="margin-bottom: 1.5rem;">Add New Course</h3>
           
           <div style="margin-bottom: 1rem;">
@@ -482,7 +610,7 @@
             </label>
           </div>
           
-          <div style="display: flex; justify-content: flex-end; gap: 1rem;">
+          <div class="btn-row" style="display: flex; justify-content: flex-end; gap: 1rem;">
             <button type="button" class="btn btn-danger" id="cancelAddCourse">Cancel</button>
             <button type="button" class="btn btn-primary" id="confirmAddCourse">Add Course</button>
           </div>
@@ -525,6 +653,29 @@
   </div>
 
   <script>
+    // Setup mobile sidebar
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const closeSidebar = document.getElementById('closeSidebar');
+    
+    menuToggle.addEventListener('click', function() {
+      sidebar.classList.add('active');
+      overlay.classList.add('active');
+      closeSidebar.style.display = 'block';
+    });
+    
+    closeSidebar.addEventListener('click', function() {
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+      this.style.display = 'none';
+    });
+    
+    overlay.addEventListener('click', function() {
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+      closeSidebar.style.display = 'none';
+    });
 
     // Course removal functionality
     const removedList = document.getElementById("removed-list");
@@ -536,7 +687,7 @@
       document.querySelectorAll(".remove-btn").forEach(button => {
         button.addEventListener("click", function () {
           const row = this.closest("tr");
-          const courseName = row.children[0].textContent.trim();
+          const courseName = row.querySelector('[data-label="Course"]').textContent.trim();
           
           // Store removed HTML and hide
           const listItem = document.createElement('li');
@@ -573,10 +724,13 @@
 
     // Add New Course Modal
     const addCourseModal = document.getElementById('addCourseModal');
+    const addCourseBtn = document.getElementById('addCourseBtn');
     
-    document.getElementById('addCourseBtn').addEventListener('click', function() {
-      addCourseModal.style.display = 'flex';
-    });
+    if (addCourseBtn) {
+      addCourseBtn.addEventListener('click', function() {
+        addCourseModal.style.display = 'flex';
+      });
+    }
     
     document.getElementById('cancelAddCourse').addEventListener('click', function() {
       addCourseModal.style.display = 'none';
@@ -596,26 +750,26 @@
       const newRow = document.createElement('tr');
       newRow.className = 'course-row';
       newRow.innerHTML = `
-        <td>
+        <td data-label="Course">
           <input type="hidden" name="course_id" value="${courseId}">
           ${courseId}
         </td>
-        <td>
+        <td data-label="Credits">
           <input type="hidden" name="credit" value="${credits}">
           ${credits}
         </td>
-        <td>
+        <td data-label="Major?">
           <input type="hidden" name="major" value="${isMajor ? '1' : '0'}">
           ${isMajor ? 'Yes' : 'No'}
         </td>
-        <td>
+        <td data-label="Grade">
           <select name="grade" class="grade-select">
             {% for g in grade_options %}
               <option value="{{ g }}">{{ g }}</option>
             {% endfor %}
           </select>
         </td>
-        <td>
+        <td data-label="Action">
           <button type="button" class="btn btn-danger btn-sm remove-btn">
             <i class="fas fa-trash"></i>
           </button>
@@ -640,6 +794,42 @@
         addCourseModal.style.display = 'none';
       }
     });
+    
+    // Enhance tables for mobile
+    function enhanceTablesForMobile() {
+      const tables = document.querySelectorAll('table');
+      tables.forEach(function(table) {
+        const headerTexts = [];
+        
+        // Get header text values
+        table.querySelectorAll('thead th').forEach(function(th) {
+          headerTexts.push(th.textContent.trim());
+        });
+        
+        // Add data-label attributes to table cells if they don't have them already
+        if (headerTexts.length > 0) {
+          table.querySelectorAll('tbody tr').forEach(function(row) {
+            row.querySelectorAll('td').forEach(function(cell, index) {
+              if (index < headerTexts.length && !cell.hasAttribute('data-label')) {
+                cell.setAttribute('data-label', headerTexts[index]);
+              }
+            });
+          });
+        }
+      });
+    }
+
+    // Call the function to ensure all table cells have data-labels
+    enhanceTablesForMobile();
+    
+    // Make inputs touch-friendly
+    if (window.innerWidth < 768) {
+      document.querySelectorAll('input, select, button').forEach(function(element) {
+        if (element.offsetHeight < 44) { // Apple's recommended minimum
+          element.style.minHeight = '44px';
+        }
+      });
+    }
   </script>
 </body>
 </html>

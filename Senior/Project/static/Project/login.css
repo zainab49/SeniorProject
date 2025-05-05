@@ -207,24 +207,24 @@ body {
 
 @media (max-width: 480px) {
     .login-form .title {
-        font-size: 18px;
+      font-size: 1.3rem;
+    }
+
+    .login-form .message {
+      font-size: 0.85rem;
     }
 
     .login-form input {
-        font-size: 10px;
-        padding: 6px;
+      font-size: 0.85rem;
+      padding: 10px;
     }
 
     .login-form .submit-btn {
-        padding: 6px 12px;
-        font-size: 10px;
+      font-size: 0.85rem;
+      padding: 10px;
     }
 
     .image-section h2 {
-        font-size: 1.5em;
+      font-size: 1rem;
     }
-
-    .image-section p {
-        font-size: 1em;
-    }
-}
+  }

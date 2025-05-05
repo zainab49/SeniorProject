@@ -3,7 +3,7 @@
   {% load static %}
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>GPA Improvement Advisor</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
@@ -47,6 +47,7 @@
       display: flex;
       min-height: 100vh;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     /* Sidebar Styles */
@@ -67,6 +68,7 @@
       padding: 1.5rem;
       text-align: center;
       border-bottom: 1px solid rgba(255,255,255,0.1);
+      position: relative;
     }
 
     .sidebar-header h2 {
@@ -258,21 +260,22 @@
       margin-top: 16px;
     }
     .smaller-chart {
-    max-height: 250px;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  /* Adjust the chart canvas to fit the container */
-  .smaller-chart canvas {
-    max-height: 200px;
-    width: 100% !important;
-    height: auto !important;
-  }
+      max-height: 250px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    
+    /* Adjust the chart canvas to fit the container */
+    .smaller-chart canvas {
+      max-height: 200px;
+      width: 100% !important;
+      height: auto !important;
+    }
     
     /* Course Performance Table */
     .course-table-container {
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
     
     .course-table {
@@ -638,32 +641,52 @@
       left: 10px;
       z-index: 20;
       border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* Sidebar close button */
+    .sidebar-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: none;
     }
 
     /* Overlay */
-    .overlay {
+    .sidebar-overlay {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: rgba(0,0,0,0.4);
-      z-index: 999;
+      z-index: 5;
       display: none;
       backdrop-filter: blur(2px);
     }
 
-    .overlay.active {
+    .sidebar-overlay.active {
       display: block;
     }
 
-    /* Responsive Styles */
+    /* Enhanced Mobile Responsive Styles */
     @media (max-width: 992px) {
       .sidebar {
-        width: 200px;
+        width: 220px;
       }
       .content-wrapper {
-        margin-left: 200px;
+        margin-left: 220px;
+      }
+      .sidebar-menu a {
+        padding: 0.6rem 1rem;
+      }
+      .container {
+        padding: 0 15px;
       }
       .analysis-grid {
         grid-template-columns: 1fr;
@@ -675,16 +698,26 @@
         flex-direction: column;
       }
       .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        transform: translateX(-100%);
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Hide off-screen by default */
+        z-index: 100;
+        transition: left 0.3s ease;
+        overflow-y: auto;
       }
       .sidebar.active {
-        transform: translateX(0);
+        left: 0; /* Show when active */
+        box-shadow: 3px 0 15px rgba(0,0,0,0.2);
       }
       .content-wrapper {
         margin-left: 0;
+        width: 100%;
+        padding: 70px 1rem 1rem;
+      }
+      .menu-toggle {
+        display: block;
       }
       .gpa-overview {
         grid-template-columns: 1fr 1fr;
@@ -699,14 +732,131 @@
       .advisor-content::before {
         display: none;
       }
-      .menu-toggle {
-        display: block;
+      .card {
+        padding: 15px;
+      }
+      .page-title {
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+      .smaller-chart {
+        width: 100%;
+      }
+      .form-control {
+        padding: 12px;
+        min-height: 44px; /* Better tap targets */
+      }
+      .btn {
+        width: 100%;
+        padding: 12px;
+        min-height: 44px;
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 576px) {
+      .container {
+        padding: 0 10px;
+      }
+      .page-title {
+        font-size: 1.3rem;
+        padding: 0.8rem;
+      }
       .gpa-overview {
         grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .card-title {
+        font-size: 1.2rem;
+      }
+      .action-item {
+        flex-direction: column;
+      }
+      .action-checkbox {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      .advisor-avatar {
+        margin-bottom: 15px;
+      }
+      
+      /* Enhanced table display for small screens */
+      .course-table {
+        min-width: auto;
+      }
+      
+      .mobile-responsive-table td, 
+      .mobile-responsive-table th {
+        display: block;
+        text-align: left;
+        padding: 0.5rem;
+      }
+      
+      .mobile-responsive-table td {
+        position: relative;
+        padding-left: 40%;
+        border-bottom: none;
+      }
+      
+      .mobile-responsive-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.5rem;
+        top: 0.5rem;
+        width: 35%;
+        font-weight: bold;
+      }
+      
+      .mobile-responsive-table tr {
+        border-bottom: 2px solid var(--light-gray);
+        margin-bottom: 0.5rem;
+      }
+      
+      .mobile-responsive-table thead {
+        display: none;
+      }
+      
+      /* Make strategy cards more compact */
+      .strategy-card {
+        padding: 15px;
+      }
+      
+      .strategy-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+      
+      /* Improve spacing and readability */
+      .card {
+        margin-bottom: 15px;
+      }
+      
+      .performance-chart {
+        padding: 10px;
+      }
+      
+      /* Make forms more touch-friendly */
+      select, input, textarea, .btn {
+        font-size: 16px; /* Prevents zoom on iOS */
+      }
+    }
+
+    /* Print styles */
+    @media print {
+      .sidebar, .menu-toggle, .sidebar-overlay, .sidebar-close {
+        display: none;
+      }
+      
+      .content-wrapper {
+        margin-left: 0;
+        padding: 0;
+      }
+      
+      .card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
       }
     }
   </style>
@@ -717,14 +867,16 @@
     <i class="fas fa-bars"></i>
   </button>
   
-  <!-- Overlay -->
-  <div class="overlay" id="overlay"></div>
+  <!-- Sidebar Overlay -->
+  <div class="sidebar-overlay" id="overlay"></div>
   
   <!-- Sidebar -->
   <div class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <h2>Academic Portal</h2>
-      <button class="close-sidebar" id="closeSidebar"></button>
+      <button class="sidebar-close" id="closeSidebar">
+        <i class="fas fa-times"></i>
+      </button>
     </div>
     <ul class="sidebar-menu">
       <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Dashboard</a></li>
@@ -736,8 +888,6 @@
   
   <!-- Main Content -->
   <div class="content-wrapper">
-  
-    
     <main class="container">
       <h1 class="page-title">GPA Improvement Advisor</h1>
       
@@ -779,7 +929,7 @@
           </div>
           
           <div class="course-table-container">
-            <table class="course-table">
+            <table class="course-table mobile-responsive-table">
               <thead>
                 <tr>
                   <th>Course</th>
@@ -791,10 +941,10 @@
               <tbody>
                 {% for course in student_courses %}
                 <tr>
-                  <td>{{ course.course_code }} - {{ course.course_name }}</td>
-                  <td>{{ course.credits }}</td>
-                  <td>{{ course.grade }}</td>
-                  <td>
+                  <td data-label="Course">{{ course.course_code }} - {{ course.course_name }}</td>
+                  <td data-label="Credits">{{ course.credits }}</td>
+                  <td data-label="Grade">{{ course.grade }}</td>
+                  <td data-label="Performance">
                     {% if course.grade_value >= 3.33 %}
                       <span class="performance-indicator performance-good">Good</span>
                     {% elif course.grade_value >= 2.0 %}
@@ -1023,7 +1173,6 @@
               <div class="resource-description">
                 Get personalized tutoring, workshops, and academic coaching to improve your performance.
               </div>
-              
             </div>
             
             <div class="resource-card">
@@ -1034,7 +1183,6 @@
               <div class="resource-description">
                 Attend workshops on note-taking, test preparation, time management, and more.
               </div>
-              <
             </div>
             
             <div class="resource-card">
@@ -1045,7 +1193,6 @@
               <div class="resource-description">
                 Access online resources like practice quizzes, video tutorials, and interactive learning modules.
               </div>
-              
             </div>
             
             <div class="resource-card">
@@ -1102,73 +1249,88 @@
     menuToggle.addEventListener('click', function() {
       sidebar.classList.add('active');
       overlay.classList.add('active');
+      closeSidebar.style.display = 'block';
     });
     
     function closeSidebarMenu() {
       sidebar.classList.remove('active');
       overlay.classList.remove('active');
+      closeSidebar.style.display = 'none';
     }
     
     closeSidebar.addEventListener('click', closeSidebarMenu);
     overlay.addEventListener('click', closeSidebarMenu);
     
     // GPA Chart
-  // GPA Chart
-document.addEventListener('DOMContentLoaded', function() {
-  const ctx = document.getElementById('gpaChart').getContext('2d');
-  
-  // Parse semester data from Django template
-  const semesters = JSON.parse('{{ semesters|default:"[]"|escapejs }}');
-  const cgpaHistory = JSON.parse('{{ cgpa_history|default:"[]"|escapejs }}');
-  
-  const chart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: semesters,
-      datasets: [{
-        label: 'CGPA Trend',
-        data: cgpaHistory,
-        backgroundColor: 'rgba(213, 189, 175, 0.2)',
-        borderColor: '#c3a995',
-        borderWidth: 2,
-        tension: 0.3,
-        pointBackgroundColor: '#d5bdaf',
-        pointBorderColor: '#fff',
-        pointBorderWidth: 2,
-        pointRadius: 4
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: {
-        y: {
-          beginAtZero: false,
-          min: 0,
-          max: 4,
-          ticks: {
-            stepSize: 0.5
+    document.addEventListener('DOMContentLoaded', function() {
+      const ctx = document.getElementById('gpaChart').getContext('2d');
+      
+      // Parse semester data from Django template
+      const semesters = JSON.parse('{{ semesters|default:"[]"|escapejs }}');
+      const cgpaHistory = JSON.parse('{{ cgpa_history|default:"[]"|escapejs }}');
+      
+      const chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: semesters,
+          datasets: [{
+            label: 'CGPA Trend',
+            data: cgpaHistory,
+            backgroundColor: 'rgba(213, 189, 175, 0.2)',
+            borderColor: '#c3a995',
+            borderWidth: 2,
+            tension: 0.3,
+            pointBackgroundColor: '#d5bdaf',
+            pointBorderColor: '#fff',
+            pointBorderWidth: 2,
+            pointRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: false,
+              min: 0,
+              max: 4,
+              ticks: {
+                stepSize: 0.5
+              }
+            }
+          },
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              backgroundColor: '#4a3f35',
+              titleFont: {
+                size: 14
+              },
+              bodyFont: {
+                size: 13
+              },
+              padding: 12
+            }
           }
         }
-      },
-      plugins: {
-        legend: {
-          display: false
-        },
-        tooltip: {
-          backgroundColor: '#4a3f35',
-          titleFont: {
-            size: 14
-          },
-          bodyFont: {
-            size: 13
-          },
-          padding: 12
+      });
+      
+      // Make chart responsive
+      function resizeChart() {
+        if (window.innerWidth < 576) {
+          chart.options.scales.y.ticks.display = false;
+        } else {
+          chart.options.scales.y.ticks.display = true;
         }
+        chart.update();
       }
-    }
-  });
-});
+      
+      // Call on load and resize
+      resizeChart();
+      window.addEventListener('resize', resizeChart);
+    });
     
     // AI Advisor Form
     document.getElementById('submitQuery').addEventListener('click', function() {
@@ -1180,6 +1342,46 @@ document.addEventListener('DOMContentLoaded', function() {
       
       alert("Your question has been submitted! In a real implementation, this would communicate with your backend AI advisor system.");
     });
+    
+    // Make tables responsive
+    function enhanceTablesForMobile() {
+      const tables = document.querySelectorAll('table');
+      tables.forEach(function(table) {
+        // Get header text values
+        const headerTexts = [];
+        table.querySelectorAll('thead th').forEach(function(th) {
+          headerTexts.push(th.textContent.trim());
+        });
+        
+        // Add data-label attributes to table cells if they don't have them already
+        if (headerTexts.length > 0) {
+          table.querySelectorAll('tbody tr').forEach(function(row) {
+            row.querySelectorAll('td').forEach(function(cell, index) {
+              if (index < headerTexts.length && !cell.hasAttribute('data-label')) {
+                cell.setAttribute('data-label', headerTexts[index]);
+              }
+            });
+          });
+        }
+      });
+    }
+    
+    // Call the function to enhance tables
+    enhanceTablesForMobile();
+    
+    // Make inputs and buttons more touch-friendly on mobile
+    function enhanceTouchTargets() {
+      if (window.innerWidth < 768) {
+        document.querySelectorAll('input, select, textarea, button, .btn').forEach(function(element) {
+          if (element.offsetHeight < 44) { // Apple's recommended minimum
+            element.style.minHeight = '44px';
+          }
+        });
+      }
+    }
+    
+    enhanceTouchTargets();
+    window.addEventListener('resize', enhanceTouchTargets);
   </script>
 </body>
 </html>

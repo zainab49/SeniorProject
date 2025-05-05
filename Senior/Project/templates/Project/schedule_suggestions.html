@@ -3,6 +3,7 @@
   {% load static %}
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Course Schedule Suggestions</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
@@ -32,6 +33,7 @@
       color: var(--dark);
       display: flex;
       min-height: 100vh;
+      overflow-x: hidden;
     }
 
     /* Sidebar Styles */
@@ -52,6 +54,7 @@
       padding: 1.5rem;
       text-align: center;
       border-bottom: 1px solid rgba(255,255,255,0.1);
+      position: relative;
     }
 
     .sidebar-header h2 {
@@ -59,6 +62,18 @@
       font-weight: 300;
       letter-spacing: 1px;
       color: var(--white);
+    }
+
+    .sidebar-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: none;
     }
 
     .sidebar-menu {
@@ -138,6 +153,12 @@
     }
 
     /* Table Styles */
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: 1.5rem;
+    }
+
     .course-table {
       width: 100%;
       border-collapse: collapse;
@@ -169,6 +190,7 @@
     /* Toggle Buttons */
     .toggles {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
       margin-bottom: 20px;
@@ -183,6 +205,7 @@
       cursor: pointer;
       font-weight: 600;
       transition: all 0.2s;
+      min-height: 44px; /* Improved touch target */
     }
 
     .toggle-btn:hover {
@@ -194,28 +217,21 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
 
-    /* Responsive Styles */
-    @media (max-width: 992px) {
-      .sidebar {
-        width: 200px;
-      }
-      .content-wrapper {
-        margin-left: 200px;
-      }
+    /* Sidebar Overlay */
+    .sidebar-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+      z-index: 5;
+      display: none;
+      backdrop-filter: blur(2px);
     }
 
-    @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-      .content-wrapper {
-        margin-left: 0;
-      }
+    .sidebar-overlay.active {
+      display: block;
     }
 
     /* Toggle Menu Button for Mobile */
@@ -232,25 +248,134 @@
       left: 10px;
       z-index: 20;
       border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* Enhanced Mobile Responsive Styles */
+    @media (max-width: 992px) {
+      .sidebar {
+        width: 220px;
+      }
+      .content-wrapper {
+        margin-left: 220px;
+      }
+      .sidebar-menu a {
+        padding: 0.6rem 1rem;
+      }
     }
 
     @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Hide off-screen by default */
+        z-index: 100;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+      }
+      .sidebar.active {
+        left: 0; /* Show when active */
+        box-shadow: 3px 0 15px rgba(0,0,0,0.2);
+      }
+      .content-wrapper {
+        margin-left: 0;
+        width: 100%;
+        padding: 70px 1rem 1rem;
+      }
       .menu-toggle {
         display: block;
       }
-      .sidebar {
-        transform: translateX(-100%);
+      .toggles {
+        flex-direction: row;
+        flex-wrap: wrap;
       }
-      .sidebar.active {
-        transform: translateX(0);
+      .toggle-btn {
+        flex: 1 0 45%; /* Two buttons per row */
+        margin-bottom: 10px;
+        text-align: center;
+        min-width: 120px;
       }
+      .page-title {
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+      .schedule-option {
+        padding: 1rem;
+      }
+      .schedule-option h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 576px) {
       .content-wrapper {
-        padding-top: 3.5rem;
+        padding: 70px 0.75rem 1rem;
+      }
+      .page-title {
+        font-size: 1.3rem;
+        padding: 0.8rem;
+      }
+      .toggle-btn {
+        flex: 1 0 100%; /* Full width for smallest screens */
+        min-width: 0;
+      }
+      .schedule-option {
+        padding: 0.8rem;
+      }
+      
+      /* Enhanced mobile table view */
+      .mobile-responsive-table {
+        border: 0;
+      }
+      
+      .mobile-responsive-table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+      
+      .mobile-responsive-table tr {
+        border-bottom: 3px solid var(--light-gray);
+        display: block;
+        margin-bottom: 1.5rem;
+      }
+      
+      .mobile-responsive-table td {
+        border-bottom: 1px solid var(--light-gray);
+        display: block;
+        font-size: 0.9rem;
+        text-align: right;
+        padding: 0.8rem;
+        position: relative;
+        padding-left: 40%;
+      }
+      
+      .mobile-responsive-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        width: 35%;
+      }
+      
+      .mobile-responsive-table td:last-child {
+        border-bottom: 0;
       }
     }
 
     @media print {
-      .toggles, .sidebar, .menu-toggle {
+      .toggles, .sidebar, .menu-toggle, .sidebar-overlay, .sidebar-close {
         display: none;
       }
       
@@ -261,12 +386,21 @@
       
       .content-wrapper {
         margin-left: 0;
+        padding: 1rem;
       }
       
       .schedule-option {
         box-shadow: none;
         margin-bottom: 20px;
         break-inside: avoid;
+        border: 1px solid #ddd;
+      }
+      
+      .page-title {
+        background-color: white;
+        color: black;
+        box-shadow: none;
+        border-bottom: 2px solid #ccc;
       }
     }
   </style>
@@ -278,10 +412,16 @@
     <i class="fas fa-bars"></i>
   </button>
   
+  <!-- Sidebar Overlay -->
+  <div class="sidebar-overlay" id="overlay"></div>
+  
   <!-- Sidebar -->
   <div class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <h2>Academic Portal</h2>
+      <button class="sidebar-close" id="closeSidebar">
+        <i class="fas fa-times"></i>
+      </button>
     </div>
     <ul class="sidebar-menu">
       <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Dashboard</a></li>
@@ -312,36 +452,38 @@
             <h3>Schedule Option {{ forloop.counter }}</h3>
             
             <!-- Course Details Table -->
-            <table class="course-table">
-              <thead>
-                <tr>
-                  <th>Course Code</th>
-                  <th>Course Name</th>
-                  <th>Section</th>
-                  <th>Instructor</th>
-                  <th>Class Times</th>
-                  <th>Exam Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for course in option %}
+            <div class="table-responsive">
+              <table class="course-table mobile-responsive-table">
+                <thead>
                   <tr>
-                    <td>{{ course.course_code }}</td>
-                    <td>{{ course.course_name }}</td>
-                    <td>{{ course.section }}</td>
-                    <td>{{ course.instructor }}</td>
-                    <td>
-                      {% for cls in course.classes %}
-                        {{ cls.day }}: {{ cls.time_from }} - {{ cls.time_to }} {{ cls.location }}
-                        {% if cls.class_type %}({{ cls.class_type }}){% endif %}
-                        {% if not forloop.last %}<br>{% endif %}
-                      {% endfor %}
-                    </td>
-                    <td>{{ course.exam_date }}</td>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Section</th>
+                    <th>Instructor</th>
+                    <th>Class Times</th>
+                    <th>Exam Date</th>
                   </tr>
-                {% endfor %}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {% for course in option %}
+                    <tr>
+                      <td data-label="Course Code">{{ course.course_code }}</td>
+                      <td data-label="Course Name">{{ course.course_name }}</td>
+                      <td data-label="Section">{{ course.section }}</td>
+                      <td data-label="Instructor">{{ course.instructor }}</td>
+                      <td data-label="Class Times">
+                        {% for cls in course.classes %}
+                          {{ cls.day }}: {{ cls.time_from }} - {{ cls.time_to }} {{ cls.location }}
+                          {% if cls.class_type %}({{ cls.class_type }}){% endif %}
+                          {% if not forloop.last %}<br>{% endif %}
+                        {% endfor %}
+                      </td>
+                      <td data-label="Exam Date">{{ course.exam_date }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
           </div>
         {% endfor %}
       {% else %}
@@ -354,8 +496,27 @@
   
   <script>
     // Mobile menu toggle
-    document.getElementById('menuToggle').addEventListener('click', function() {
-      document.getElementById('sidebar').classList.toggle('active');
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const closeSidebar = document.getElementById('closeSidebar');
+    
+    menuToggle.addEventListener('click', function() {
+      sidebar.classList.add('active');
+      overlay.classList.add('active');
+      closeSidebar.style.display = 'block';
+    });
+    
+    closeSidebar.addEventListener('click', function() {
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+      this.style.display = 'none';
+    });
+    
+    overlay.addEventListener('click', function() {
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+      closeSidebar.style.display = 'none';
     });
     
     // Schedule option toggle functions
@@ -388,6 +549,49 @@
     function printSchedules() {
       window.print();
     }
+    
+    // Enhance tables for better mobile experience
+    function enhanceTablesForMobile() {
+      const tables = document.querySelectorAll('table');
+      tables.forEach(function(table) {
+        // Get header text values
+        const headerTexts = [];
+        table.querySelectorAll('thead th').forEach(function(th) {
+          headerTexts.push(th.textContent.trim());
+        });
+        
+        // Add data-label attributes to table cells if they don't have them already
+        if (headerTexts.length > 0) {
+          table.querySelectorAll('tbody tr').forEach(function(row) {
+            row.querySelectorAll('td').forEach(function(cell, index) {
+              if (index < headerTexts.length && !cell.hasAttribute('data-label')) {
+                cell.setAttribute('data-label', headerTexts[index]);
+              }
+            });
+          });
+        }
+      });
+    }
+    
+    // Call the function to enhance tables
+    enhanceTablesForMobile();
+    
+    // Check if we're on mobile and adjust UI accordingly
+    function checkMobileView() {
+      if (window.innerWidth <= 576) {
+        document.querySelectorAll('.toggle-btn').forEach(btn => {
+          btn.classList.add('mobile-btn');
+        });
+      } else {
+        document.querySelectorAll('.toggle-btn').forEach(btn => {
+          btn.classList.remove('mobile-btn');
+        });
+      }
+    }
+    
+    // Run on load and resize
+    checkMobileView();
+    window.addEventListener('resize', checkMobileView);
   </script>
 </body>
 </html>
