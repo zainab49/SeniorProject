@@ -1,0 +1,191 @@
+<!-- 404 Error Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        /* Common styles for all error pages */
+        :root {
+            --primary-color: #3498db;
+            --error-color: #e74c3c;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .error-container {
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .error-404 .error-code {
+            color: var(--primary-color);
+        }
+        
+        .error-400 .error-code {
+            color: #f39c12;
+        }
+        
+        .error-500 .error-code {
+            color: var(--error-color);
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .error-action {
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .error-illustration {
+            margin: 2rem 0;
+            height: 180px;
+        }
+        
+        .error-illustration svg {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container error-404">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <div class="error-illustration">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#3498db" d="M40,90 C40,60 60,40 90,40 L110,40 C140,40 160,60 160,90 L160,110 C160,140 140,160 110,160 L90,160 C60,160 40,140 40,110 Z" opacity="0.2"/>
+                <circle cx="70" cy="80" r="5" fill="#333"/>
+                <circle cx="130" cy="80" r="5" fill="#333"/>
+                <path d="M70,120 Q100,100 130,120" fill="none" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                <path d="M50,50 L70,70 M150,50 L130,70" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <p class="error-message">The page you're looking for doesn't exist or has been moved.</p>
+        <div class="error-action">
+            <a href="/" class="btn">Go Home</a>
+        </div>
+    </div>
+
+    <script>
+        // You could add some JavaScript here for additional functionality
+        // For example, logging the error or offering alternative pages
+    </script>
+</body>
+</html>
+
+<!-- 400 Error Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>400 - Bad Request</title>
+    <style>
+        /* Styles already defined in the 404 page */
+    </style>
+</head>
+<body>
+    <div class="error-container error-400">
+        <div class="error-code">400</div>
+        <h1 class="error-title">Bad Request</h1>
+        <div class="error-illustration">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#f39c12" d="M40,90 C40,60 60,40 90,40 L110,40 C140,40 160,60 160,90 L160,110 C160,140 140,160 110,160 L90,160 C60,160 40,140 40,110 Z" opacity="0.2"/>
+                <circle cx="70" cy="80" r="5" fill="#333"/>
+                <circle cx="130" cy="80" r="5" fill="#333"/>
+                <path d="M70,120 L130,120" fill="none" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                <path d="M60,60 L80,60 M120,60 L140,60" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <p class="error-message">Your browser sent a request that this server could not understand.</p>
+        <div class="error-action">
+            <a href="/" class="btn">Go Home</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 500 Error Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Server Error</title>
+    <style>
+        /* Styles already defined in the 404 page */
+    </style>
+</head>
+<body>
+    <div class="error-container error-500">
+        <div class="error-code">500</div>
+        <h1 class="error-title">Server Error</h1>
+        <div class="error-illustration">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#e74c3c" d="M40,90 C40,60 60,40 90,40 L110,40 C140,40 160,60 160,90 L160,110 C160,140 140,160 110,160 L90,160 C60,160 40,140 40,110 Z" opacity="0.2"/>
+                <path d="M80,70 L120,130 M120,70 L80,130" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="100" cy="160" r="5" fill="#333"/>
+            </svg>
+        </div>
+        <p class="error-message">Sorry, something went wrong on our server. We're working to fix the issue.</p>
+        <div class="error-action">
+            <a href="/" class="btn">Refresh Page</a>
+        </div>
+    </div>
+</body> 
+</html>

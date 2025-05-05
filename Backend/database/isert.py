@@ -19,7 +19,7 @@ c = conn.cursor()
 # Check if Students table exists (critical for foreign key)
 c.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='Students'")
 if not c.fetchone():
-    print("❌ Missing Students table - create this first!")
+    print(" Missing Students table - create this first!")
     exit()
 
 # Rest of table creation code...
@@ -29,7 +29,7 @@ for file in files:
     print(f"\nProcessing: {resolved_path}")
     
     if not os.path.exists(resolved_path):
-        print(f"❌ File not found: {resolved_path}")
+        print(f" File not found: {resolved_path}")
         continue
 
     try:
