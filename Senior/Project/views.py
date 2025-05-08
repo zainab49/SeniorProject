@@ -8,6 +8,10 @@ import fnmatch
 from .ai_schedule import generate_course_schedule
 
 
+from django.shortcuts import render
+def crash_test(request):
+    raise Exception("Simulated server crash")
+
 
 # Login view
 def login_page(request):
