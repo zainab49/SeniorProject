@@ -421,23 +421,23 @@
             "major_gpa": "Yes"
           },
           {
-            "course_code": "ITCY 4XX",
-            "course_title": "ITCY Elective 1",
+            "course_code": "ITCY 494",
+            "course_title": "Cloud Security",
             "lecture_hours": 3,
             "practical_hours": 2,
             "credits": 3,
             "course_type": "ME",
-            "prerequisite": "As per ME list",
+            "prerequisite": "ITIS 252 & ITCY 351",
             "major_gpa": "Yes"
           },
           {
-            "course_code": "ITCY 4XX",
-            "course_title": "ITCY Elective 2",
+            "course_code": "ITCY 440",
+            "course_title": "Wireless Network Security",
             "lecture_hours": 3,
             "practical_hours": 2,
             "credits": 3,
             "course_type": "ME",
-            "prerequisite": "As per ME list",
+            "prerequisite": "ITNE 341",
             "major_gpa": "Yes"
           },
           {
@@ -483,18 +483,18 @@
             "major_gpa": "Yes"
           },
           {
-            "course_code": "ITCY 4XX",
-            "course_title": "ITCY Elective 3",
+            "course_code": "ITCY 432",
+            "course_title": "Internet of Things (IoT) Security",
             "lecture_hours": 3,
             "practical_hours": 2,
             "credits": 3,
             "course_type": "ME",
-            "prerequisite": "As per ME list",
+            "prerequisite": "ITNE 341",
             "major_gpa": "Yes"
           },
           {
-            "course_code": "ITCY 4XX",
-            "course_title": "ITCY Elective 4",
+            "course_code": "ITCY 490",
+            "course_title": "Selected Topics in Cybersecurity I",
             "lecture_hours": 3,
             "practical_hours": 2,
             "credits": 3,

@@ -22,10 +22,21 @@ def load_json(path):
         return {}
 
 # Helper: Flatten taken courses (past + current)
+
 def get_taken_courses(student):
-    completed = set(StudentCourse.objects.filter(student=student).values_list('course_code', flat=True))
+    low_grades = {"C", "C-", "D+", "D", "F"}
+    low_grade_courses = set()
+    
+    all_courses = StudentCourse.objects.filter(student=student)
+    completed = set()
     current = set(Enrollment.objects.filter(student=student).values_list('course_id', flat=True))
-    return completed.union(current)
+    
+    for course in all_courses:
+        completed.add(course.course_code)
+        if course.grade in low_grades:
+            low_grade_courses.add(course.course_code)
+    
+    return completed.union(current), low_grade_courses
 
 # Helper: Parse time string to minutes since midnight for easier comparison
 def time_to_minutes(time_str):
@@ -168,11 +179,21 @@ def has_conflict(existing_sections, new_section):
 def get_plan_filename(major):
     major = major.strip().lower()
     if "cybersecurity" in major:
-        return "Cy-2021.json"
+        if "2021" in major:
+            return "Cy-2021.json"
+        else:
+            # Try other possible cybersecurity plan files
+            return "Cy-2021.json"  # Default to 2021 version
     elif "network engineering" in major:
-        return "NE-2017.json"
+        if "2017" in major:
+            return "NE-2017.json"
+        else:
+            return "NE-2017.json"  # Default to 2017 version
     elif "software engineering" in major:
-        return "SE-2024.json"
+        if "2024" in major:
+            return "SE-2024.json"
+        else:
+            return "SE-2024.json"  # Default to 2024 version
     else:
         # Default to SE if unknown major
         print(f"Unknown major: {major}, defaulting to Software Engineering plan")
@@ -207,14 +228,68 @@ def analyze_student_performance(student):
     
     return strengths
 
+# Helper: Check if a course is an internship course
+def is_internship_course(course_name, course_code):
+    """Check if a course is an internship-related course."""
+    # Check course name for internship keywords
+    internship_keywords = ['internship', 'practicum', 'field placement', 'co-op', 'cooperative education']
+    
+    # Check if any keyword appears in the course name (case-insensitive)
+    if course_name and any(keyword.lower() in course_name.lower() for keyword in internship_keywords):
+        return True
+    
+    # Also check course code for common internship course codes (e.g. INTP, INT)
+    internship_codes = ['INTP', 'INT ', 'PRAC', 'COOP']
+    if course_code and any(code in course_code for code in internship_codes):
+        return True
+    
+    return False
+
+# Helper: Check if prerequisites are met for a course
+def are_prerequisites_met(course_code, prereq_str, taken_courses):
+    """Advanced prerequisite checking that handles multiple prerequsite formats."""
+    if not prereq_str or prereq_str == '---':
+        return True  # No prerequisites
+        
+    # Normalize course codes by removing spaces
+    taken_normalized = {course.replace(" ", "") for course in taken_courses}
+    
+    # Handle comma-separated format (e.g., "COURSE1, COURSE2")
+    if ',' in prereq_str:
+        prereq_list = [p.strip().replace(" ", "") for p in prereq_str.split(',')]
+        # Check if any prereq is met (OR relationship)
+        return any(prereq in taken_normalized for prereq in prereq_list)
+    
+    # Handle AND operator
+    elif ' AND ' in prereq_str.upper():
+        prereq_parts = [p.strip().replace(" ", "") for p in prereq_str.upper().split(' AND ')]
+        # Check if all prerequs are met (AND relationship)
+        return all(prereq in taken_normalized for prereq in prereq_parts)
+    
+    # Handle OR operator
+    elif ' OR ' in prereq_str.upper():
+        prereq_parts = [p.strip().replace(" ", "") for p in prereq_str.upper().split(' OR ')]
+        # Check if any prereq is met (OR relationship)
+        return any(prereq in taken_normalized for prereq in prereq_parts)
+    
+    # Simple single prerequisite
+    return prereq_str.replace(" ", "") in taken_normalized
+
 # Helper: Calculate a score for an individual course
-def calculate_individual_course_score(course, student_strengths):
+def calculate_individual_course_score(course, student_strengths, is_in_academic_plan):
     """Calculate priority score for a single course."""
     score = 0
 
     # Major courses get high priority
     if course.get('is_major', False):
         score += 30
+    
+    # Courses in academic plan get extra priority
+    if is_in_academic_plan:
+        score += 40
+    else:
+        # Significant penalty for courses not in academic plan
+        score -= 50
 
     # Higher credit courses get priority
     score += course.get('credits', 3) * 5
@@ -320,22 +395,172 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
 
     major_file = os.path.join(plan_dir, plan_filename)
     plan_data = load_json(major_file)
-    academic_plan = plan_data.get('program', {}).get('study_plan', {})
-
+    
+    # Print actual plan data for debugging
+    print(f"Plan data keys: {list(plan_data.keys() if isinstance(plan_data, dict) else ['<not a dict>'])}")
+    
+    # Try different possible structures for academic plan
+    academic_plan = None
+    
+    # Option 1: Standard structure from original code
+    if 'program' in plan_data and 'study_plan' in plan_data.get('program', {}):
+        academic_plan = plan_data.get('program', {}).get('study_plan', {})
+    # Option 2: Direct study_plan at root
+    elif 'study_plan' in plan_data:
+        academic_plan = plan_data.get('study_plan', {})
+    # Option 3: Courses are in a 'courses' field
+    elif 'courses' in plan_data:
+        academic_plan = plan_data.get('courses', {})
+    # Option 4: Look for any field that might contain course data
+    else:
+        # Try to find any key that might contain a list of courses or structured data
+        for key, value in plan_data.items() if isinstance(plan_data, dict) else []:
+            if isinstance(value, (dict, list)) and key not in ['metadata', 'version', 'info']:
+                academic_plan = value
+                break
+        # If still not found, use plan data itself
+        if not academic_plan:
+            academic_plan = plan_data
+    
     if not academic_plan:
         print(f"No study plan found in {major_file}")
-        return [], []
+        return []  # Return single empty list instead of tuple
+        
+    print(f"Academic plan structure type: {type(academic_plan)}")
 
-    # Flatten all courses from the academic plan
+    # Flatten all courses from the academic plan and create a set of course codes for quick lookup
     all_plan_courses = []
-    for year in academic_plan.values():
-        for semester_courses in year.values():
-            all_plan_courses.extend(semester_courses)
+    plan_course_codes = set()
+    
+    # Debug info
+    if isinstance(academic_plan, dict):
+        print(f"Academic plan keys: {list(academic_plan.keys())}")
+    
+    # Handle different possible structures of academic_plan
+    try:
+        # Structure option 1: dictionary with years as keys and dictionaries as values
+        if isinstance(academic_plan, dict):
+            for year_key, year in academic_plan.items():
+                print(f"Examining year '{year_key}', type: {type(year)}")
+                
+                # Each year could be a dict with semesters as keys
+                if isinstance(year, dict):
+                    for sem_key, semester_courses in year.items():
+                        print(f"  Examining semester '{sem_key}', type: {type(semester_courses)}")
+                        if isinstance(semester_courses, list):
+                            all_plan_courses.extend(semester_courses)
+                            # Add normalized course codes (without spaces) to the set for quick lookup
+                            for course in semester_courses:
+                                if isinstance(course, dict) and 'course_code' in course:
+                                    plan_course_codes.add(course['course_code'].replace(" ", ""))
+                                    print(f"    Added course: {course['course_code']}")
+                # Or year could be a list of courses directly
+                elif isinstance(year, list):
+                    all_plan_courses.extend(year)
+                    for course in year:
+                        if isinstance(course, dict) and 'course_code' in course:
+                            plan_course_codes.add(course['course_code'].replace(" ", ""))
+                            print(f"    Added course: {course['course_code']}")
+                            
+        # Structure option 2: list of courses directly in academic_plan
+        elif isinstance(academic_plan, list):
+            all_plan_courses.extend(academic_plan)
+            for course in academic_plan:
+                if isinstance(course, dict) and 'course_code' in course:
+                    plan_course_codes.add(course['course_code'].replace(" ", ""))
+                    print(f"    Added course: {course['course_code']}")
+                    
+        # Special case: maybe the plan is a single dictionary containing all courses with codes as keys
+        if isinstance(academic_plan, dict) and len(plan_course_codes) == 0:
+            for key, value in academic_plan.items():
+                if isinstance(value, dict) and 'course_code' in value:
+                    all_plan_courses.append(value)
+                    plan_course_codes.add(value['course_code'].replace(" ", ""))
+                    print(f"    Added course via direct lookup: {value['course_code']}")
+                # The key itself might be a course code
+                elif isinstance(value, dict):
+                    # Create a synthetic course entry
+                    synthetic_course = value.copy()
+                    synthetic_course['course_code'] = key
+                    all_plan_courses.append(synthetic_course)
+                    plan_course_codes.add(key.replace(" ", ""))
+                    print(f"    Added course using key as code: {key}")
+                            
+    except Exception as e:
+        print(f"Error parsing academic plan: {str(e)}")
+        print(f"Academic plan structure: {type(academic_plan)}")
+        # Fallback: try to extract courses from any recognizable structure
+        try:
+            for item in academic_plan:
+                if isinstance(item, dict) and 'course_code' in item:
+                    all_plan_courses.append(item)
+                    plan_course_codes.add(item['course_code'].replace(" ", ""))
+                    print(f"    Added course in fallback mode: {item['course_code']}")
+        except Exception as e2:
+            print(f"Fallback extraction also failed: {str(e2)}")
+    
+    # Final fallback: if we still have no courses, look for any course-like structures 
+    # in the entire plan data recursively
+    if len(plan_course_codes) == 0:
+        print("No courses found using standard methods. Performing deep search...")
+        
+        def find_courses_recursive(data, depth=0, max_depth=3):
+            if depth > max_depth:
+                return []
+                
+            found_courses = []
+            
+            if isinstance(data, dict):
+                # Check if this dict looks like a course
+                if 'course_code' in data and isinstance(data['course_code'], str):
+                    found_courses.append(data)
+                    return found_courses
+                
+                # Otherwise search all its values
+                for key, value in data.items():
+                    # If key looks like a course code and value is a dict, treat it as a course
+                    if isinstance(key, str) and isinstance(value, dict):
+                        if re.match(r'[A-Z]{2,4}\s*\d{3,4}', key):
+                            course_data = value.copy()
+                            course_data['course_code'] = key
+                            found_courses.append(course_data)
+                    
+                    # Recursively search values
+                    found_courses.extend(find_courses_recursive(value, depth + 1, max_depth))
+                    
+            elif isinstance(data, list):
+                for item in data:
+                    found_courses.extend(find_courses_recursive(item, depth + 1, max_depth))
+            
+            return found_courses
+        
+        try:
+            import re
+            deep_found_courses = find_courses_recursive(plan_data)
+            
+            # Add any found courses
+            for course in deep_found_courses:
+                if 'course_code' in course:
+                    all_plan_courses.append(course)
+                    plan_course_codes.add(course['course_code'].replace(" ", ""))
+                    print(f"    Deep search found course: {course['course_code']}")
+        except Exception as e:
+            print(f"Deep search failed: {str(e)}")
+    
+    
+    # If no courses in plan were found, we might need to just allow all courses
+    if len(plan_course_codes) == 0:
+        print("WARNING: No courses found in academic plan. Using fallback mode to accept all courses.")
+        allow_all_courses = True
+    else:
+        allow_all_courses = False
+        
+    print(f"Found {len(plan_course_codes)} courses in academic plan")
 
-    taken = get_taken_courses(student)
+    taken, low_grades = get_taken_courses(student)
     print(f"Student has completed {len(taken)} courses")
 
-    # Load all course schedule files (both S and F semesters)
+    # Load ONLY Spring semester course schedule files (ending with S.json)
     # Group sections by course code
     course_sections = defaultdict(list)  # key: course_code, value: list of sections
     
@@ -344,7 +569,8 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
     total_courses = 0
     
     for file in os.listdir(schedule_dir):
-        if file.endswith('S.json') or file.endswith('F.json'):
+        # Only process Spring semester files
+        if file.endswith('S.json'):
             file_path = os.path.join(schedule_dir, file)
             try:
                 # Just check file size and get a count without full parsing
@@ -367,7 +593,8 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
     
     # Now process files with their allocated course counts
     for file in os.listdir(schedule_dir):
-        if file.endswith('S.json') or file.endswith('F.json'):
+        # Only process Spring semester files
+        if file.endswith('S.json'):
             file_path = os.path.join(schedule_dir, file)
             data = load_json(file_path)
 
@@ -384,41 +611,42 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
                     continue
 
                 course_code = course.get('course_code', '').strip()
+                course_name = course.get('course_name', '')
                 
-                # Skip if this course has already been taken
-                if course_code in taken:
+                # Skip if this course has already been taken and not failed
+                if course_code in taken and course_code not in low_grades:
+
+                    continue
+                
+                # Skip internship courses
+                if is_internship_course(course_name, course_code):
+                    continue
+                
+                # Check if course is in academic plan by comparing normalized codes
+                normalized_code = course_code.replace(" ", "")
+                is_in_plan = normalized_code in plan_course_codes
+                
+                # Skip courses that are not in the academic plan
+                if not is_in_plan and not allow_all_courses:
                     continue
 
                 # Find matching course in academic plan
                 plan_course = None
                 for pc in all_plan_courses:
                     pc_code = pc.get('course_code', '').replace(" ", "")
-                    if pc_code == course_code.replace(" ", ""):
+                    if pc_code == normalized_code:
                         plan_course = pc
                         break
 
-                # If no matching course in plan, still consider it (might be an elective)
+                # If no matching course in plan, skip it (shouldn't happen with the previous check)
                 if not plan_course:
-                    # Construct a default plan course
-                    plan_course = {
-                        'course_code': course_code,
-                        'credits': 3,
-                        'course_type': 'EL',  # Mark as elective
-                        'prerequisite': course.get('prerequisites', '')
-                    }
+                    continue
 
-                # Check prerequisites if defined in the course
+                # Check prerequisites
                 prereq = plan_course.get('prerequisite', course.get('prerequisites', '')).strip()
-
-                prereq_met = True
-                if prereq and prereq != '---':
-                    if ',' in prereq:
-                        # Handle multiple prerequisites (need at least one)
-                        prereq_list = [p.strip() for p in prereq.split(',')]
-                        if not any(p in taken for p in prereq_list):
-                            prereq_met = False
-                    elif prereq not in taken:
-                        prereq_met = False
+                
+                # Use the enhanced prerequisite check
+                prereq_met = are_prerequisites_met(course_code, prereq, taken)
                 
                 if not prereq_met:
                     continue
@@ -431,7 +659,7 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
 
                     section_data = {
                         'course_code': course_code,
-                        'course_name': course.get('course_name', ''),
+                        'course_name': course_name,
                         'section': section.get('section_number', ''),
                         'instructor': section.get('instructor', ''),
                         'exam_date': course.get('exam_date', ''),
@@ -441,7 +669,8 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
                         'credits': plan_course.get('credits', 3),
                         'prerequisite': prereq,
                         'is_major': 'MR' in plan_course.get('course_type', ''),
-                        'semester': file.replace('.json', '')
+                        'semester': file.replace('.json', ''),
+                        'is_in_plan': is_in_plan
                     }
                     
                     # Group by course code
@@ -457,7 +686,8 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
         course_scores = []
         for course_code in unique_courses:
             first_section = course_sections[course_code][0]  # Use first section for scoring
-            score = calculate_individual_course_score(first_section, student_strengths)
+            is_in_plan = first_section.get('is_in_plan', False)
+            score = calculate_individual_course_score(first_section, student_strengths, is_in_plan)
             course_scores.append((course_code, score))
         
         # Sort by score (descending)
@@ -474,11 +704,11 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
     
     if not unique_courses:
         print("No valid courses found")
-        return [], []
+        return []  # Return a single empty list instead of tuple
 
     # Generate multiple schedules (3 total)
     schedules = []
-    min_diversity_threshold = 50  # At least 50% different courses between schedules
+    min_diversity_threshold = 100  # At least 50% different courses between schedules
     
     # Target exactly 4 different courses for each schedule
     target_course_count = 4
@@ -490,7 +720,7 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
     
     # Number of schedules to generate
     num_schedules = 3
-    max_attempts = 100  # Maximum number of attempts to find diverse schedules
+    max_attempts = 200  # Maximum number of attempts to find diverse schedules
     
     # Function to generate one schedule
     def generate_single_schedule(excluded_courses=None):
@@ -502,7 +732,7 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
             return None
             
         # Cap the number of combinations to try
-        max_course_combinations = 300
+        max_course_combinations = 400
         
         # Generate course combinations (not section combinations yet)
         all_course_combos = list(combinations(available_courses, target_course_count))
@@ -531,8 +761,11 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
             for sections in section_options:
                 if len(sections) > MAX_SECTIONS_PER_COURSE:
                     # Score each section
-                    section_scores = [(section, calculate_individual_course_score(section, student_strengths)) 
-                                    for section in sections]
+                    section_scores = [(section, calculate_individual_course_score(
+                        section, 
+                        student_strengths, 
+                        section.get('is_in_plan', False)
+                    )) for section in sections]
                     # Take the top sections by score
                     section_scores.sort(key=lambda x: x[1], reverse=True)
                     limited_section_options.append([s for s, _ in section_scores[:MAX_SECTIONS_PER_COURSE]])
@@ -588,7 +821,8 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
             course_scores = []
             for course_code in available_courses:
                 first_section = course_sections[course_code][0]  # Use first section for scoring
-                score = calculate_individual_course_score(first_section, student_strengths)
+                is_in_plan = first_section.get('is_in_plan', False)
+                score = calculate_individual_course_score(first_section, student_strengths, is_in_plan)
                 course_scores.append((course_code, score))
             
             # Sort by score (descending)
@@ -632,9 +866,16 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
             # Score all courses
             for course_code in available_courses:
                 # Find best section for each course
-                best_section = max(course_sections[course_code], 
-                                  key=lambda s: calculate_individual_course_score(s, student_strengths))
-                score = calculate_individual_course_score(best_section, student_strengths)
+                best_section = max(
+                    course_sections[course_code], 
+                    key=lambda s: calculate_individual_course_score(
+                        s, 
+                        student_strengths, 
+                        s.get('is_in_plan', False)
+                    )
+                )
+                is_in_plan = best_section.get('is_in_plan', False)
+                score = calculate_individual_course_score(best_section, student_strengths, is_in_plan)
                 course_scores.append((best_section, score))
             
             # Take top courses
@@ -733,7 +974,7 @@ def generate_course_schedule(student, schedule_dir, plan_dir):
             print(f"Generated schedule {len(schedules)} with {len(next_schedule)} courses (random approach)")
     
     # Return the generated schedules
-    return schedules
+    return schedules  # Return single list instead of tuple
 
 # Helper: Format schedule as HTML table
 def format_schedule_as_table(schedule, option_number):

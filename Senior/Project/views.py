@@ -13,6 +13,7 @@ def crash_test(request):
     raise Exception("Simulated server crash")
 
 
+
 # Login view
 def login_page(request):
     if request.method == 'POST':
@@ -152,6 +153,42 @@ def home_page(request):
     })
 #------------------------------------------------------------------------------------------------------------
 # GPA Calculator page view
+
+def calculate_and_update_gpa(student):
+    """
+    Calculates and updates the student's CGPA and MGPA in the database
+    """
+    # Get all completed courses
+    student_courses = StudentCourse.objects.filter(student=student)
+    
+    # Calculate CGPA (all courses)
+    total_points = 0
+    total_credits = 0
+    major_points = 0
+    major_credits = 0
+    
+    for course in student_courses:
+        grade_value = GRADE_MAP.get(course.grade, 0)
+        if grade_value is not None:
+            total_points += grade_value * course.credits
+            total_credits += course.credits
+            
+            if course.is_major_course:
+                major_points += grade_value * course.credits
+                major_credits += course.credits
+    
+    # Calculate GPAs
+    cgpa = round(total_points / total_credits, 2) if total_credits else 0.0
+    mgpa = round(major_points / major_credits, 2) if major_credits else 0.0
+    
+    # Update student record
+    student.CGPA = cgpa
+    student.MGPA = mgpa
+    student.save()
+    
+    return cgpa, mgpa
+
+    
 GRADE_MAP = {
     "A": 4.00, "A-": 3.67, "B+": 3.33, "B": 3.00, "B-": 2.67,
     "C+": 2.33, "C": 2.00, "C-": 1.67, "D+": 1.33, "D": 1.00, "F": 0.00

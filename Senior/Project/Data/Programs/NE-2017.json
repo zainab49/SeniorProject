@@ -474,8 +474,8 @@
             "major_gpa": "Yes"
           },
           {
-            "course_code": "ITNE XXX",
-            "course_title": "ITNE Major Elective From List 1",
+            "course_code": "ITIS 321",
+            "course_title": "Entrepreneurship & Digital Innovation",
             "lecture_hours": "X",
             "practical_hours": "X",
             "credits": 3,
@@ -484,8 +484,8 @@
             "major_gpa": "Yes"
           },
           {
-            "course_code": "ITNE XXX",
-            "course_title": "ITNE Major Elective From List 1",
+            "course_code": "ITNE 490",
+            "course_title": "Multimedia Communications",
             "lecture_hours": "X",
             "practical_hours": "X",
             "credits": 3,
@@ -536,8 +536,8 @@
             "major_gpa": "Yes"
           },
           {
-            "course_code": "ITNE XXX",
-            "course_title": "ITNE Elective From List 1",
+            "course_code": "ITNE 419",
+            "course_title": "Wireless Sensor Networks",
             "lecture_hours": 3,
             "practical_hours": 2,
             "credits": 3,
@@ -546,8 +546,8 @@
             "major_gpa": "Yes"
           },
           {
-            "course_code": "ITNE XXX",
-            "course_title": "ITNE Elective From List 1",
+            "course_code": "ITNE 492",
+            "course_title": "Selected Topics in Network Engineering 1",
             "lecture_hours": 3,
             "practical_hours": 2,
             "credits": 3,
