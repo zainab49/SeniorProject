@@ -195,7 +195,6 @@ GRADE_MAP = {
 }
 
 def gpa_calculator_page(request):
-    calculate_and_update_gpa(student)
     student_id = request.session.get('student_id')
     if not student_id:
         return redirect('login')
@@ -209,65 +208,54 @@ def gpa_calculator_page(request):
 
     if request.method == 'POST':
         grades = request.POST.getlist('grade')
+        credits = request.POST.getlist('credit')
+        majors = request.POST.getlist('major')
 
-        # Calculate SGPA (from Enrollment using user-selected grades)
         sgpa_points = 0
         sgpa_credits = 0
+        total_points = 0
+        total_credits = 0
+        major_points = 0
+        major_credits = 0
 
-        for i, enrollment in enumerate(enrollments):
-            grade = grades[i]
+        for grade, credit, major in zip(grades, credits, majors):
+            try:
+                credit = int(credit)
+            except ValueError:
+                continue  # Skip invalid inputs
+
+            is_major = major == '1'
             gpa_value = GRADE_MAP.get(grade)
+
             if gpa_value is None:
                 continue
 
-            credit = enrollment.Credits
+            # SGPA (just this semester)
             sgpa_points += gpa_value * credit
             sgpa_credits += credit
 
-        sgpa = round(sgpa_points / sgpa_credits, 2) if sgpa_credits else 0.0
+            # CGPA
+            total_points += gpa_value * credit
+            total_credits += credit
 
-        # Calculate CGPA (including completed + current courses)
-        total_points = 0
-        total_credits = 0
+            # MGPA
+            if is_major:
+                major_points += gpa_value * credit
+                major_credits += credit
 
-        # From completed courses
+        # Add completed courses from DB
         for course in student_courses:
             gpa_value = GRADE_MAP.get(course.grade)
             if gpa_value is not None:
                 total_points += gpa_value * course.credits
                 total_credits += course.credits
-
-        # From current enrollments
-        for i, enrollment in enumerate(enrollments):
-            grade = grades[i]
-            gpa_value = GRADE_MAP.get(grade)
-            if gpa_value is not None:
-                total_points += gpa_value * enrollment.Credits
-                total_credits += enrollment.Credits
-
-        cgpa = round(total_points / total_credits, 2) if total_credits else 0.0
-
-        # Calculate MGPA (including completed + current major courses)
-        major_points = 0
-        major_credits = 0
-
-        # From completed major courses
-        for course in student_courses:
-            if course.is_major_course:
-                gpa_value = GRADE_MAP.get(course.grade)
-                if gpa_value is not None:
+                if course.is_major_course:
                     major_points += gpa_value * course.credits
                     major_credits += course.credits
 
-        # From current major courses
-        for i, enrollment in enumerate(enrollments):
-            if enrollment.is_major_course:
-                grade = grades[i]
-                gpa_value = GRADE_MAP.get(grade)
-                if gpa_value is not None:
-                    major_points += gpa_value * enrollment.Credits
-                    major_credits += enrollment.Credits
-
+        # Final GPA calculations
+        sgpa = round(sgpa_points / sgpa_credits, 2) if sgpa_credits else 0.0
+        cgpa = round(total_points / total_credits, 2) if total_credits else 0.0
         mgpa = round(major_points / major_credits, 2) if major_credits else 0.0
 
         return render(request, 'Project/gpa_calculator.html', {
