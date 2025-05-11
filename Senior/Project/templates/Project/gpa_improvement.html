@@ -841,6 +841,224 @@
         font-size: 16px; /* Prevents zoom on iOS */
       }
     }
+    /* Enhanced AI Academic Advisor Section */
+.advisor-section {
+  margin-bottom: 32px;
+}
+
+.advisor-container {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* Improved advisor avatar */
+.advisor-avatar {
+  flex: 0 0 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border: 3px solid var(--white);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advisor-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Enhanced advisor content area */
+.advisor-content {
+  flex: 1;
+  background: linear-gradient(to bottom, white, rgba(245, 235, 224, 0.2));
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  position: relative;
+  border: 1px solid rgba(213, 189, 175, 0.3);
+}
+
+/* Improved speech bubble pointer */
+.advisor-content::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid white;
+  filter: drop-shadow(-3px 2px 2px rgba(0,0,0,0.05));
+}
+
+/* Enhanced greeting */
+.advisor-greeting {
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--color-heading);
+  font-size: 1.3rem;
+  border-bottom: 2px dashed var(--primary-light);
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* Adding a decoration to the greeting */
+.advisor-greeting::after {
+  content: "🤖";
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 1.4rem;
+}
+
+/* Improved message content */
+.advisor-messages {
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.advisor-message {
+  margin-bottom: 18px;
+}
+
+.advisor-message p {
+  margin-bottom: 12px;
+}
+
+.advisor-message p strong {
+  color: var(--dark);
+  background-color: rgba(213, 189, 175, 0.2);
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.advisor-message ul {
+  margin-left: 24px;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+.advisor-message li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.advisor-message li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.advisor-message li strong {
+  color: var(--dark);
+}
+
+/* Highlight box for advice */
+.advisor-highlight {
+  background-color: rgba(195, 169, 149, 0.1);
+  border-left: 4px solid var(--primary);
+  padding: 15px;
+  margin: 18px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.advisor-highlight strong {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+/* Action buttons */
+.advisor-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.advisor-btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.advisor-btn:hover {
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.advisor-btn-secondary {
+  background-color: transparent;
+  color: var(--dark);
+  border: 1px solid var(--primary);
+}
+
+.advisor-btn-secondary:hover {
+  background-color: var(--primary-light);
+  color: var(--dark);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .advisor-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .advisor-content::before {
+    display: none;
+  }
+  
+  .advisor-avatar {
+    margin-bottom: 0;
+  }
+  
+  .advisor-actions {
+    flex-direction: column;
+  }
+  
+  .advisor-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .advisor-greeting {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .advisor-greeting::after {
+    position: static;
+    margin-left: 5px;
+  }
+  
+  .advisor-content {
+    padding: 18px;
+  }
+}
 
     /* Print styles */
     @media print {
@@ -859,6 +1077,135 @@
         border: 1px solid #ddd;
       }
     }
+
+    /* Chat Container Styling */
+  .styled-chat-container {
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f9f4ef;
+    border-radius: 10px;
+    border: 1px solid var(--primary-light);
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.03);
+    margin-bottom: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) #f1f1f1;
+  }
+  
+  /* Styling the scrollbar for WebKit browsers */
+  .styled-chat-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .styled-chat-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .styled-chat-container::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+  }
+  
+  /* Message Styling */
+  .chat-message {
+    padding: 12px 16px;
+    border-radius: 18px;
+    margin-bottom: 12px;
+    max-width: 85%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    line-height: 1.5;
+    position: relative;
+    word-wrap: break-word;
+  }
+  
+  /* Advisor Message Styling */
+  .chat-message.advisor {
+    background-color: white;
+    border-top-left-radius: 4px;
+    align-self: flex-start;
+    margin-right: auto;
+    border-left: 3px solid var(--primary);
+  }
+  
+  /* Student Message Styling */
+  .chat-message.student {
+    background-color: var(--primary-light);
+    border-top-right-radius: 4px;
+    align-self: flex-end;
+    margin-left: auto;
+    text-align: right;
+    border-right: 3px solid var(--secondary);
+  }
+  
+  /* Chat Input Wrapper */
+  .styled-chat-input-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0 5px;
+  }
+  
+  /* Chat Input Field */
+  .styled-chat-input {
+    flex: 1;
+    padding: 12px 18px;
+    border: 2px solid var(--primary-light);
+    border-radius: 25px;
+    font-size: 0.95rem;
+    background-color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  }
+  
+  .styled-chat-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(213, 189, 175, 0.2);
+  }
+  
+  /* Send Button */
+  .styled-chat-btn {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .styled-chat-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  }
+  
+  .styled-chat-btn:active {
+    transform: translateY(1px);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 576px) {
+    .chat-message {
+      max-width: 90%;
+    }
+    
+    .styled-chat-input {
+      padding: 10px 15px;
+    }
+    
+    .styled-chat-btn {
+      padding: 0 20px;
+      font-size: 0.9rem;
+    }
+  }
   </style>
 </head>
 <body>
@@ -980,70 +1327,31 @@
               <div class="advisor-greeting">Hello, {{ student.student_name }}!</div>
               <div class="advisor-messages">
                 <div class="advisor-message">
-                  {% if student.CGPA >= 3.5 %}
-                    <p>Congratulations on your outstanding academic performance! With a CGPA of {{ student.CGPA }}, you're demonstrating excellent work in your studies.</p>
-                    <p>Looking at your course history, I've noticed these strengths:</p>
-                    <ul>
-                      {% for strength in strengths %}
-                        <li>{{ strength }}</li>
-                      {% endfor %}
-                    </ul>
-                    <p>To maintain your excellent standing, consider:</p>
-                    <ul>
-                      <li>Maintaining your consistent study habits</li>
-                      <li>Exploring more advanced topics in your strongest subjects</li>
-                      <li>Considering research opportunities with faculty</li>
-                    </ul>
-                  {% elif student.CGPA >= 3.0 %}
-                    <p>You're doing very well with your CGPA of {{ student.CGPA }}! You're on a good path academically.</p>
-                    <p>Based on your course history, here are your strengths and areas for improvement:</p>
-                    <ul>
-                      {% for strength in strengths %}
-                        <li>Strength: {{ strength }}</li>
-                      {% endfor %}
-                      {% for improvement in improvements %}
-                        <li>Area to improve: {{ improvement }}</li>
-                      {% endfor %}
-                    </ul>
-                    <p>To further enhance your GPA, I recommend:</p>
-                    <ul>
-                      <li>Focusing additional study time on your weaker subjects</li>
-                      <li>Forming study groups for challenging courses</li>
-                      <li>Utilizing office hours for courses where you scored lower</li>
-                    </ul>
-                  {% elif student.CGPA >= 2.0 %}
-                    <p>With a CGPA of {{ student.CGPA }}, you're in good academic standing, but there's room for improvement to reach your full potential.</p>
-                    <p>After analyzing your course performance, I've identified these areas that need attention:</p>
-                    <ul>
-                      {% for improvement in improvements %}
-                        <li>{{ improvement }}</li>
-                      {% endfor %}
-                    </ul>
-                    <p>Here are some strategies to help boost your GPA:</p>
-                    <ul>
-                      <li>Creating a structured study schedule with more time allocated to challenging subjects</li>
-                      <li>Seeking tutoring for courses where you've struggled</li>
-                      <li>Improving your note-taking and exam preparation techniques</li>
-                      <li>Meeting with academic advisors to discuss course selection strategies</li>
-                    </ul>
-                  {% else %}
-                    <p>I see that your current CGPA is {{ student.CGPA }}, which puts you on academic probation. Let's work together to improve your academic standing.</p>
-                    <p>Looking at your course history, these are the critical areas that need immediate attention:</p>
-                    <ul>
-                      {% for improvement in improvements %}
-                        <li>{{ improvement }}</li>
-                      {% endfor %}
-                    </ul>
-                    <p>I recommend these urgent actions to improve your standing:</p>
-                    <ul>
-                      <li>Meeting with your academic advisor immediately to create a recovery plan</li>
-                      <li>Reducing your course load next semester to focus on fewer subjects</li>
-                      <li>Registering for the university's academic success program</li>
-                      <li>Using the tutoring center regularly for all courses</li>
-                      <li>Developing better time management and study habits</li>
-                    </ul>
-                  {% endif %}
+                  <p>To reach your target CGPA of <strong>{{ target_cgpa }}</strong>, you need to perform well in your current courses this semester.</p>
+      
+                  <p>Here's what you need to achieve in each course:</p>
+                  <ul>
+                    {% for enrollment in current_courses %}
+                      <li><strong>{{ enrollment.course_id }} - {{ enrollment.course_name }}:</strong> At least a <strong>{{ enrollment.min_grade }}</strong> grade is needed.</li>
+                    {% endfor %}
+                  </ul>
+                  
+                  <div class="advisor-highlight">
+                    {% if average_gpa_needed >= 3.5 %}
+                      <p><strong>Advice:</strong> You need a very high performance this semester (average GPA {{ average_gpa_needed|floatformat:2 }}). Focus intensely on all subjects. Consider reducing distractions, attending all office hours, and possibly getting tutoring.</p>
+                    {% elif average_gpa_needed >= 3.0 %}
+                      <p><strong>Advice:</strong> You're expected to aim for mostly A and B grades (average GPA {{ average_gpa_needed|floatformat:2 }}). Stay consistent and put extra effort into weaker areas.</p>
+                    {% elif average_gpa_needed >= 2.5 %}
+                      <p><strong>Advice:</strong> A good performance will get you there (average GPA {{ average_gpa_needed|floatformat:2 }}). Focus on improving in subjects you struggled with before.</p>
+                    {% else %}
+                      <p><strong>Advice:</strong> Your target is within easy reach (average GPA {{ average_gpa_needed|floatformat:2 }}). Maintain steady performance and avoid failing grades.</p>
+                    {% endif %}
+                  </div>
                 </div>
+              </div>
+              
+              <div class="advisor-actions">
+                
               </div>
             </div>
           </div>
@@ -1136,9 +1444,7 @@
       <!-- Action Plan Section -->
       <div class="action-plan-section">
         <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">Your GPA Improvement Plan</h2>
-          </div>
+          
           
           <div class="action-plan-list">
             {% for action in action_plan %}
@@ -1202,9 +1508,7 @@
               <h3 class="resource-title">Faculty Office Hours</h3>
               <div class="resource-description">
                 Meet with your professors during office hours to get clarification and additional help.
-              </div>
-              <a href="#" class="resource-link">Find Office Hours →</a>
-            </div>
+              
           </div>
         </div>
       </div>
@@ -1212,27 +1516,18 @@
       <!-- Ask AI Advisor Form -->
       <div class="card">
         <div class="card-header">
-          <h2 class="card-title">Ask Your AI Advisor</h2>
+          <h2 class="card-title">Chat with Your AI Advisor</h2>
         </div>
         
-        <div class="query-form">
-          <div class="form-group">
-            <label for="queryType" class="form-label">What would you like help with?</label>
-            <select id="queryType" class="form-control">
-              <option value="study">Study strategies for specific courses</option>
-              <option value="time">Time management techniques</option>
-              <option value="gpa">How to improve my GPA this semester</option>
-              <option value="resources">Finding resources for difficult subjects</option>
-              <option value="other">Other question</option>
-            </select>
-          </div>
-          
-          <div class="form-group">
-            <label for="queryDetails" class="form-label">Your Question</label>
-            <textarea id="queryDetails" class="form-control" placeholder="Enter your specific question or provide details..."></textarea>
-          </div>
-          
-          <button type="button" class="btn" id="submitQuery">Get Personalized Advice</button>
+        <!-- Chat Messages - Keeping the original structure but adding styling -->
+        <div id="chatContainer" class="styled-chat-container">
+          <div class="chat-message advisor">👩‍🏫 Hello {{ student.student_name }}, I'm your AI advisor. Ask me about your GPA, performance, or strategies!</div>
+        </div>
+        
+        <!-- Chat Input - Keeping the original structure but adding styling -->
+        <div class="styled-chat-input-wrapper">
+          <input type="text" id="chatInput" class="styled-chat-input" placeholder="Ask me a question...">
+          <button class="styled-chat-btn" id="sendMessage">Send</button>
         </div>
       </div>
     </main>
@@ -1380,8 +1675,59 @@
       }
     }
     
+    
     enhanceTouchTargets();
     window.addEventListener('resize', enhanceTouchTargets);
   </script>
+  <script>
+    const chatContainer = document.getElementById('chatContainer');
+    const chatInput = document.getElementById('chatInput');
+    const sendButton = document.getElementById('sendMessage');
+  
+    function appendMessage(sender, text) {
+      const msg = document.createElement('div');
+      msg.className = 'chat-message ' + sender;
+      msg.style.marginBottom = '10px';
+      msg.innerHTML = (sender === 'advisor' ? '👩‍🏫 ' : '🧑‍🎓 ') + text;
+      chatContainer.appendChild(msg);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+  
+    function getAdvisorResponse(question) {
+      question = question.toLowerCase();
+  
+      if (question.includes('gpa')) {
+        return `Your current CGPA is {{ student.CGPA }}. To reach your target CGPA of {{ target_cgpa }}, you need an average GPA of about {{ average_gpa_needed|floatformat:2 }} this semester.`;
+      }
+      if (question.includes('performance') || question.includes('grades')) {
+        return `{% for enrollment in current_courses %}You need at least a <strong>{{ enrollment.min_grade }}</strong> in <strong>{{ enrollment.course_id }}</strong>{% if not forloop.last %}, {% endif %}{% endfor %} to reach your goal.`;
+      }
+      if (question.includes('study')) {
+        return "Focus on active recall, practice problems, and spaced repetition. Use the Pomodoro technique to stay efficient!";
+      }
+      if (question.includes('time')) {
+        return "Use a weekly planner. Set aside fixed hours daily for studying. Prioritize courses with lower grades.";
+      }
+      if (question.includes('help') || question.includes('resources')) {
+        return "Try the academic success center, study groups, and faculty office hours for help.";
+      }
+      return "Sorry, I can only help with GPA, grades, study tips, and time management for now.";
+    }
+  
+    sendButton.addEventListener('click', () => {
+      const userText = chatInput.value.trim();
+      if (!userText) return;
+  
+      appendMessage('student', userText);
+      const reply = getAdvisorResponse(userText);
+      appendMessage('advisor', reply);
+      chatInput.value = '';
+    });
+  
+    chatInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') sendButton.click();
+    });
+  </script>
+  
 </body>
 </html>
